@@ -1,0 +1,5003 @@
+[
+  {
+    "id": "abana",
+    "name": "Abana",
+    "lat": 33.545097,
+    "lng": 36.224661,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 5:12"
+    ],
+    "comment": "Now Barada River"
+  },
+  {
+    "id": "abdon",
+    "name": "Abdon",
+    "lat": 33.047808,
+    "lng": 35.146201,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 21:30",
+      "1 Chr 6:74"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "abel-keramim",
+    "name": "Abel-keramim",
+    "lat": 32.02425,
+    "lng": 35.82352,
+    "accuracy": "approximate",
+    "passages": [
+      "Judg 11:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "abel-meholah",
+    "name": "Abel-meholah",
+    "lat": 32.35601,
+    "lng": 35.536929,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 7:22",
+      "1 Kgs 4:12",
+      "1 Kgs 19:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "abilene",
+    "name": "Abilene",
+    "lat": 33.5873,
+    "lng": 36.09171,
+    "accuracy": "exact",
+    "passages": [
+      "Luke 3:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "achzib-1",
+    "name": "Achzib 1",
+    "lat": 31.7,
+    "lng": 35,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:44",
+      "Mic 1:14"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adadah",
+    "name": "Adadah",
+    "lat": 31.1858,
+    "lng": 34.96745,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adamah",
+    "name": "Adamah",
+    "lat": 32.7253,
+    "lng": 35.4382,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:36"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adami-nekeb",
+    "name": "Adami-nekeb",
+    "lat": 32.6105,
+    "lng": 35.54289,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "addar",
+    "name": "Addar",
+    "lat": 30.9522,
+    "lng": 34.7187,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:3"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adithaim",
+    "name": "Adithaim",
+    "lat": 31.7001,
+    "lng": 34.89532,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:36"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adramyttium",
+    "name": "Adramyttium",
+    "lat": 39.5748,
+    "lng": 26.9367,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 27:2"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adriatic-sea",
+    "name": "Adriatic Sea",
+    "lat": 42.415,
+    "lng": 16.3735,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 27:27"
+    ],
+    "comment": "water"
+  },
+  {
+    "id": "adullam",
+    "name": "Adullam",
+    "lat": 31.65,
+    "lng": 35,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 12:15",
+      "Josh 15:35",
+      "1 Sam 22:1",
+      "2 Sam 23:13",
+      "1 Chr 11:15",
+      "2 Chr 11:7",
+      "Neh 11:30",
+      "Mic 1:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "adummim",
+    "name": "Adummim",
+    "lat": 31.817585,
+    "lng": 35.361646,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:7",
+      "Josh 18:17"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "aenon",
+    "name": "Aenon",
+    "lat": 32.398936,
+    "lng": 35.54351,
+    "accuracy": "exact",
+    "passages": [
+      "John 3:23"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ahava",
+    "name": "Ahava",
+    "lat": 33.625197,
+    "lng": 42.786647,
+    "accuracy": "exact",
+    "passages": [
+      "Ezra 8:15",
+      "Ezra 8:21",
+      "Ezra 8:31"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ain-1",
+    "name": "Ain 1",
+    "lat": 34.353071,
+    "lng": 36.385705,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ain-2",
+    "name": "Ain 2",
+    "lat": 31.370835,
+    "lng": 34.860665,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:32",
+      "Josh 19:7",
+      "Josh 21:16",
+      "1 Chr 4:32"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "akrabbim",
+    "name": "Akrabbim",
+    "lat": 30.688292,
+    "lng": 35.263182,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:4",
+      "Josh 15:3",
+      "Judg 1:36"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "alemeth",
+    "name": "Alemeth",
+    "lat": 31.828406,
+    "lng": 35.287637,
+    "accuracy": "exact",
+    "passages": [
+      "1 Chr 6:60"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "allammelech",
+    "name": "Allammelech",
+    "lat": 32.97829,
+    "lng": 35.182915,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 19:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "amad",
+    "name": "Amad",
+    "lat": 33.019337,
+    "lng": 35.173644,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "amana",
+    "name": "Amana",
+    "lat": 33.68137,
+    "lng": 36.055039,
+    "accuracy": "exact",
+    "passages": [
+      "Sng 4:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ammah",
+    "name": "Ammah",
+    "lat": 31.869005,
+    "lng": 35.343177,
+    "accuracy": "approximate",
+    "passages": [
+      "2 Sam 2:24"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "anab",
+    "name": "Anab",
+    "lat": 31.403888,
+    "lng": 34.944185,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:21",
+      "Josh 15:50"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "anaharath",
+    "name": "Anaharath",
+    "lat": 32.607039,
+    "lng": 35.397389,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:19"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ananiah",
+    "name": "Ananiah",
+    "lat": 31.83291,
+    "lng": 35.219683,
+    "accuracy": "exact",
+    "passages": [
+      "Neh 11:32"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "anim",
+    "name": "Anim",
+    "lat": 31.373521,
+    "lng": 35.074552,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:50"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "aphek-1",
+    "name": "Aphek 1",
+    "lat": 34.066067,
+    "lng": 35.865801,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:4",
+      "Josh 19:30"
+    ],
+    "comment": "http://www.traveljournals.net/explore/lebanon/map/m1170262/hamul.html"
+  },
+  {
+    "id": "arab",
+    "name": "Arab",
+    "lat": 31.450746,
+    "lng": 35.045648,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:52"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "arabah",
+    "name": "Arabah",
+    "lat": 32.029676,
+    "lng": 35.520995,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 1:1",
+      "Deut 1:7",
+      "Deut 2:8",
+      "Deut 3:17",
+      "Deut 4:49",
+      "Deut 11:30",
+      "Josh 8:14",
+      "Josh 11:2",
+      "Josh 11:16",
+      "Josh 12:1",
+      "Josh 12:3",
+      "Josh 12:8",
+      "Josh 18:18",
+      "1 Sam 23:24",
+      "2 Sam 2:29",
+      "2 Sam 4:7",
+      "2 Kgs 25:4",
+      "Jer 39:4",
+      "Jer 52:7",
+      "Ezek 47:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "aram",
+    "name": "Aram",
+    "lat": 34.85,
+    "lng": 39.12,
+    "accuracy": "approximate",
+    "passages": [
+      "Num 23:7",
+      "2 Sam 8:6",
+      "2 Sam 15:8",
+      "1 Chr 2:23",
+      "Hos 12:12"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "aram-maacah",
+    "name": "Aram-maacah",
+    "lat": 33.2,
+    "lng": 36.5,
+    "accuracy": "approximate",
+    "passages": [
+      "1 Chr 19:6"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "aram-naharaim",
+    "name": "Aram-naharaim",
+    "lat": 35.1,
+    "lng": 42,
+    "accuracy": "approximate",
+    "passages": [
+      "Ps 60:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "argob",
+    "name": "Argob",
+    "lat": 33.144,
+    "lng": 36.136,
+    "accuracy": "approximate",
+    "passages": [
+      "Deut 3:4",
+      "Deut 3:13",
+      "Deut 3:14",
+      "1 Kgs 4:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "arnon",
+    "name": "Arnon",
+    "lat": 31.4288,
+    "lng": 35.677009,
+    "accuracy": "exact",
+    "passages": [
+      "Num 21:13",
+      "Num 21:14",
+      "Num 21:24",
+      "Num 21:26",
+      "Num 21:28",
+      "Num 22:36",
+      "Judg 11:13",
+      "Judg 11:18",
+      "Judg 11:22",
+      "Judg 11:26",
+      "Isa 16:2",
+      "Jer 48:20"
+    ],
+    "comment": "Now Wadi Mojib"
+  },
+  {
+    "id": "aroer-2",
+    "name": "Aroer 2",
+    "lat": 31.9617,
+    "lng": 35.9115,
+    "accuracy": "approximate",
+    "passages": [
+      "Num 32:34",
+      "Josh 13:25",
+      "Judg 11:33",
+      "2 Sam 24:5",
+      "1 Chr 5:8",
+      "Isa 17:2"
+    ],
+    "comment": "Guess (near Rabbah)"
+  },
+  {
+    "id": "arumah",
+    "name": "Arumah",
+    "lat": 32.154887,
+    "lng": 35.318192,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 9:41"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "arvad",
+    "name": "Arvad",
+    "lat": 34.856082,
+    "lng": 35.858485,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 27:8",
+      "Ezek 27:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ashkenaz",
+    "name": "Ashkenaz",
+    "lat": 40.6,
+    "lng": 44.6,
+    "accuracy": "approximate",
+    "passages": [
+      "Jer 51:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ashnah",
+    "name": "Ashnah",
+    "lat": 31.8099,
+    "lng": 34.9365,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:33",
+      "Josh 15:43"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "azmon",
+    "name": "Azmon",
+    "lat": 30.958506,
+    "lng": 34.3805,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:4",
+      "Num 34:5",
+      "Josh 15:4"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "baalath-1",
+    "name": "Baalath 1",
+    "lat": 31.927451,
+    "lng": 35.055378,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 19:44"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "baalath-beer",
+    "name": "Baalath-beer",
+    "lat": 32.049953,
+    "lng": 35.733402,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "baal-hazor",
+    "name": "Baal-hazor",
+    "lat": 31.979434,
+    "lng": 35.279229,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 13:23"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "baal-meon",
+    "name": "Baal-meon",
+    "lat": 31.679454,
+    "lng": 35.734892,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:38",
+      "1 Chr 5:8",
+      "Ezek 25:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "baal-zephon",
+    "name": "Baal-zephon",
+    "lat": 29.938441,
+    "lng": 32.395473,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 14:2",
+      "Ex 14:9",
+      "Num 33:7"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "bahurim",
+    "name": "Bahurim",
+    "lat": 31.824736,
+    "lng": 35.388486,
+    "accuracy": "approximate",
+    "passages": [
+      "2 Sam 3:16",
+      "2 Sam 16:5",
+      "2 Sam 17:18",
+      "2 Sam 19:16",
+      "2 Sam 23:31",
+      "1 Kgs 2:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "bene-berak",
+    "name": "Bene-berak",
+    "lat": 32.035782,
+    "lng": 34.827108,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:45"
+    ],
+    "comment": "uk.geocities.com/jonpartin/joshua4.html"
+  },
+  {
+    "id": "berothah",
+    "name": "Berothah",
+    "lat": 33.93148,
+    "lng": 36.152049,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 47:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "besor",
+    "name": "Besor",
+    "lat": 31.398056,
+    "lng": 34.436667,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 30:9",
+      "1 Sam 30:10",
+      "1 Sam 30:21"
+    ],
+    "comment": "wadi esh sheria"
+  },
+  {
+    "id": "beten",
+    "name": "Beten",
+    "lat": 32.934736,
+    "lng": 35.270799,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:25"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-anath",
+    "name": "Beth-anath",
+    "lat": 33.146864,
+    "lng": 35.427134,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 19:38",
+      "Judg 1:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-anoth",
+    "name": "Beth-anoth",
+    "lat": 31.558456,
+    "lng": 35.124483,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:59"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-arabah",
+    "name": "Beth-arabah",
+    "lat": 31.84332,
+    "lng": 35.50649,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:6",
+      "Josh 15:61",
+      "Josh 18:18",
+      "Josh 18:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-azmaveth",
+    "name": "Beth-azmaveth",
+    "lat": 31.834203,
+    "lng": 35.260706,
+    "accuracy": "exact",
+    "passages": [
+      "Neh 7:28"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-dagon-1",
+    "name": "Beth-dagon 1",
+    "lat": 31.908,
+    "lng": 34.775,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:41"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-dagon-2",
+    "name": "Beth-dagon 2",
+    "lat": 32.899561,
+    "lng": 35.107928,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 19:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-emek",
+    "name": "Beth-emek",
+    "lat": 32.978855,
+    "lng": 35.167096,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-gamul",
+    "name": "Beth-gamul",
+    "lat": 31.519692,
+    "lng": 35.844714,
+    "accuracy": "exact",
+    "passages": [
+      "Jer 48:23"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-haccherem",
+    "name": "Beth-haccherem",
+    "lat": 31.665911,
+    "lng": 35.241516,
+    "accuracy": "exact",
+    "passages": [
+      "Neh 3:14",
+      "Jer 6:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-haram",
+    "name": "Beth-haram",
+    "lat": 31.816667,
+    "lng": 35.583333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:27"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "beth-hoglah",
+    "name": "Beth-hoglah",
+    "lat": 31.837062,
+    "lng": 35.513151,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:6",
+      "Josh 18:19",
+      "Josh 18:21"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "bethlehem-2",
+    "name": "Bethlehem 2",
+    "lat": 32.735379,
+    "lng": 35.189704,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-nimrah",
+    "name": "Beth-nimrah",
+    "lat": 31.900811,
+    "lng": 35.625693,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:36",
+      "Josh 13:27"
+    ],
+    "comment": "now Beth-Nimrah"
+  },
+  {
+    "id": "beth-peor",
+    "name": "Beth-peor",
+    "lat": 31.656099,
+    "lng": 35.71187,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 3:29",
+      "Deut 4:46",
+      "Deut 34:6",
+      "Josh 13:20"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "beth-rehob",
+    "name": "Beth-rehob",
+    "lat": 33.219354,
+    "lng": 35.544122,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 18:28",
+      "2 Sam 10:6"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-shemesh-2",
+    "name": "Beth-shemesh 2",
+    "lat": 32.40643,
+    "lng": 35.504628,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:22"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "beth-shittah",
+    "name": "Beth-shittah",
+    "lat": 32.552496,
+    "lng": 35.438257,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 7:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-tappuah",
+    "name": "Beth-tappuah",
+    "lat": 31.52973,
+    "lng": 35.050377,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:53"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "beth-zur",
+    "name": "Beth-zur",
+    "lat": 31.596107,
+    "lng": 35.10262,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:58",
+      "2 Chr 11:7",
+      "Neh 3:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "betonim",
+    "name": "Betonim",
+    "lat": 32.0105,
+    "lng": 35.706297,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "bezek-1",
+    "name": "Bezek 1",
+    "lat": 31.898029,
+    "lng": 34.952878,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:4",
+      "Judg 1:5"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "bozrah-1",
+    "name": "Bozrah 1",
+    "lat": 30.734691,
+    "lng": 35.60625,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 36:33",
+      "1 Chr 1:44",
+      "Isa 34:6",
+      "Isa 63:1",
+      "Jer 49:13",
+      "Jer 49:22",
+      "Amos 1:12"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "brook-of-egypt",
+    "name": "Brook of Egypt",
+    "lat": 31.032047,
+    "lng": 33.854957,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:5",
+      "Josh 15:4",
+      "Josh 15:47",
+      "1 Kgs 8:65",
+      "2 Kgs 24:7",
+      "2 Chr 7:8",
+      "Isa 27:12",
+      "Ezek 47:19",
+      "Ezek 48:28"
+    ],
+    "comment": "river: now Wadi al Arish; http://en.wikipedia.org/wiki/Brook_of_Egypt"
+  },
+  {
+    "id": "cabul-1",
+    "name": "Cabul 1",
+    "lat": 32.865661,
+    "lng": 35.211814,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "calah",
+    "name": "Calah",
+    "lat": 36.142884,
+    "lng": 43.312178,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:11",
+      "Gen 10:12"
+    ],
+    "comment": "?"
+  },
+  {
+    "id": "calneh",
+    "name": "Calneh",
+    "lat": 32.127213,
+    "lng": 45.229995,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:10",
+      "Amos 6:2"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "cauda",
+    "name": "Cauda",
+    "lat": 34.84351,
+    "lng": 24.091671,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 27:16"
+    ],
+    "comment": "island; now Gavdos; http://www.creteisland.gr/english/chania/selino/gavdos/"
+  },
+  {
+    "id": "chebar",
+    "name": "Chebar",
+    "lat": 33.159129,
+    "lng": 44.06293,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 1:1",
+      "Ezek 1:3",
+      "Ezek 3:15",
+      "Ezek 3:23",
+      "Ezek 10:15",
+      "Ezek 10:20",
+      "Ezek 10:22",
+      "Ezek 43:3"
+    ],
+    "comment": "~; now Nehardea; http://www.hebrewhistory.info/factpapers/fp031_iraq.htm"
+  },
+  {
+    "id": "chephar-ammoni",
+    "name": "Chephar-ammoni",
+    "lat": 31.966667,
+    "lng": 35.25,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:24"
+    ],
+    "comment": "?; now Khirbat Kafr Ana"
+  },
+  {
+    "id": "chephirah",
+    "name": "Chephirah",
+    "lat": 31.836401,
+    "lng": 35.095272,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 9:17",
+      "Josh 18:26",
+      "Ezra 2:25",
+      "Neh 7:29"
+    ],
+    "comment": "now Kirbat el Kafira"
+  },
+  {
+    "id": "chesalon",
+    "name": "Chesalon",
+    "lat": 31.781049,
+    "lng": 35.05113,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:10"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "chesulloth",
+    "name": "Chesulloth",
+    "lat": 32.683231,
+    "lng": 35.324694,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:18"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "chios",
+    "name": "Chios",
+    "lat": 38.44484,
+    "lng": 26.063302,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 20:15"
+    ],
+    "comment": "now Chios"
+  },
+  {
+    "id": "crete",
+    "name": "Crete",
+    "lat": 35.171239,
+    "lng": 25.007204,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 27:7",
+      "Acts 27:12",
+      "Acts 27:13",
+      "Acts 27:21",
+      "Titus 1:5"
+    ],
+    "comment": "island"
+  },
+  {
+    "id": "cuth",
+    "name": "Cuth",
+    "lat": 32.733333,
+    "lng": 44.666667,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 17:30"
+    ],
+    "comment": "http://en.wikipedia.org/wiki/Kutha"
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "lat": 35.018306,
+    "lng": 33.207693,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 23:1",
+      "Isa 23:12",
+      "Jer 2:10",
+      "Ezek 27:6",
+      "Acts 4:36",
+      "Acts 11:19",
+      "Acts 11:20",
+      "Acts 13:4",
+      "Acts 15:39",
+      "Acts 21:3",
+      "Acts 21:16",
+      "Acts 27:4"
+    ],
+    "comment": "island"
+  },
+  {
+    "id": "cyrene",
+    "name": "Cyrene",
+    "lat": 32.824979,
+    "lng": 21.858301,
+    "accuracy": "exact",
+    "passages": [
+      "Matt 27:32",
+      "Mark 15:21",
+      "Luke 23:26",
+      "Acts 2:10",
+      "Acts 11:20",
+      "Acts 13:1"
+    ],
+    "comment": "http://en.wikipedia.org/wiki/Cyrene%2C_Libya"
+  },
+  {
+    "id": "dabbesheth",
+    "name": "Dabbesheth",
+    "lat": 33,
+    "lng": 35.266682,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "dannah",
+    "name": "Dannah",
+    "lat": 31.561025,
+    "lng": 34.975472,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:49"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "debir-2",
+    "name": "Debir 2",
+    "lat": 31.816662,
+    "lng": 35.349994,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:7"
+    ],
+    "comment": "now Ed Dhaherie"
+  },
+  {
+    "id": "dedan",
+    "name": "Dedan",
+    "lat": 26.625139,
+    "lng": 37.919663,
+    "accuracy": "exact",
+    "passages": [
+      "Jer 25:23",
+      "Jer 49:8",
+      "Ezek 25:13",
+      "Ezek 27:15",
+      "Ezek 27:20",
+      "Ezek 38:13"
+    ],
+    "comment": "http://en.wikipedia.org/wiki/Al-%27Ula"
+  },
+  {
+    "id": "dimnah",
+    "name": "Dimnah",
+    "lat": 32.781808,
+    "lng": 35.321364,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 21:35"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "dinhabah",
+    "name": "Dinhabah",
+    "lat": 30.336614,
+    "lng": 35.529889,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 36:32",
+      "1 Chr 1:43"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "dizahab",
+    "name": "Dizahab",
+    "lat": 28.507836,
+    "lng": 34.516339,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 1:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "dophkah",
+    "name": "Dophkah",
+    "lat": 28.770015,
+    "lng": 33.40046,
+    "accuracy": "approximate",
+    "passages": [
+      "Num 33:12",
+      "Num 33:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "dumah-1",
+    "name": "Dumah 1",
+    "lat": 31.43827,
+    "lng": 34.982762,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:52"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ebez",
+    "name": "Ebez",
+    "lat": 32.261621,
+    "lng": 35.328129,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:20"
+    ],
+    "comment": "now Al-Bathan"
+  },
+  {
+    "id": "ecbatana",
+    "name": "Ecbatana",
+    "lat": 34.798311,
+    "lng": 48.514966,
+    "accuracy": "exact",
+    "passages": [
+      "Ezra 6:2"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "elath",
+    "name": "Elath",
+    "lat": 29.528502,
+    "lng": 35.005732,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 2:8",
+      "2 Kgs 14:22",
+      "2 Kgs 16:6"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "elealeh",
+    "name": "Elealeh",
+    "lat": 31.813796,
+    "lng": 35.824275,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:3",
+      "Num 32:37",
+      "Isa 15:4",
+      "Isa 16:9",
+      "Jer 48:34"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "elim",
+    "name": "Elim",
+    "lat": 29.306194,
+    "lng": 32.980924,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 15:27",
+      "Ex 16:1",
+      "Num 33:9",
+      "Num 33:10"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "elon",
+    "name": "Elon",
+    "lat": 31.973818,
+    "lng": 35.116531,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:43"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "elonbeth-hanan",
+    "name": "Elonbeth-hanan",
+    "lat": 31.852593,
+    "lng": 35.109078,
+    "accuracy": "exact",
+    "passages": [
+      "1 Kgs 4:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "eltekeh",
+    "name": "Eltekeh",
+    "lat": 31.869521,
+    "lng": 35.06688,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:44"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "eltekon",
+    "name": "Eltekon",
+    "lat": 31.66057,
+    "lng": 34.995406,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:59"
+    ],
+    "comment": "from tyndale"
+  },
+  {
+    "id": "enam",
+    "name": "Enam",
+    "lat": 32.15,
+    "lng": 35.126,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:34"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "eneglaim",
+    "name": "Eneglaim",
+    "lat": 30.998062,
+    "lng": 35.498547,
+    "accuracy": "approximate",
+    "passages": [
+      "Ezek 47:10"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "en-gannim-1",
+    "name": "En-gannim 1",
+    "lat": 31.75,
+    "lng": 34.950106,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:34"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "en-haddah",
+    "name": "En-haddah",
+    "lat": 32.478425,
+    "lng": 35.254452,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:21"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "en-hazor",
+    "name": "En-hazor",
+    "lat": 33.1,
+    "lng": 35.35,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:37"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "en-rogel",
+    "name": "En-rogel",
+    "lat": 31.767775,
+    "lng": 35.234408,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:7",
+      "Josh 18:16",
+      "2 Sam 17:17",
+      "1 Kgs 1:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "en-shemesh",
+    "name": "En-shemesh",
+    "lat": 31.77402,
+    "lng": 35.270231,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:7",
+      "Josh 18:17"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ephes-dammim",
+    "name": "Ephes-dammim",
+    "lat": 31.691186,
+    "lng": 34.944496,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 17:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "erech",
+    "name": "Erech",
+    "lat": 32.322222,
+    "lng": 45.636111,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:10",
+      "Ezra 4:9"
+    ],
+    "comment": "now Uruk"
+  },
+  {
+    "id": "eshan",
+    "name": "Eshan",
+    "lat": 31.420175,
+    "lng": 35.033537,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:52"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "eshtaol",
+    "name": "Eshtaol",
+    "lat": 31.782429,
+    "lng": 35.009012,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:33",
+      "Josh 19:41",
+      "Judg 13:25",
+      "Judg 16:31",
+      "Judg 18:2",
+      "Judg 18:8",
+      "Judg 18:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "etam-1",
+    "name": "Etam 1",
+    "lat": 31.736294,
+    "lng": 35.05485,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 15:8",
+      "Judg 15:11"
+    ],
+    "comment": "http://www.tiuli.com/english/Judean_Mountains/Judean_Mountains.asp"
+  },
+  {
+    "id": "etam-3",
+    "name": "Etam 3",
+    "lat": 31.686465,
+    "lng": 35.17474,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 11:6"
+    ],
+    "comment": "now Khirbet el Khokh; palestine-family.net/index.php?nav=8-18&cid=17&did=193"
+  },
+  {
+    "id": "etham",
+    "name": "Etham",
+    "lat": 30.467511,
+    "lng": 32.282767,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 13:20",
+      "Num 33:6",
+      "Num 33:7",
+      "Num 33:8"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "euphrates",
+    "name": "Euphrates",
+    "lat": 35.090577,
+    "lng": 40.42778,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 2:14",
+      "Gen 15:18",
+      "Gen 31:21",
+      "Gen 36:37",
+      "Ex 23:31",
+      "Deut 1:7",
+      "Deut 11:24",
+      "Josh 1:4",
+      "Josh 24:2",
+      "2 Sam 8:3",
+      "2 Sam 10:16",
+      "1 Kgs 4:21",
+      "1 Kgs 4:24",
+      "1 Kgs 14:15",
+      "2 Kgs 23:29",
+      "2 Kgs 24:7",
+      "1 Chr 1:48",
+      "1 Chr 5:9",
+      "1 Chr 18:3",
+      "1 Chr 19:16",
+      "2 Chr 9:26",
+      "2 Chr 35:20",
+      "Isa 27:12",
+      "Jer 2:18",
+      "Jer 13:4",
+      "Jer 13:5",
+      "Jer 13:6",
+      "Jer 13:7",
+      "Jer 46:2",
+      "Jer 46:6",
+      "Jer 46:10",
+      "Jer 51:63",
+      "Rev 9:14",
+      "Rev 16:12"
+    ],
+    "comment": "river"
+  },
+  {
+    "id": "forum-of-appius",
+    "name": "Forum of Appius",
+    "lat": 41.468706,
+    "lng": 12.993929,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 28:15"
+    ],
+    "comment": "http://gnswww.nga.mil/geonames/Gazetteer/Search/Results.jsp?Feature__Unique_Feature_ID=-117178&Diacritics=Yes&reload=1"
+  },
+  {
+    "id": "gallim",
+    "name": "Gallim",
+    "lat": 31.816667,
+    "lng": 35.25,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 25:44",
+      "Isa 10:30"
+    ],
+    "comment": "~; from tyndale"
+  },
+  {
+    "id": "gebim",
+    "name": "Gebim",
+    "lat": 31.8,
+    "lng": 35.25,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 10:31"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "gederah",
+    "name": "Gederah",
+    "lat": 31.823337,
+    "lng": 34.777779,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:36",
+      "1 Chr 4:23",
+      "1 Chr 12:4"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "gedor-1",
+    "name": "Gedor 1",
+    "lat": 31.63333,
+    "lng": 35.083333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:58",
+      "1 Chr 12:7"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "geshur",
+    "name": "Geshur",
+    "lat": 33,
+    "lng": 36.41667,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:13",
+      "2 Sam 3:3",
+      "2 Sam 13:37",
+      "2 Sam 13:38",
+      "2 Sam 14:23",
+      "2 Sam 14:32",
+      "2 Sam 15:8",
+      "1 Chr 2:23",
+      "1 Chr 3:2"
+    ],
+    "comment": "~; now Leja"
+  },
+  {
+    "id": "gibbethon",
+    "name": "Gibbethon",
+    "lat": 31.976623,
+    "lng": 35.004896,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:44",
+      "Josh 21:23",
+      "1 Kgs 15:27",
+      "1 Kgs 16:15",
+      "1 Kgs 16:17"
+    ],
+    "comment": "now Qibya"
+  },
+  {
+    "id": "gihon-2",
+    "name": "Gihon 2",
+    "lat": 31.773116,
+    "lng": 35.237186,
+    "accuracy": "exact",
+    "passages": [
+      "1 Kgs 1:33",
+      "1 Kgs 1:38",
+      "1 Kgs 1:45",
+      "2 Chr 32:30",
+      "2 Chr 33:14"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "gilboa",
+    "name": "Gilboa",
+    "lat": 32.516667,
+    "lng": 35.4,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 28:4",
+      "2 Sam 1:21",
+      "2 Sam 21:12"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "gilgal-2",
+    "name": "Gilgal 2",
+    "lat": 32.029737,
+    "lng": 35.222604,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 2:1",
+      "2 Kgs 4:38"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "giloh",
+    "name": "Giloh",
+    "lat": 31.616667,
+    "lng": 35.083333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:51",
+      "2 Sam 15:12"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "gimzo",
+    "name": "Gimzo",
+    "lat": 31.928659,
+    "lng": 34.943219,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 28:18"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "goshen-2",
+    "name": "Goshen 2",
+    "lat": 31.45,
+    "lng": 34.916667,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 10:41",
+      "Josh 11:16",
+      "Josh 15:51"
+    ],
+    "comment": "~; from harper"
+  },
+  {
+    "id": "gozan",
+    "name": "Gozan",
+    "lat": 36.840013,
+    "lng": 40.06889,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 17:6",
+      "2 Kgs 18:11",
+      "2 Kgs 19:12",
+      "1 Chr 5:26",
+      "Isa 37:12"
+    ],
+    "comment": "from harper"
+  },
+  {
+    "id": "habor",
+    "name": "Habor",
+    "lat": 36.344972,
+    "lng": 40.789333,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 17:6",
+      "2 Kgs 18:11",
+      "1 Chr 5:26"
+    ],
+    "comment": "river"
+  },
+  {
+    "id": "hachilah",
+    "name": "Hachilah",
+    "lat": 31.466604,
+    "lng": 35.216691,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 23:19",
+      "1 Sam 26:1",
+      "1 Sam 26:3"
+    ],
+    "comment": "?; now Zahrat al Kula"
+  },
+  {
+    "id": "hadad-rimmon",
+    "name": "Hadad-rimmon",
+    "lat": 32.524106,
+    "lng": 35.205136,
+    "accuracy": "exact",
+    "passages": [
+      "Zech 12:11"
+    ],
+    "comment": "now Rommanah"
+  },
+  {
+    "id": "hadashah",
+    "name": "Hadashah",
+    "lat": 31.679512,
+    "lng": 34.695903,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:37"
+    ],
+    "comment": "now Ibdis"
+  },
+  {
+    "id": "hadid",
+    "name": "Hadid",
+    "lat": 31.963575,
+    "lng": 34.952536,
+    "accuracy": "exact",
+    "passages": [
+      "Neh 11:34"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "haeleph",
+    "name": "Haeleph",
+    "lat": 31.792733,
+    "lng": 35.196862,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:28"
+    ],
+    "comment": "now Lifta"
+  },
+  {
+    "id": "halhul",
+    "name": "Halhul",
+    "lat": 31.579549,
+    "lng": 35.099103,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:58"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hamath",
+    "name": "Hamath",
+    "lat": 35.136204,
+    "lng": 36.749488,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 8:9",
+      "2 Kgs 14:28",
+      "2 Kgs 17:24",
+      "2 Kgs 17:30",
+      "2 Kgs 18:34",
+      "2 Kgs 19:13",
+      "2 Kgs 23:33",
+      "2 Kgs 25:21",
+      "1 Chr 18:9",
+      "2 Chr 8:4",
+      "Isa 10:9",
+      "Isa 11:11",
+      "Isa 36:19",
+      "Isa 37:13",
+      "Jer 39:5",
+      "Jer 49:23",
+      "Jer 52:9",
+      "Jer 52:27",
+      "Ezek 47:16",
+      "Ezek 47:17",
+      "Ezek 48:1",
+      "Amos 6:2",
+      "Zech 9:2"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hammath",
+    "name": "Hammath",
+    "lat": 33.125828,
+    "lng": 35.165,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:35",
+      "1 Chr 2:55"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hanes",
+    "name": "Hanes",
+    "lat": 29.085425,
+    "lng": 30.934402,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 30:4"
+    ],
+    "comment": "http://www.digitalegypt.ucl.ac.uk/ehnasya/index.html"
+  },
+  {
+    "id": "hannathon",
+    "name": "Hannathon",
+    "lat": 32.916002,
+    "lng": 35.426637,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:14"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "harod",
+    "name": "Harod",
+    "lat": 32.549638,
+    "lng": 35.355647,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 7:1",
+      "2 Sam 23:25",
+      "1 Chr 11:27"
+    ],
+    "comment": "now Ein Harod"
+  },
+  {
+    "id": "harosheth-hagoyim",
+    "name": "Harosheth-hagoyim",
+    "lat": 32.691177,
+    "lng": 35.110039,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 4:2",
+      "Judg 4:13",
+      "Judg 4:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hazar-enan",
+    "name": "Hazar-enan",
+    "lat": 34.229499,
+    "lng": 37.240077,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:9",
+      "Num 34:10",
+      "Ezek 47:17",
+      "Ezek 48:1"
+    ],
+    "comment": "now Al Qaryatayn"
+  },
+  {
+    "id": "hazar-shual",
+    "name": "Hazar-shual",
+    "lat": 31.215418,
+    "lng": 34.942986,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:28",
+      "Josh 19:3",
+      "1 Chr 4:28",
+      "Neh 11:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hazeroth",
+    "name": "Hazeroth",
+    "lat": 28.916667,
+    "lng": 34.5,
+    "accuracy": "exact",
+    "passages": [
+      "Num 11:35",
+      "Num 12:16",
+      "Num 33:17",
+      "Num 33:18",
+      "Deut 1:1"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "hazor-4",
+    "name": "Hazor 4",
+    "lat": 31.833333,
+    "lng": 35.2,
+    "accuracy": "approximate",
+    "passages": [
+      "Neh 11:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "helbon",
+    "name": "Helbon",
+    "lat": 33.664912,
+    "lng": 36.248576,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 27:18"
+    ],
+    "comment": "now Halbon"
+  },
+  {
+    "id": "heleph",
+    "name": "Heleph",
+    "lat": 33.134416,
+    "lng": 35.332157,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "helkath",
+    "name": "Helkath",
+    "lat": 32.955448,
+    "lng": 35.211971,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:25",
+      "Josh 21:31"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "helkath-hazzurim",
+    "name": "Helkath-hazzurim",
+    "lat": 31.880126,
+    "lng": 35.280188,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 2:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hena",
+    "name": "Hena",
+    "lat": 34.467725,
+    "lng": 41.964955,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 18:34",
+      "2 Kgs 19:13",
+      "Isa 37:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hereth",
+    "name": "Hereth",
+    "lat": 31.621492,
+    "lng": 35.029273,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 22:5"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hethlon",
+    "name": "Hethlon",
+    "lat": 34.73799,
+    "lng": 36.340918,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 47:15",
+      "Ezek 48:1"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "hierapolis",
+    "name": "Hierapolis",
+    "lat": 37.924517,
+    "lng": 29.124525,
+    "accuracy": "exact",
+    "passages": [
+      "Col 4:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hobah",
+    "name": "Hobah",
+    "lat": 33.5,
+    "lng": 36.466667,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 14:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "holon-1",
+    "name": "Holon 1",
+    "lat": 31.583333,
+    "lng": 34.95,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:51",
+      "Josh 21:15"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "horem",
+    "name": "Horem",
+    "lat": 33.166667,
+    "lng": 35.433333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:38"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "hor-haggidgad",
+    "name": "Hor-haggidgad",
+    "lat": 30.358285,
+    "lng": 35.19027,
+    "accuracy": "exact",
+    "passages": [
+      "Num 33:32",
+      "Num 33:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "horonaim",
+    "name": "Horonaim",
+    "lat": 31.288056,
+    "lng": 35.515,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 15:5",
+      "Jer 48:3",
+      "Jer 48:5",
+      "Jer 48:34"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "hosah",
+    "name": "Hosah",
+    "lat": 32.178502,
+    "lng": 35.22758,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:29"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "hukkok",
+    "name": "Hukkok",
+    "lat": 32.882153,
+    "lng": 35.496694,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:34"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "idalah",
+    "name": "Idalah",
+    "lat": 32.733333,
+    "lng": 35.166667,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "irpeel",
+    "name": "Irpeel",
+    "lat": 31.869343,
+    "lng": 35.197712,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ithlah",
+    "name": "Ithlah",
+    "lat": 31.823593,
+    "lng": 35.075769,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:42"
+    ],
+    "comment": "Now Bayt Thul"
+  },
+  {
+    "id": "jabbok",
+    "name": "Jabbok",
+    "lat": 32.193237,
+    "lng": 35.676305,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 32:22",
+      "Num 21:24",
+      "Deut 2:37",
+      "Deut 3:16",
+      "Josh 12:2",
+      "Judg 11:13",
+      "Judg 11:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "jabneel-1",
+    "name": "Jabneel 1",
+    "lat": 31.865518,
+    "lng": 34.746856,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:11"
+    ],
+    "comment": "now Yavneh"
+  },
+  {
+    "id": "jabneel-2",
+    "name": "Jabneel 2",
+    "lat": 32.7,
+    "lng": 35.5,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:33"
+    ],
+    "comment": "now Yavneel"
+  },
+  {
+    "id": "janim",
+    "name": "Janim",
+    "lat": 31.516667,
+    "lng": 35.166667,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:53"
+    ],
+    "comment": "now Bani Naim"
+  },
+  {
+    "id": "janoah-1",
+    "name": "Janoah 1",
+    "lat": 33.260246,
+    "lng": 35.302915,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 16:6",
+      "Josh 16:7"
+    ],
+    "comment": "now Yanouh"
+  },
+  {
+    "id": "janoah-2",
+    "name": "Janoah 2",
+    "lat": 32.155895,
+    "lng": 35.361606,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 15:29"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "japhia",
+    "name": "Japhia",
+    "lat": 32.691633,
+    "lng": 35.274955,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:12"
+    ],
+    "comment": "now Yafa"
+  },
+  {
+    "id": "jehud",
+    "name": "Jehud",
+    "lat": 32.033636,
+    "lng": 34.889599,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:45"
+    ],
+    "comment": "now Yehud"
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "lat": 31.777444,
+    "lng": 35.234935,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 10:1",
+      "Josh 10:3",
+      "Josh 10:5",
+      "Josh 10:23",
+      "Josh 12:10",
+      "Josh 15:8",
+      "Josh 15:63",
+      "Josh 18:28",
+      "Judg 1:7",
+      "Judg 1:8",
+      "Judg 1:21",
+      "Judg 19:10",
+      "1 Sam 17:54",
+      "2 Sam 5:5",
+      "2 Sam 5:6",
+      "2 Sam 5:13",
+      "2 Sam 5:14",
+      "2 Sam 8:7",
+      "2 Sam 9:13",
+      "2 Sam 10:14",
+      "2 Sam 11:1",
+      "2 Sam 11:12",
+      "2 Sam 12:31",
+      "2 Sam 14:23",
+      "2 Sam 14:28",
+      "2 Sam 15:8",
+      "2 Sam 15:11",
+      "2 Sam 15:14",
+      "2 Sam 15:29",
+      "2 Sam 15:37",
+      "2 Sam 16:3",
+      "2 Sam 16:15",
+      "2 Sam 17:20",
+      "2 Sam 19:19",
+      "2 Sam 19:25",
+      "2 Sam 19:33",
+      "2 Sam 19:34",
+      "2 Sam 20:2",
+      "2 Sam 20:3",
+      "2 Sam 20:7",
+      "2 Sam 20:22",
+      "2 Sam 24:8",
+      "2 Sam 24:16",
+      "1 Kgs 2:11",
+      "1 Kgs 2:36",
+      "1 Kgs 2:38",
+      "1 Kgs 2:41",
+      "1 Kgs 3:1",
+      "1 Kgs 3:15",
+      "1 Kgs 8:1",
+      "1 Kgs 9:15",
+      "1 Kgs 9:19",
+      "1 Kgs 10:2",
+      "1 Kgs 10:26",
+      "1 Kgs 10:27",
+      "1 Kgs 11:7",
+      "1 Kgs 11:13",
+      "1 Kgs 11:29",
+      "1 Kgs 11:32",
+      "1 Kgs 11:36",
+      "1 Kgs 11:42",
+      "1 Kgs 12:18",
+      "1 Kgs 12:21",
+      "1 Kgs 12:27",
+      "1 Kgs 12:28",
+      "1 Kgs 14:21",
+      "1 Kgs 14:25",
+      "1 Kgs 15:2",
+      "1 Kgs 15:4",
+      "1 Kgs 15:10",
+      "1 Kgs 22:42",
+      "2 Kgs 8:17",
+      "2 Kgs 8:26",
+      "2 Kgs 9:28",
+      "2 Kgs 12:1",
+      "2 Kgs 12:17",
+      "2 Kgs 12:18",
+      "2 Kgs 14:2",
+      "2 Kgs 14:13",
+      "2 Kgs 14:19",
+      "2 Kgs 14:20",
+      "2 Kgs 15:2",
+      "2 Kgs 15:33",
+      "2 Kgs 16:2",
+      "2 Kgs 16:5",
+      "2 Kgs 18:2",
+      "2 Kgs 18:17",
+      "2 Kgs 18:22",
+      "2 Kgs 18:35",
+      "2 Kgs 19:10",
+      "2 Kgs 19:21",
+      "2 Kgs 19:31",
+      "2 Kgs 21:1",
+      "2 Kgs 21:4",
+      "2 Kgs 21:7",
+      "2 Kgs 21:12",
+      "2 Kgs 21:13",
+      "2 Kgs 21:16",
+      "2 Kgs 21:19",
+      "2 Kgs 22:1",
+      "2 Kgs 22:14",
+      "2 Kgs 23:1",
+      "2 Kgs 23:2",
+      "2 Kgs 23:4",
+      "2 Kgs 23:5",
+      "2 Kgs 23:6",
+      "2 Kgs 23:9",
+      "2 Kgs 23:13",
+      "2 Kgs 23:20",
+      "2 Kgs 23:23",
+      "2 Kgs 23:24",
+      "2 Kgs 23:27",
+      "2 Kgs 23:30",
+      "2 Kgs 23:31",
+      "2 Kgs 23:33",
+      "2 Kgs 23:36",
+      "2 Kgs 24:4",
+      "2 Kgs 24:8",
+      "2 Kgs 24:10",
+      "2 Kgs 24:14",
+      "2 Kgs 24:15",
+      "2 Kgs 24:18",
+      "2 Kgs 24:20",
+      "2 Kgs 25:1",
+      "2 Kgs 25:8",
+      "2 Kgs 25:9",
+      "2 Kgs 25:10",
+      "1 Chr 3:4",
+      "1 Chr 3:5",
+      "1 Chr 6:10",
+      "1 Chr 6:15",
+      "1 Chr 6:32",
+      "1 Chr 8:28",
+      "1 Chr 8:32",
+      "1 Chr 9:3",
+      "1 Chr 9:34",
+      "1 Chr 9:38",
+      "1 Chr 11:4",
+      "1 Chr 14:3",
+      "1 Chr 14:4",
+      "1 Chr 15:3",
+      "1 Chr 18:7",
+      "1 Chr 19:15",
+      "1 Chr 20:1",
+      "1 Chr 20:3",
+      "1 Chr 21:4",
+      "1 Chr 21:15",
+      "1 Chr 21:16",
+      "1 Chr 23:25",
+      "1 Chr 28:1",
+      "1 Chr 29:27",
+      "2 Chr 1:4",
+      "2 Chr 1:13",
+      "2 Chr 1:14",
+      "2 Chr 1:15",
+      "2 Chr 2:7",
+      "2 Chr 2:16",
+      "2 Chr 3:1",
+      "2 Chr 5:2",
+      "2 Chr 6:6",
+      "2 Chr 8:6",
+      "2 Chr 9:1",
+      "2 Chr 9:25",
+      "2 Chr 9:27",
+      "2 Chr 9:30",
+      "2 Chr 10:18",
+      "2 Chr 11:1",
+      "2 Chr 11:5",
+      "2 Chr 11:14",
+      "2 Chr 11:16",
+      "2 Chr 12:2",
+      "2 Chr 12:4",
+      "2 Chr 12:5",
+      "2 Chr 12:7",
+      "2 Chr 12:9",
+      "2 Chr 12:13",
+      "2 Chr 13:2",
+      "2 Chr 14:15",
+      "2 Chr 15:10",
+      "2 Chr 17:13",
+      "2 Chr 19:1",
+      "2 Chr 19:4",
+      "2 Chr 19:8",
+      "2 Chr 20:5",
+      "2 Chr 20:15",
+      "2 Chr 20:17",
+      "2 Chr 20:18",
+      "2 Chr 20:20",
+      "2 Chr 30:14",
+      "2 Chr 32:19",
+      "2 Chr 32:22",
+      "2 Chr 32:23",
+      "2 Chr 32:25",
+      "2 Chr 32:26",
+      "2 Chr 32:33",
+      "2 Chr 33:1",
+      "2 Chr 33:4",
+      "2 Chr 33:7",
+      "2 Chr 33:9",
+      "2 Chr 33:13",
+      "2 Chr 33:15",
+      "2 Chr 33:21",
+      "2 Chr 34:1",
+      "2 Chr 34:3",
+      "2 Chr 34:5",
+      "2 Chr 34:7",
+      "2 Chr 34:9",
+      "2 Chr 34:22",
+      "2 Chr 34:29",
+      "2 Chr 34:30",
+      "2 Chr 34:32",
+      "2 Chr 35:1",
+      "2 Chr 35:18",
+      "2 Chr 35:24",
+      "2 Chr 36:1",
+      "2 Chr 36:2",
+      "2 Chr 36:3",
+      "2 Chr 36:4",
+      "2 Chr 36:5",
+      "2 Chr 36:9",
+      "2 Chr 36:10",
+      "2 Chr 36:11",
+      "2 Chr 36:14",
+      "2 Chr 36:19",
+      "2 Chr 36:23",
+      "Ezra 1:2",
+      "Ezra 1:3",
+      "Ezra 1:4",
+      "Ezra 1:5",
+      "Ezra 1:7",
+      "Ezra 1:11",
+      "Ezra 2:1",
+      "Ezra 2:68",
+      "Ezra 3:1",
+      "Ezra 3:8",
+      "Ezra 4:6",
+      "Ezra 4:8",
+      "Ezra 4:12",
+      "Ezra 4:20",
+      "Ezra 4:23",
+      "Ezra 4:24",
+      "Ezra 5:1",
+      "Ezra 5:2",
+      "Ezra 5:14",
+      "Ezra 5:15",
+      "Ezra 5:16",
+      "Ezra 5:17",
+      "Ezra 6:3",
+      "Ezra 6:5",
+      "Ezra 6:9",
+      "Ezra 6:12",
+      "Ezra 6:18",
+      "Ezra 7:7",
+      "Ezra 7:8",
+      "Ezra 7:9",
+      "Ezra 7:13",
+      "Ezra 7:14",
+      "Ezra 7:15",
+      "Ezra 7:16",
+      "Ezra 7:17",
+      "Ezra 7:19",
+      "Ezra 7:27",
+      "Ezra 8:29",
+      "Ezra 8:30",
+      "Ezra 8:31",
+      "Ezra 8:32",
+      "Ezra 9:9",
+      "Ezra 10:7",
+      "Ezra 10:9",
+      "Neh 1:2",
+      "Neh 1:3",
+      "Neh 2:11",
+      "Neh 2:12",
+      "Neh 2:13",
+      "Neh 2:17",
+      "Neh 2:20",
+      "Neh 3:8",
+      "Neh 3:9",
+      "Neh 3:12",
+      "Neh 4:7",
+      "Neh 4:8",
+      "Neh 4:22",
+      "Neh 6:7",
+      "Neh 7:2",
+      "Neh 7:3",
+      "Neh 7:6",
+      "Neh 8:15",
+      "Neh 11:1",
+      "Neh 11:2",
+      "Neh 11:3",
+      "Neh 11:4",
+      "Neh 11:6",
+      "Neh 11:22",
+      "Neh 12:27",
+      "Neh 12:28",
+      "Neh 12:29",
+      "Neh 12:43",
+      "Neh 13:6",
+      "Neh 13:7",
+      "Neh 13:15",
+      "Neh 13:16",
+      "Neh 13:19",
+      "Neh 13:20",
+      "Est 2:6",
+      "Ps 51:18",
+      "Ps 68:29",
+      "Ps 79:1",
+      "Ps 79:3",
+      "Ps 102:21",
+      "Ps 116:19",
+      "Ps 122:2",
+      "Ps 122:3",
+      "Ps 122:6",
+      "Ps 125:2",
+      "Ps 128:5",
+      "Ps 135:21",
+      "Ps 137:5",
+      "Ps 137:6",
+      "Ps 137:7",
+      "Ps 147:2",
+      "Ps 147:12",
+      "Eccl 1:1",
+      "Eccl 1:12",
+      "Eccl 1:16",
+      "Eccl 2:7",
+      "Eccl 2:9",
+      "Sng 1:5",
+      "Sng 2:7",
+      "Sng 3:5",
+      "Sng 3:10",
+      "Sng 5:8",
+      "Sng 5:16",
+      "Sng 6:4",
+      "Sng 8:4",
+      "Isa 1:1",
+      "Isa 2:1",
+      "Isa 2:3",
+      "Isa 3:1",
+      "Isa 3:8",
+      "Isa 4:3",
+      "Isa 4:4",
+      "Isa 5:3",
+      "Isa 5:14",
+      "Isa 7:1",
+      "Isa 8:14",
+      "Isa 10:10",
+      "Isa 10:11",
+      "Isa 10:12",
+      "Isa 10:32",
+      "Isa 22:10",
+      "Isa 22:21",
+      "Isa 24:23",
+      "Isa 27:13",
+      "Isa 28:14",
+      "Isa 30:19",
+      "Isa 31:5",
+      "Isa 31:9",
+      "Isa 33:20",
+      "Isa 36:2",
+      "Isa 36:7",
+      "Isa 36:20",
+      "Isa 37:10",
+      "Isa 37:22",
+      "Isa 37:32",
+      "Isa 40:2",
+      "Isa 40:9",
+      "Isa 41:27",
+      "Isa 44:26",
+      "Isa 44:28",
+      "Isa 51:17",
+      "Isa 52:1",
+      "Isa 52:2",
+      "Isa 52:9",
+      "Isa 62:6",
+      "Isa 62:7",
+      "Isa 64:10",
+      "Isa 65:18",
+      "Isa 65:19",
+      "Isa 66:10",
+      "Isa 66:13",
+      "Isa 66:20",
+      "Jer 1:3",
+      "Jer 1:15",
+      "Jer 2:2",
+      "Jer 3:17",
+      "Jer 4:3",
+      "Jer 4:4",
+      "Jer 4:5",
+      "Jer 4:10",
+      "Jer 4:11",
+      "Jer 4:14",
+      "Jer 4:16",
+      "Jer 5:1",
+      "Jer 6:1",
+      "Jer 6:6",
+      "Jer 6:8",
+      "Jer 7:17",
+      "Jer 7:34",
+      "Jer 8:1",
+      "Jer 9:11",
+      "Jer 11:2",
+      "Jer 11:6",
+      "Jer 11:9",
+      "Jer 11:12",
+      "Jer 11:13",
+      "Jer 13:9",
+      "Jer 13:13",
+      "Jer 13:27",
+      "Jer 14:2",
+      "Jer 14:16",
+      "Jer 15:4",
+      "Jer 15:5",
+      "Jer 17:19",
+      "Jer 17:20",
+      "Jer 17:21",
+      "Jer 17:25",
+      "Jer 17:26",
+      "Jer 17:27",
+      "Jer 18:11",
+      "Jer 19:3",
+      "Jer 19:7",
+      "Jer 19:13",
+      "Jer 22:19",
+      "Jer 23:14",
+      "Jer 23:15",
+      "Jer 24:1",
+      "Jer 24:8",
+      "Jer 25:2",
+      "Jer 25:18",
+      "Jer 26:18",
+      "Jer 27:3",
+      "Jer 27:18",
+      "Jer 27:20",
+      "Jer 27:21",
+      "Jer 29:1",
+      "Jer 29:2",
+      "Jer 29:4",
+      "Jer 29:20",
+      "Jer 29:25",
+      "Jer 32:2",
+      "Jer 32:32",
+      "Jer 32:44",
+      "Jer 33:10",
+      "Jer 33:13",
+      "Jer 33:16",
+      "Jer 34:1",
+      "Jer 34:6",
+      "Jer 34:7",
+      "Jer 34:8",
+      "Jer 34:19",
+      "Jer 35:11",
+      "Jer 35:13",
+      "Jer 35:17",
+      "Jer 36:9",
+      "Jer 36:31",
+      "Jer 37:5",
+      "Jer 37:11",
+      "Jer 37:12",
+      "Jer 38:28",
+      "Jer 39:1",
+      "Jer 39:8",
+      "Jer 40:1",
+      "Jer 42:18",
+      "Jer 44:2",
+      "Jer 44:6",
+      "Jer 44:9",
+      "Jer 44:13",
+      "Jer 44:17",
+      "Jer 44:21",
+      "Jer 51:35",
+      "Jer 51:50",
+      "Jer 52:1",
+      "Jer 52:3",
+      "Jer 52:4",
+      "Jer 52:12",
+      "Jer 52:13",
+      "Jer 52:14",
+      "Jer 52:29",
+      "Lam 1:7",
+      "Lam 1:8",
+      "Lam 1:17",
+      "Lam 2:10",
+      "Lam 2:13",
+      "Lam 2:15",
+      "Lam 4:12",
+      "Ezek 4:1",
+      "Ezek 4:7",
+      "Ezek 4:16",
+      "Ezek 5:5",
+      "Ezek 8:3",
+      "Ezek 9:4",
+      "Ezek 9:8",
+      "Ezek 11:15",
+      "Ezek 12:10",
+      "Ezek 12:19",
+      "Ezek 13:16",
+      "Ezek 14:21",
+      "Ezek 14:22",
+      "Ezek 15:6",
+      "Ezek 16:2",
+      "Ezek 16:3",
+      "Ezek 17:12",
+      "Ezek 21:2",
+      "Ezek 21:20",
+      "Ezek 21:22",
+      "Ezek 22:19",
+      "Ezek 23:4",
+      "Ezek 24:2",
+      "Ezek 26:2",
+      "Ezek 33:21",
+      "Ezek 36:38",
+      "Dan 1:1",
+      "Dan 5:2",
+      "Dan 5:3",
+      "Dan 6:10",
+      "Dan 9:2",
+      "Dan 9:7",
+      "Dan 9:12",
+      "Dan 9:16",
+      "Dan 9:25",
+      "Joel 2:32",
+      "Joel 3:1",
+      "Joel 3:6",
+      "Joel 3:16",
+      "Joel 3:17",
+      "Joel 3:20",
+      "Amos 1:2",
+      "Amos 2:5",
+      "Obad 1:11",
+      "Obad 1:20",
+      "Mic 1:1",
+      "Mic 1:5",
+      "Mic 1:9",
+      "Mic 1:12",
+      "Mic 3:10",
+      "Mic 3:12",
+      "Mic 4:2",
+      "Mic 4:8",
+      "Zeph 1:4",
+      "Zeph 1:12",
+      "Zeph 3:14",
+      "Zeph 3:16",
+      "Zech 1:12",
+      "Zech 1:14",
+      "Zech 1:16",
+      "Zech 1:17",
+      "Zech 1:19",
+      "Zech 2:2",
+      "Zech 2:4",
+      "Zech 2:12",
+      "Zech 3:2",
+      "Zech 7:7",
+      "Zech 8:3",
+      "Zech 8:4",
+      "Zech 8:8",
+      "Zech 8:15",
+      "Zech 8:22",
+      "Zech 9:9",
+      "Zech 9:10",
+      "Zech 12:2",
+      "Zech 12:3",
+      "Zech 12:5",
+      "Zech 12:6",
+      "Zech 12:7",
+      "Zech 12:8",
+      "Zech 12:9",
+      "Zech 12:10",
+      "Zech 12:11",
+      "Zech 13:1",
+      "Zech 14:2",
+      "Zech 14:4",
+      "Zech 14:8",
+      "Zech 14:10",
+      "Zech 14:11",
+      "Zech 14:12",
+      "Zech 14:14",
+      "Zech 14:16",
+      "Zech 14:17",
+      "Zech 14:21",
+      "Mal 2:11",
+      "Mal 3:4",
+      "Matt 2:1",
+      "Matt 2:3",
+      "Matt 3:5",
+      "Matt 4:25",
+      "Matt 5:35",
+      "Matt 15:1",
+      "Matt 16:21",
+      "Matt 20:17",
+      "Matt 20:18",
+      "Matt 21:1",
+      "Matt 21:10",
+      "Matt 23:37",
+      "Mark 1:5",
+      "Mark 3:8",
+      "Mark 3:22",
+      "Mark 7:1",
+      "Mark 10:32",
+      "Mark 10:33",
+      "Mark 11:1",
+      "Mark 11:11",
+      "Mark 11:15",
+      "Mark 11:27",
+      "Mark 15:41",
+      "Luke 2:22",
+      "Luke 2:25",
+      "Luke 2:38",
+      "Luke 2:41",
+      "Luke 2:43",
+      "Luke 2:45",
+      "Luke 4:9",
+      "Luke 5:17",
+      "Luke 6:17",
+      "Luke 9:31",
+      "Luke 9:51",
+      "Luke 9:53",
+      "Luke 10:30",
+      "Luke 13:4",
+      "Luke 13:22",
+      "Luke 13:33",
+      "Luke 13:34",
+      "Luke 17:11",
+      "Luke 18:31",
+      "Luke 19:11",
+      "Luke 19:28",
+      "Luke 21:20",
+      "Luke 21:24",
+      "Luke 23:7",
+      "Luke 23:28",
+      "Luke 24:13",
+      "Luke 24:18",
+      "Luke 24:33",
+      "Luke 24:47",
+      "Luke 24:52",
+      "John 1:19",
+      "John 2:13",
+      "John 2:23",
+      "John 4:20",
+      "John 4:21",
+      "John 4:45",
+      "John 5:1",
+      "John 5:2",
+      "John 7:25",
+      "John 10:22",
+      "John 11:18",
+      "John 11:55",
+      "John 12:12",
+      "Acts 1:4",
+      "Acts 1:8",
+      "Acts 1:12",
+      "Acts 1:19",
+      "Acts 2:5",
+      "Acts 2:14",
+      "Acts 4:5",
+      "Acts 4:16",
+      "Acts 5:16",
+      "Acts 5:28",
+      "Acts 6:7",
+      "Acts 8:1",
+      "Acts 8:14",
+      "Acts 8:25",
+      "Acts 8:26",
+      "Acts 8:27",
+      "Acts 9:2",
+      "Acts 9:13",
+      "Acts 9:21",
+      "Acts 9:26",
+      "Acts 9:28",
+      "Acts 10:39",
+      "Acts 11:2",
+      "Acts 11:22",
+      "Acts 11:27",
+      "Acts 12:25",
+      "Acts 13:13",
+      "Acts 13:27",
+      "Acts 13:31",
+      "Acts 15:2",
+      "Acts 15:4",
+      "Acts 16:4",
+      "Acts 19:21",
+      "Acts 20:16",
+      "Acts 20:22",
+      "Acts 21:4",
+      "Acts 21:11",
+      "Acts 21:12",
+      "Acts 21:13",
+      "Acts 21:15",
+      "Acts 21:17",
+      "Acts 21:31",
+      "Acts 22:5",
+      "Acts 22:17",
+      "Acts 22:18",
+      "Acts 23:11",
+      "Acts 24:11",
+      "Acts 25:1",
+      "Acts 25:3",
+      "Acts 25:7",
+      "Acts 25:9",
+      "Acts 25:15",
+      "Acts 25:20",
+      "Acts 25:24",
+      "Acts 26:4",
+      "Acts 26:10",
+      "Acts 26:20",
+      "Acts 28:17",
+      "Rom 15:19",
+      "Rom 15:25",
+      "Rom 15:26",
+      "Rom 15:31",
+      "1 Cor 16:3",
+      "Gal 1:17",
+      "Gal 1:18",
+      "Gal 2:1",
+      "Gal 4:25",
+      "Gal 4:26",
+      "Heb 12:22",
+      "Rev 3:12",
+      "Rev 21:2",
+      "Rev 21:10"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "jeshanah",
+    "name": "Jeshanah",
+    "lat": 31.980029,
+    "lng": 35.229709,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 13:19"
+    ],
+    "comment": "now Ein Sinya"
+  },
+  {
+    "id": "jogbehah",
+    "name": "Jogbehah",
+    "lat": 32.028743,
+    "lng": 35.862887,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:35",
+      "Judg 8:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "jordan-valley",
+    "name": "Jordan Valley",
+    "lat": 32.309099,
+    "lng": 35.5599,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 13:10",
+      "Gen 13:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "juttah",
+    "name": "Juttah",
+    "lat": 31.45,
+    "lng": 35.083333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:55",
+      "Josh 21:16"
+    ],
+    "comment": "~; now Yatta"
+  },
+  {
+    "id": "kadesh-2",
+    "name": "Kadesh 2",
+    "lat": 34.558327,
+    "lng": 36.522943,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 24:6"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "kain",
+    "name": "Kain",
+    "lat": 31.5,
+    "lng": 35.166667,
+    "accuracy": "exact",
+    "passages": [
+      "Num 24:22",
+      "Josh 15:57"
+    ],
+    "comment": "now Yaqin"
+  },
+  {
+    "id": "kanah-1",
+    "name": "Kanah 1",
+    "lat": 32.138219,
+    "lng": 35.038971,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 16:8",
+      "Josh 17:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "kedemoth",
+    "name": "Kedemoth",
+    "lat": 31.646073,
+    "lng": 35.894537,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 2:26",
+      "Josh 13:18",
+      "Josh 21:37",
+      "1 Chr 6:79"
+    ],
+    "comment": "~; esv map"
+  },
+  {
+    "id": "keilah",
+    "name": "Keilah",
+    "lat": 31.614175,
+    "lng": 35.002752,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:44",
+      "1 Sam 23:1",
+      "1 Sam 23:2",
+      "1 Sam 23:3",
+      "1 Sam 23:4",
+      "1 Sam 23:5",
+      "1 Sam 23:6",
+      "1 Sam 23:7",
+      "1 Sam 23:8",
+      "1 Sam 23:10",
+      "1 Sam 23:11",
+      "1 Sam 23:12",
+      "1 Sam 23:13",
+      "Neh 3:17",
+      "Neh 3:18"
+    ],
+    "comment": "now Khirbet Qila"
+  },
+  {
+    "id": "kenath",
+    "name": "Kenath",
+    "lat": 32.756919,
+    "lng": 36.6164,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:42",
+      "1 Chr 2:23"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "kibzaim",
+    "name": "Kibzaim",
+    "lat": 31.833333,
+    "lng": 35.3,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 21:22"
+    ],
+    "comment": "~; now Kabus"
+  },
+  {
+    "id": "kidron",
+    "name": "Kidron",
+    "lat": 31.772134,
+    "lng": 35.236596,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 15:23",
+      "1 Kgs 2:37",
+      "1 Kgs 15:13",
+      "2 Kgs 23:4",
+      "2 Kgs 23:6",
+      "2 Kgs 23:12",
+      "2 Chr 15:16",
+      "2 Chr 29:16",
+      "Jer 31:40"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "kiriath-jearim",
+    "name": "Kiriath-jearim",
+    "lat": 31.771104,
+    "lng": 34.993812,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 9:17",
+      "Josh 15:9",
+      "Josh 15:60",
+      "Josh 18:14",
+      "Josh 18:15",
+      "Josh 18:28",
+      "Judg 18:12",
+      "1 Sam 6:21",
+      "1 Sam 7:1",
+      "1 Sam 7:2",
+      "1 Chr 13:5",
+      "1 Chr 13:6",
+      "2 Chr 1:4",
+      "Neh 7:29",
+      "Jer 26:20"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "kishion",
+    "name": "Kishion",
+    "lat": 32.559061,
+    "lng": 35.246206,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:20",
+      "Josh 21:28"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "kishon",
+    "name": "Kishon",
+    "lat": 32.761948,
+    "lng": 35.064096,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 4:7",
+      "Judg 4:13",
+      "Judg 5:21",
+      "1 Kgs 18:40",
+      "Ps 83:9"
+    ],
+    "comment": "river"
+  },
+  {
+    "id": "kitron",
+    "name": "Kitron",
+    "lat": 32.753141,
+    "lng": 35.279335,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:30"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "lahmam",
+    "name": "Lahmam",
+    "lat": 31.566667,
+    "lng": 34.9,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:40"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "laishah",
+    "name": "Laishah",
+    "lat": 31.8,
+    "lng": 35.25,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 10:30"
+    ],
+    "comment": "now Isawiya"
+  },
+  {
+    "id": "lasha",
+    "name": "Lasha",
+    "lat": 31.718148,
+    "lng": 35.584826,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:19"
+    ],
+    "comment": "http://www.christusrex.org/www1/ofm/mad/sections/section3.html"
+  },
+  {
+    "id": "lasharon",
+    "name": "Lasharon",
+    "lat": 32.72544,
+    "lng": 35.467002,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 12:18"
+    ],
+    "comment": "now Sharona"
+  },
+  {
+    "id": "lebonah",
+    "name": "Lebonah",
+    "lat": 32.07077,
+    "lng": 35.239871,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 21:19"
+    ],
+    "comment": "now al-Lubban"
+  },
+  {
+    "id": "lo-debar",
+    "name": "Lo-debar",
+    "lat": 32.662488,
+    "lng": 35.783568,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 9:4",
+      "2 Sam 9:5",
+      "2 Sam 17:27",
+      "Amos 6:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "luz-2",
+    "name": "Luz 2",
+    "lat": 37,
+    "lng": 36.57,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:26"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "maarath",
+    "name": "Maarath",
+    "lat": 31.621003,
+    "lng": 35.102328,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:59"
+    ],
+    "comment": "now Bayt Ummar"
+  },
+  {
+    "id": "madmannah",
+    "name": "Madmannah",
+    "lat": 31.391668,
+    "lng": 34.940502,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:31",
+      "1 Chr 2:49"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "madon",
+    "name": "Madon",
+    "lat": 32.799879,
+    "lng": 35.459506,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:1",
+      "Josh 12:19"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mahanaim",
+    "name": "Mahanaim",
+    "lat": 32.214708,
+    "lng": 35.632914,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 32:2",
+      "Josh 13:26",
+      "Josh 13:30",
+      "Josh 21:38",
+      "2 Sam 2:8",
+      "2 Sam 2:12",
+      "2 Sam 2:29",
+      "2 Sam 17:24",
+      "2 Sam 17:27",
+      "2 Sam 19:32",
+      "1 Kgs 2:8",
+      "1 Kgs 4:14",
+      "1 Chr 6:80"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mahaneh-dan",
+    "name": "Mahaneh-dan",
+    "lat": 31.758315,
+    "lng": 34.994252,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 13:25",
+      "Judg 18:12"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "makkedah",
+    "name": "Makkedah",
+    "lat": 31.935117,
+    "lng": 34.781326,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 10:10",
+      "Josh 10:16",
+      "Josh 10:17",
+      "Josh 10:21",
+      "Josh 10:28",
+      "Josh 10:29",
+      "Josh 12:16",
+      "Josh 15:41"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "manahath",
+    "name": "Manahath",
+    "lat": 31.752603,
+    "lng": 35.181972,
+    "accuracy": "exact",
+    "passages": [
+      "1 Chr 8:6"
+    ],
+    "comment": "now Malha"
+  },
+  {
+    "id": "marah",
+    "name": "Marah",
+    "lat": 29.35,
+    "lng": 32.933333,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 15:23",
+      "Num 33:8",
+      "Num 33:9"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "mareal",
+    "name": "Mareal",
+    "lat": 32.697409,
+    "lng": 35.241789,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:11"
+    ],
+    "comment": "now Malul"
+  },
+  {
+    "id": "mearah",
+    "name": "Mearah",
+    "lat": 33.633333,
+    "lng": 35.433333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:4"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "memphis",
+    "name": "Memphis",
+    "lat": 29.849632,
+    "lng": 31.253958,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 19:13",
+      "Jer 2:16",
+      "Jer 44:1",
+      "Jer 46:14",
+      "Jer 46:19",
+      "Ezek 30:13",
+      "Ezek 30:16",
+      "Hos 9:6"
+    ],
+    "comment": "http://en.wikipedia.org/wiki/Memphis%2C_Egypt"
+  },
+  {
+    "id": "mephaath",
+    "name": "Mephaath",
+    "lat": 31.85,
+    "lng": 35.933333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:18",
+      "Josh 21:37",
+      "1 Chr 6:79",
+      "Jer 48:21"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "merom",
+    "name": "Merom",
+    "lat": 33.075269,
+    "lng": 35.60548,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:5",
+      "Josh 11:7"
+    ],
+    "comment": "lake"
+  },
+  {
+    "id": "mesha",
+    "name": "Mesha",
+    "lat": 28.85726,
+    "lng": 34.859127,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:30"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "michmethath",
+    "name": "Michmethath",
+    "lat": 32.183333,
+    "lng": 35.283333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 16:6",
+      "Josh 17:7"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "middin",
+    "name": "Middin",
+    "lat": 31.743894,
+    "lng": 35.401591,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:61"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "migdal-el",
+    "name": "Migdal-el",
+    "lat": 33.232131,
+    "lng": 35.362942,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:38"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "migdal-gad",
+    "name": "Migdal-gad",
+    "lat": 31.666667,
+    "lng": 34.583333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:37"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "migdol",
+    "name": "Migdol",
+    "lat": 30.020296,
+    "lng": 32.372233,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 14:2",
+      "Num 33:7",
+      "Jer 44:1",
+      "Jer 46:14",
+      "Ezek 29:10",
+      "Ezek 30:6"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "minnith",
+    "name": "Minnith",
+    "lat": 31.75,
+    "lng": 35.85,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 11:33",
+      "Ezek 27:17"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "misrephoth-maim",
+    "name": "Misrephoth-maim",
+    "lat": 33.118952,
+    "lng": 35.139434,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:8",
+      "Josh 13:6"
+    ],
+    "comment": "now Narouq"
+  },
+  {
+    "id": "moladah",
+    "name": "Moladah",
+    "lat": 31.162327,
+    "lng": 35.057114,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:26",
+      "Josh 19:2",
+      "1 Chr 4:28",
+      "Neh 11:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mount-ephron",
+    "name": "Mount Ephron",
+    "lat": 31.675746,
+    "lng": 35.042407,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mount-halak",
+    "name": "Mount Halak",
+    "lat": 30.916667,
+    "lng": 34.833333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:17",
+      "Josh 12:7"
+    ],
+    "comment": "?; http://www.bibleorigins.net/MountHalakGebelHalaqMap.html"
+  },
+  {
+    "id": "mount-hor-1",
+    "name": "Mount Hor 1",
+    "lat": 30.317396,
+    "lng": 35.407152,
+    "accuracy": "exact",
+    "passages": [
+      "Num 20:22",
+      "Num 20:23",
+      "Num 20:25",
+      "Num 20:27",
+      "Num 21:4",
+      "Num 33:37",
+      "Num 33:38",
+      "Num 33:39",
+      "Num 33:41",
+      "Deut 32:50"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mount-hor-2",
+    "name": "Mount Hor 2",
+    "lat": 35.710069,
+    "lng": 36.18808,
+    "accuracy": "approximate",
+    "passages": [
+      "Num 34:7",
+      "Num 34:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mount-seir-2",
+    "name": "Mount Seir 2",
+    "lat": 31.783333,
+    "lng": 34.994,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:10"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mount-sinai",
+    "name": "Mount Sinai",
+    "lat": 28.539722,
+    "lng": 33.973333,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 19:11",
+      "Ex 19:18",
+      "Ex 19:20",
+      "Ex 19:23",
+      "Ex 24:16",
+      "Ex 31:18",
+      "Ex 34:2",
+      "Ex 34:4",
+      "Ex 34:29",
+      "Ex 34:32",
+      "Lev 7:38",
+      "Lev 25:1",
+      "Lev 26:46",
+      "Lev 27:34",
+      "Num 3:1",
+      "Num 28:6",
+      "Neh 9:13",
+      "Acts 7:30",
+      "Acts 7:38",
+      "Gal 4:24",
+      "Gal 4:25"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "mozah",
+    "name": "Mozah",
+    "lat": 31.802641,
+    "lng": 35.158376,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:26"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "naamah",
+    "name": "Naamah",
+    "lat": 31.871782,
+    "lng": 34.871894,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:41"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "naaran",
+    "name": "Naaran",
+    "lat": 31.949518,
+    "lng": 35.45873,
+    "accuracy": "exact",
+    "passages": [
+      "1 Chr 7:28"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "nahalol",
+    "name": "Nahalol",
+    "lat": 32.722209,
+    "lng": 35.35282,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:30"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "neballat",
+    "name": "Neballat",
+    "lat": 31.992079,
+    "lng": 34.957563,
+    "accuracy": "exact",
+    "passages": [
+      "Neh 11:34"
+    ],
+    "comment": "now Bayt Nabala"
+  },
+  {
+    "id": "nebo-1",
+    "name": "Nebo 1",
+    "lat": 31.748024,
+    "lng": 35.743257,
+    "accuracy": "exact",
+    "passages": [
+      "Num 32:3",
+      "Num 32:38",
+      "Num 33:47",
+      "1 Chr 5:8",
+      "Isa 15:2",
+      "Jer 48:1",
+      "Jer 48:22"
+    ],
+    "comment": "from harper; now El Mekhaiyat"
+  },
+  {
+    "id": "nebo-2",
+    "name": "Nebo 2",
+    "lat": 31.606256,
+    "lng": 35.037417,
+    "accuracy": "exact",
+    "passages": [
+      "Ezra 2:29",
+      "Ezra 10:43",
+      "Neh 7:33"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "neiel",
+    "name": "Neiel",
+    "lat": 32.894254,
+    "lng": 35.221877,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:27"
+    ],
+    "comment": "~; now Yenin"
+  },
+  {
+    "id": "nephtoah",
+    "name": "Nephtoah",
+    "lat": 31.683036,
+    "lng": 35.167987,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:9",
+      "Josh 18:15"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "netophah",
+    "name": "Netophah",
+    "lat": 31.735465,
+    "lng": 35.220503,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 23:28",
+      "2 Sam 23:29",
+      "1 Chr 11:30",
+      "1 Chr 27:13",
+      "Ezra 2:22",
+      "Neh 7:26"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "nezib",
+    "name": "Nezib",
+    "lat": 31.58805,
+    "lng": 34.992389,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:43"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "nicopolis",
+    "name": "Nicopolis",
+    "lat": 39.024033,
+    "lng": 20.73573,
+    "accuracy": "exact",
+    "passages": [
+      "Titus 3:12"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "nile",
+    "name": "Nile",
+    "lat": 30.092632,
+    "lng": 31.230987,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 41:1",
+      "Gen 41:2",
+      "Gen 41:3",
+      "Gen 41:17",
+      "Gen 41:18",
+      "Ex 1:22",
+      "Ex 4:9",
+      "Ex 7:15",
+      "Ex 7:17",
+      "Ex 7:18",
+      "Ex 7:20",
+      "Ex 7:21",
+      "Ex 7:24",
+      "Ex 7:25",
+      "Ex 8:3",
+      "Ex 8:9",
+      "Ex 8:11",
+      "Ex 17:5",
+      "1 Chr 13:5",
+      "Isa 19:6",
+      "Isa 19:7",
+      "Isa 19:8",
+      "Isa 23:3",
+      "Isa 23:10",
+      "Jer 2:18",
+      "Jer 46:7",
+      "Jer 46:8",
+      "Ezek 29:3",
+      "Ezek 29:9",
+      "Ezek 30:12",
+      "Amos 8:8",
+      "Amos 9:5",
+      "Nahum 3:8",
+      "Zech 10:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "nimrim",
+    "name": "Nimrim",
+    "lat": 31.133191,
+    "lng": 35.531138,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 15:6",
+      "Jer 48:34"
+    ],
+    "comment": "from harper; now Numeira"
+  },
+  {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "lat": 36.35941,
+    "lng": 43.152887,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:11",
+      "Gen 10:12",
+      "2 Kgs 19:36",
+      "Isa 37:37",
+      "Jonah 1:2",
+      "Jonah 3:2",
+      "Jonah 3:3",
+      "Jonah 3:4",
+      "Jonah 3:5",
+      "Jonah 3:6",
+      "Jonah 3:7",
+      "Jonah 4:11",
+      "Nahum 1:1",
+      "Nahum 2:8",
+      "Nahum 3:7",
+      "Zeph 2:13",
+      "Matt 12:41",
+      "Luke 11:30",
+      "Luke 11:32"
+    ],
+    "comment": "Nineveh in KML"
+  },
+  {
+    "id": "nob",
+    "name": "Nob",
+    "lat": 31.799605,
+    "lng": 35.23298,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 21:1",
+      "1 Sam 22:9",
+      "1 Sam 22:11",
+      "1 Sam 22:19",
+      "Neh 11:32",
+      "Isa 10:32"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "on",
+    "name": "On",
+    "lat": 30.108086,
+    "lng": 31.33822,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 41:45",
+      "Gen 41:50",
+      "Gen 46:20",
+      "Ezek 30:17"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ophni",
+    "name": "Ophni",
+    "lat": 31.961989,
+    "lng": 35.215483,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:24"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "parah",
+    "name": "Parah",
+    "lat": 31.833333,
+    "lng": 35.3,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:23"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "paran",
+    "name": "Paran",
+    "lat": 29.151667,
+    "lng": 33.541944,
+    "accuracy": "approximate",
+    "passages": [
+      "Gen 21:21",
+      "Num 10:12",
+      "Num 12:16",
+      "Num 13:3",
+      "Num 13:26",
+      "Deut 1:1",
+      "1 Sam 25:1",
+      "1 Kgs 11:18"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "patmos",
+    "name": "Patmos",
+    "lat": 37.30752,
+    "lng": 26.548274,
+    "accuracy": "exact",
+    "passages": [
+      "Rev 1:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "pethor",
+    "name": "Pethor",
+    "lat": 36.654616,
+    "lng": 38.068879,
+    "accuracy": "exact",
+    "passages": [
+      "Num 22:5",
+      "Deut 23:4"
+    ],
+    "comment": "http://www.aushariye.hum.ku.dk/images/large/fig-01.htm"
+  },
+  {
+    "id": "pharpar",
+    "name": "Pharpar",
+    "lat": 33.379601,
+    "lng": 36.306085,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 5:12"
+    ],
+    "comment": "river"
+  },
+  {
+    "id": "pi-beseth",
+    "name": "Pi-beseth",
+    "lat": 30.583333,
+    "lng": 31.5,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 30:17"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "pi-hahiroth",
+    "name": "Pi-hahiroth",
+    "lat": 29.94658,
+    "lng": 32.425144,
+    "accuracy": "exact",
+    "passages": [
+      "Ex 14:2",
+      "Ex 14:9",
+      "Num 33:7"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "pirathon",
+    "name": "Pirathon",
+    "lat": 32.286022,
+    "lng": 35.022944,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 12:15",
+      "2 Sam 23:30",
+      "1 Chr 11:31",
+      "1 Chr 27:14"
+    ],
+    "comment": "now Faroun"
+  },
+  {
+    "id": "raamah",
+    "name": "Raamah",
+    "lat": 15.68,
+    "lng": 42.78,
+    "accuracy": "approximate",
+    "passages": [
+      "Ezek 27:22"
+    ],
+    "comment": "?"
+  },
+  {
+    "id": "rabbith",
+    "name": "Rabbith",
+    "lat": 32.391416,
+    "lng": 35.377302,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:20"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "rakkon",
+    "name": "Rakkon",
+    "lat": 32.132898,
+    "lng": 34.788144,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:46"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "ramah-2",
+    "name": "Ramah 2",
+    "lat": 33.111078,
+    "lng": 35.310464,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:29"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ramah-3",
+    "name": "Ramah 3",
+    "lat": 32.93901,
+    "lng": 35.368123,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:36"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "rehoboth-1",
+    "name": "Rehoboth 1",
+    "lat": 31.066829,
+    "lng": 34.59783,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 26:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "rezeph",
+    "name": "Rezeph",
+    "lat": 35.95,
+    "lng": 39.016667,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 19:12",
+      "Isa 37:12"
+    ],
+    "comment": "~; from http://en.wikipedia.org/wiki/Resafa"
+  },
+  {
+    "id": "riblah-1",
+    "name": "Riblah 1",
+    "lat": 34.431703,
+    "lng": 36.545259,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 23:33",
+      "2 Kgs 25:6",
+      "2 Kgs 25:20",
+      "2 Kgs 25:21",
+      "Jer 39:5",
+      "Jer 39:6",
+      "Jer 52:9",
+      "Jer 52:10",
+      "Jer 52:26",
+      "Jer 52:27",
+      "Ezek 6:14"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "rimmon-1",
+    "name": "Rimmon 1",
+    "lat": 31.93466,
+    "lng": 35.297063,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 20:45",
+      "Judg 20:47",
+      "Judg 21:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "salecah",
+    "name": "Salecah",
+    "lat": 32.493941,
+    "lng": 36.710337,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 3:10",
+      "Josh 12:5",
+      "Josh 13:11",
+      "1 Chr 5:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "salt-sea",
+    "name": "Salt Sea",
+    "lat": 31.538593,
+    "lng": 35.482268,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 14:3",
+      "Num 34:3",
+      "Num 34:12",
+      "Deut 3:17",
+      "Josh 3:16",
+      "Josh 12:3",
+      "Josh 15:2",
+      "Josh 15:5",
+      "Josh 18:19"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "samos",
+    "name": "Samos",
+    "lat": 37.715172,
+    "lng": 26.934167,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 20:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "samothrace",
+    "name": "Samothrace",
+    "lat": 40.467279,
+    "lng": 25.486069,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 16:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "secacah",
+    "name": "Secacah",
+    "lat": 31.766667,
+    "lng": 35.283333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:61"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "secu",
+    "name": "Secu",
+    "lat": 31.883333,
+    "lng": 35.2,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 19:22"
+    ],
+    "comment": "~; now Suweika"
+  },
+  {
+    "id": "sephar",
+    "name": "Sephar",
+    "lat": 14.550219,
+    "lng": 44.392642,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 10:30"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "sepharvaim",
+    "name": "Sepharvaim",
+    "lat": 33.789693,
+    "lng": 44.459399,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 17:24",
+      "2 Kgs 17:31",
+      "2 Kgs 18:34",
+      "2 Kgs 19:13",
+      "Isa 36:19",
+      "Isa 37:13"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "shaalbim",
+    "name": "Shaalbim",
+    "lat": 31.870364,
+    "lng": 34.981728,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:35",
+      "1 Kgs 4:9"
+    ],
+    "comment": "now Salbit"
+  },
+  {
+    "id": "shaaraim-1",
+    "name": "Shaaraim 1",
+    "lat": 31.7001,
+    "lng": 34.89532,
+    "accuracy": "approximate",
+    "passages": [
+      "Josh 15:36",
+      "1 Sam 17:52"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "shamir-1",
+    "name": "Shamir 1",
+    "lat": 31.416667,
+    "lng": 34.933333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:48"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "shamir-2",
+    "name": "Shamir 2",
+    "lat": 32.36047,
+    "lng": 35.250054,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 10:1",
+      "Judg 10:2"
+    ],
+    "comment": "now Sanur"
+  },
+  {
+    "id": "shaphir",
+    "name": "Shaphir",
+    "lat": 31.743719,
+    "lng": 34.694006,
+    "accuracy": "approximate",
+    "passages": [
+      "Mic 1:11"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "sharuhen",
+    "name": "Sharuhen",
+    "lat": 31.282222,
+    "lng": 34.4825,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:6"
+    ],
+    "comment": "now Tel Sharuhen"
+  },
+  {
+    "id": "shihor-libnath",
+    "name": "Shihor-libnath",
+    "lat": 32.538496,
+    "lng": 34.907697,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:26"
+    ],
+    "comment": "river; now Nahar Tanninim?"
+  },
+  {
+    "id": "shion",
+    "name": "Shion",
+    "lat": 32.716666,
+    "lng": 35.333334,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:19"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "sibmah",
+    "name": "Sibmah",
+    "lat": 31.815283,
+    "lng": 35.766738,
+    "accuracy": "approximate",
+    "passages": [
+      "Num 32:38",
+      "Josh 13:19",
+      "Isa 16:8",
+      "Isa 16:9",
+      "Jer 48:32"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "sirah",
+    "name": "Sirah",
+    "lat": 31.55,
+    "lng": 35.1,
+    "accuracy": "approximate",
+    "passages": [
+      "2 Sam 3:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "syene",
+    "name": "Syene",
+    "lat": 24.066181,
+    "lng": 32.895862,
+    "accuracy": "exact",
+    "passages": [
+      "Isa 49:12",
+      "Ezek 29:10",
+      "Ezek 30:6"
+    ],
+    "comment": "now Aswan"
+  },
+  {
+    "id": "syrtis",
+    "name": "Syrtis",
+    "lat": 31.766667,
+    "lng": 18.505556,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 27:17"
+    ],
+    "comment": "water; from harper; now Sidra"
+  },
+  {
+    "id": "taanath-shiloh",
+    "name": "Taanath-shiloh",
+    "lat": 32.15,
+    "lng": 35.383333,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 16:6"
+    ],
+    "comment": "~; now Khirbat Tana"
+  },
+  {
+    "id": "tahpanhes",
+    "name": "Tahpanhes",
+    "lat": 30.860556,
+    "lng": 32.171389,
+    "accuracy": "exact",
+    "passages": [
+      "Jer 2:16",
+      "Jer 43:7",
+      "Jer 43:8",
+      "Jer 43:9",
+      "Jer 44:1",
+      "Jer 46:14"
+    ],
+    "comment": "http://en.wikipedia.org/wiki/Tahpanhes"
+  },
+  {
+    "id": "tamar-2",
+    "name": "Tamar 2",
+    "lat": 31.024923,
+    "lng": 35.064154,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 47:18",
+      "Ezek 47:19",
+      "Ezek 48:28"
+    ],
+    "comment": "now Kurnub; from New Bible Dictionary"
+  },
+  {
+    "id": "tema",
+    "name": "Tema",
+    "lat": 27.633172,
+    "lng": 38.554125,
+    "accuracy": "exact",
+    "passages": [
+      "Job 6:19",
+      "Isa 21:14",
+      "Jer 25:23"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "thebes",
+    "name": "Thebes",
+    "lat": 25.700025,
+    "lng": 32.639441,
+    "accuracy": "exact",
+    "passages": [
+      "Jer 46:25",
+      "Ezek 30:14",
+      "Ezek 30:15",
+      "Ezek 30:16",
+      "Nahum 3:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "three-taverns",
+    "name": "Three Taverns",
+    "lat": 41.59132,
+    "lng": 12.828636,
+    "accuracy": "exact",
+    "passages": [
+      "Acts 28:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "tigris",
+    "name": "Tigris",
+    "lat": 35.983343,
+    "lng": 43.346466,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 2:14",
+      "Dan 10:4"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "timnah-1",
+    "name": "Timnah 1",
+    "lat": 31.784368,
+    "lng": 34.90968,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 38:12",
+      "Gen 38:13",
+      "Gen 38:14",
+      "Josh 15:10",
+      "Josh 19:43",
+      "Judg 14:1",
+      "Judg 14:2",
+      "Judg 14:5",
+      "2 Chr 28:18"
+    ],
+    "comment": "now Tel Batash"
+  },
+  {
+    "id": "timnah-2",
+    "name": "Timnah 2",
+    "lat": 31.699323,
+    "lng": 35.040359,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:57"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "timnath-heres",
+    "name": "Timnath-heres",
+    "lat": 32.121473,
+    "lng": 35.150392,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 2:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "tiphsah-1",
+    "name": "Tiphsah 1",
+    "lat": 35.847967,
+    "lng": 38.73235,
+    "accuracy": "exact",
+    "passages": [
+      "1 Kgs 4:24"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "tiphsah-2",
+    "name": "Tiphsah 2",
+    "lat": 32.166667,
+    "lng": 35.166667,
+    "accuracy": "exact",
+    "passages": [
+      "2 Kgs 15:16"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "tob",
+    "name": "Tob",
+    "lat": 32.561735,
+    "lng": 36.240494,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 11:3",
+      "Judg 11:5",
+      "2 Sam 10:6",
+      "2 Sam 10:8"
+    ],
+    "comment": "from harper; now et-Taiyibeh"
+  },
+  {
+    "id": "tophel",
+    "name": "Tophel",
+    "lat": 30.936991,
+    "lng": 35.61687,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 1:1"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ulai",
+    "name": "Ulai",
+    "lat": 32.178696,
+    "lng": 48.22489,
+    "accuracy": "exact",
+    "passages": [
+      "Dan 8:2",
+      "Dan 8:16"
+    ],
+    "comment": "river; from http://en.wikipedia.org/wiki/Ulai"
+  },
+  {
+    "id": "ummah",
+    "name": "Ummah",
+    "lat": 33.104377,
+    "lng": 35.180623,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:30"
+    ],
+    "comment": "now Alma el Shaab"
+  },
+  {
+    "id": "uzal",
+    "name": "Uzal",
+    "lat": 15.354879,
+    "lng": 44.215092,
+    "accuracy": "exact",
+    "passages": [
+      "Ezek 27:19"
+    ],
+    "comment": "now Sanaa"
+  },
+  {
+    "id": "uzzen-sheerah",
+    "name": "Uzzen-sheerah",
+    "lat": 31.887821,
+    "lng": 35.045649,
+    "accuracy": "exact",
+    "passages": [
+      "1 Chr 7:24"
+    ],
+    "comment": "now Beit Sera"
+  },
+  {
+    "id": "valley-of-achor",
+    "name": "Valley of Achor",
+    "lat": 31.83689,
+    "lng": 35.399737,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 7:24",
+      "Josh 7:26",
+      "Josh 15:7",
+      "Isa 65:10",
+      "Hos 2:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-aven",
+    "name": "Valley of Aven",
+    "lat": 34.006944,
+    "lng": 36.203889,
+    "accuracy": "exact",
+    "passages": [
+      "Amos 1:5"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-beracah",
+    "name": "Valley of Beracah",
+    "lat": 31.61065,
+    "lng": 35.165648,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 20:26"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-elah",
+    "name": "Valley of Elah",
+    "lat": 31.690629,
+    "lng": 34.963136,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 17:2",
+      "1 Sam 17:19",
+      "1 Sam 21:9"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-hinnom",
+    "name": "Valley of Hinnom",
+    "lat": 31.769079,
+    "lng": 35.227994,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:8",
+      "Josh 18:16",
+      "Neh 11:30"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-iphtahel",
+    "name": "Valley of Iphtahel",
+    "lat": 32.832774,
+    "lng": 35.277225,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:14",
+      "Josh 19:27"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-mizpeh",
+    "name": "Valley of Mizpeh",
+    "lat": 33.28177,
+    "lng": 35.573371,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 11:8"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-rephaim",
+    "name": "Valley of Rephaim",
+    "lat": 31.756332,
+    "lng": 35.223059,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:8",
+      "Josh 18:16",
+      "2 Sam 5:18",
+      "2 Sam 5:22",
+      "2 Sam 23:13",
+      "1 Chr 11:15",
+      "1 Chr 14:9",
+      "Isa 17:5"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "valley-of-salt",
+    "name": "Valley of Salt",
+    "lat": 31.087328,
+    "lng": 35.38374,
+    "accuracy": "exact",
+    "passages": [
+      "2 Sam 8:13",
+      "2 Kgs 14:7",
+      "1 Chr 18:12",
+      "2 Chr 25:11",
+      "Ps 60:1"
+    ],
+    "comment": "from nbd"
+  },
+  {
+    "id": "valley-of-siddim",
+    "name": "Valley of Siddim",
+    "lat": 31.235341,
+    "lng": 35.517624,
+    "accuracy": "exact",
+    "passages": [
+      "Gen 14:3",
+      "Gen 14:8",
+      "Gen 14:10"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "valley-of-sorek",
+    "name": "Valley of Sorek",
+    "lat": 31.825731,
+    "lng": 34.989013,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 16:4"
+    ],
+    "comment": "now Wadi es-Sarar"
+  },
+  {
+    "id": "valley-of-zeboim",
+    "name": "Valley of Zeboim",
+    "lat": 31.936283,
+    "lng": 35.424836,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 13:18"
+    ],
+    "comment": "from tyndale; now Wadi ed Dubba"
+  },
+  {
+    "id": "valley-of-zephathah",
+    "name": "Valley of Zephathah",
+    "lat": 31.615198,
+    "lng": 34.910085,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 14:10"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "yiron",
+    "name": "Yiron",
+    "lat": 33.088748,
+    "lng": 35.414111,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:38"
+    ],
+    "comment": "now Yaroun"
+  },
+  {
+    "id": "zanoah-1",
+    "name": "Zanoah 1",
+    "lat": 31.716667,
+    "lng": 35,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:34",
+      "Neh 3:13",
+      "Neh 11:30"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zanoah-2",
+    "name": "Zanoah 2",
+    "lat": 31.366667,
+    "lng": 35,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:56"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zaphon",
+    "name": "Zaphon",
+    "lat": 32.23771,
+    "lng": 35.585865,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:27",
+      "Judg 12:1"
+    ],
+    "comment": "~; now Qos"
+  },
+  {
+    "id": "zarethan",
+    "name": "Zarethan",
+    "lat": 32.267821,
+    "lng": 35.576613,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 3:16",
+      "1 Kgs 4:12",
+      "1 Kgs 7:46"
+    ],
+    "comment": "now Tell es Saidiyeh; from harper"
+  },
+  {
+    "id": "zedad",
+    "name": "Zedad",
+    "lat": 34.312571,
+    "lng": 36.925484,
+    "accuracy": "exact",
+    "passages": [
+      "Num 34:8",
+      "Ezek 47:15"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zelzah",
+    "name": "Zelzah",
+    "lat": 31.717666,
+    "lng": 35.187019,
+    "accuracy": "exact",
+    "passages": [
+      "1 Sam 10:2"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zemaraim",
+    "name": "Zemaraim",
+    "lat": 31.910999,
+    "lng": 35.45728,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 18:22"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zephath",
+    "name": "Zephath",
+    "lat": 30.880918,
+    "lng": 34.63062,
+    "accuracy": "exact",
+    "passages": [
+      "Judg 1:17"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zered",
+    "name": "Zered",
+    "lat": 30.884128,
+    "lng": 35.897633,
+    "accuracy": "exact",
+    "passages": [
+      "Deut 2:13",
+      "Deut 2:14"
+    ],
+    "comment": "river"
+  },
+  {
+    "id": "zereth-shahar",
+    "name": "Zereth-shahar",
+    "lat": 31.616962,
+    "lng": 35.567522,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 13:19"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ziddim",
+    "name": "Ziddim",
+    "lat": 32.814279,
+    "lng": 35.435872,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 19:35"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "zior",
+    "name": "Zior",
+    "lat": 31.589719,
+    "lng": 35.148296,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:54"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "ziz",
+    "name": "Ziz",
+    "lat": 31.572903,
+    "lng": 35.406346,
+    "accuracy": "exact",
+    "passages": [
+      "2 Chr 20:16"
+    ],
+    "comment": ""
+  },
+  {
+    "id": "zophim",
+    "name": "Zophim",
+    "lat": 31.767811,
+    "lng": 35.725296,
+    "accuracy": "exact",
+    "passages": [
+      "Num 23:14"
+    ],
+    "comment": "~"
+  },
+  {
+    "id": "zorah",
+    "name": "Zorah",
+    "lat": 31.762141,
+    "lng": 34.969319,
+    "accuracy": "exact",
+    "passages": [
+      "Josh 15:33",
+      "Josh 19:41",
+      "Judg 13:2",
+      "Judg 13:25",
+      "Judg 16:31",
+      "Judg 18:2",
+      "Judg 18:8",
+      "Judg 18:11",
+      "2 Chr 11:10",
+      "Neh 11:29"
+    ],
+    "comment": ""
+  }
+]
