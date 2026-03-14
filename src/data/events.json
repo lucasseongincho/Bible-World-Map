@@ -1,0 +1,3918 @@
+[
+  {
+    "id": "creation-eden",
+    "title": "Creation & Garden of Eden",
+    "category": "creation",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 2
+    },
+    "date_estimate": "-4000",
+    "date_label": "circa 4000 BC",
+    "location": {
+      "name": "Mesopotamia (Tigris-Euphrates region)",
+      "lat": 33.5,
+      "lng": 44.4,
+      "accuracy": "approximate"
+    },
+    "description": "God created the heavens and the earth in six days, forming man from the dust and placing him in the Garden of Eden, a paradise watered by four rivers including the Tigris and Euphrates.",
+    "people": [
+      "adam",
+      "eve"
+    ],
+    "tags": [
+      "creation",
+      "genesis",
+      "eden",
+      "god"
+    ],
+    "related_events": [
+      "the-flood",
+      "tower-of-babel"
+    ]
+  },
+  {
+    "id": "the-flood",
+    "title": "Noah's Flood & Mount Ararat",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 7,
+      "verse_start": 11,
+      "verse_end": 24
+    },
+    "date_estimate": "-2350",
+    "date_label": "circa 2350 BC",
+    "location": {
+      "name": "Mount Ararat, Armenia",
+      "lat": 39.7,
+      "lng": 44.3,
+      "accuracy": "approximate"
+    },
+    "description": "God sent a great flood to judge humanity's wickedness. Noah, found righteous, built an ark and preserved his family and every kind of animal. The ark came to rest on Mount Ararat when the waters receded.",
+    "people": [
+      "noah"
+    ],
+    "tags": [
+      "flood",
+      "judgment",
+      "noah",
+      "ararat",
+      "covenant"
+    ],
+    "related_events": [
+      "creation-eden",
+      "tower-of-babel"
+    ]
+  },
+  {
+    "id": "tower-of-babel",
+    "title": "Tower of Babel",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 11,
+      "verse_start": 1,
+      "verse_end": 9
+    },
+    "date_estimate": "-2200",
+    "date_label": "circa 2200 BC",
+    "location": {
+      "name": "Babylon (ancient Shinar)",
+      "lat": 32.5,
+      "lng": 44.4,
+      "accuracy": "approximate"
+    },
+    "description": "The people of the earth united to build a tower reaching to heaven. God confused their language and scattered them across the earth, giving rise to the world's many nations and tongues.",
+    "people": [
+      "nimrod"
+    ],
+    "tags": [
+      "babel",
+      "babylon",
+      "judgment",
+      "languages",
+      "nations"
+    ],
+    "related_events": [
+      "the-flood",
+      "creation-eden"
+    ]
+  },
+  {
+    "id": "abrahams-call",
+    "title": "Abraham's Call from Ur",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 12,
+      "verse_start": 1,
+      "verse_end": 4
+    },
+    "date_estimate": "-2091",
+    "date_label": "circa 2091 BC",
+    "location": {
+      "name": "Ur of the Chaldees",
+      "lat": 30.96,
+      "lng": 46.1,
+      "accuracy": "approximate"
+    },
+    "description": "God called Abram out of Ur of the Chaldees, promising to make him a great nation, bless him, and through him bless all families of the earth. Abram obeyed and departed for Canaan.",
+    "people": [
+      "abraham",
+      "sarah",
+      "lot"
+    ],
+    "tags": [
+      "covenant",
+      "promise",
+      "abraham",
+      "ur",
+      "canaan"
+    ],
+    "related_events": [
+      "sodom-gomorrah",
+      "jacob-bethel"
+    ]
+  },
+  {
+    "id": "sodom-gomorrah",
+    "title": "Destruction of Sodom & Gomorrah",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 19,
+      "verse_start": 24,
+      "verse_end": 25
+    },
+    "date_estimate": "-2067",
+    "date_label": "circa 2067 BC",
+    "location": {
+      "name": "Dead Sea region (southern basin)",
+      "lat": 31.1,
+      "lng": 35.5,
+      "accuracy": "approximate"
+    },
+    "description": "God destroyed Sodom and Gomorrah with brimstone and fire from heaven because of their great wickedness. Lot and his daughters were spared, but Lot's wife looked back and became a pillar of salt.",
+    "people": [
+      "lot",
+      "abraham"
+    ],
+    "tags": [
+      "judgment",
+      "sodom",
+      "gomorrah",
+      "fire",
+      "lot"
+    ],
+    "related_events": [
+      "abrahams-call"
+    ]
+  },
+  {
+    "id": "jacob-bethel",
+    "title": "Jacob's Dream at Bethel",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 28,
+      "verse_start": 12,
+      "verse_end": 17
+    },
+    "date_estimate": "-1928",
+    "date_label": "circa 1928 BC",
+    "location": {
+      "name": "Bethel (Luz), Canaan",
+      "lat": 31.92,
+      "lng": 35.22,
+      "accuracy": "approximate"
+    },
+    "description": "Jacob, fleeing from Esau, dreamed of a ladder stretching from earth to heaven with angels ascending and descending. God appeared and reaffirmed the Abrahamic covenant, promising the land to Jacob's descendants.",
+    "people": [
+      "jacob"
+    ],
+    "tags": [
+      "covenant",
+      "jacob",
+      "bethel",
+      "dream",
+      "angels"
+    ],
+    "related_events": [
+      "abrahams-call",
+      "joseph-egypt"
+    ]
+  },
+  {
+    "id": "joseph-egypt",
+    "title": "Joseph Sold into Egypt",
+    "category": "journey",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 37,
+      "verse_start": 28,
+      "verse_end": 28
+    },
+    "date_estimate": "-1898",
+    "date_label": "circa 1898 BC",
+    "location": {
+      "name": "Egypt (Nile Delta region)",
+      "lat": 30.06,
+      "lng": 31.24,
+      "accuracy": "approximate"
+    },
+    "description": "Joseph was sold by his jealous brothers to Ishmaelite traders for twenty pieces of silver and taken to Egypt. Through God's providence, Joseph rose to become second in command over all Egypt, ultimately saving his family from famine.",
+    "people": [
+      "joseph",
+      "jacob"
+    ],
+    "tags": [
+      "joseph",
+      "egypt",
+      "slavery",
+      "providence",
+      "famine"
+    ],
+    "related_events": [
+      "jacob-bethel",
+      "burning-bush"
+    ]
+  },
+  {
+    "id": "burning-bush",
+    "title": "The Burning Bush",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 6
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Mount Horeb (Sinai), Midian",
+      "lat": 28.54,
+      "lng": 33.97,
+      "accuracy": "approximate"
+    },
+    "description": "Moses encountered a bush that burned but was not consumed. From it, God spoke and revealed His name 'I AM WHO I AM,' commissioning Moses to lead Israel out of Egypt.",
+    "people": [
+      "moses"
+    ],
+    "tags": [
+      "moses",
+      "burning bush",
+      "god",
+      "revelation",
+      "sinai"
+    ],
+    "related_events": [
+      "ten-plagues",
+      "red-sea-crossing"
+    ]
+  },
+  {
+    "id": "ten-plagues",
+    "title": "Ten Plagues of Egypt",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 7,
+      "verse_start": 14,
+      "verse_end": 25
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Egypt (Nile Delta / Goshen region)",
+      "lat": 30.06,
+      "lng": 31.24,
+      "accuracy": "approximate"
+    },
+    "description": "God sent ten devastating plagues upon Egypt — water to blood, frogs, lice, flies, livestock disease, boils, hail, locusts, darkness, and death of the firstborn — to compel Pharaoh to release Israel.",
+    "people": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "tags": [
+      "plagues",
+      "egypt",
+      "exodus",
+      "moses",
+      "judgment"
+    ],
+    "related_events": [
+      "burning-bush",
+      "red-sea-crossing"
+    ]
+  },
+  {
+    "id": "red-sea-crossing",
+    "title": "Crossing of the Red Sea",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 14,
+      "verse_start": 21,
+      "verse_end": 31
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Red Sea (Gulf of Suez)",
+      "lat": 29.85,
+      "lng": 32.57,
+      "accuracy": "approximate"
+    },
+    "description": "God parted the Red Sea, allowing Israel to cross on dry ground. When Pharaoh's army pursued them, the waters returned and destroyed the entire Egyptian force, completing Israel's deliverance from slavery.",
+    "people": [
+      "moses",
+      "pharaoh"
+    ],
+    "tags": [
+      "exodus",
+      "miracle",
+      "israel",
+      "egypt",
+      "red sea"
+    ],
+    "related_events": [
+      "ten-plagues",
+      "mt-sinai"
+    ]
+  },
+  {
+    "id": "mt-sinai",
+    "title": "Ten Commandments at Mount Sinai",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 20,
+      "verse_start": 1,
+      "verse_end": 17
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Mount Sinai (Jebel Musa), Sinai Peninsula",
+      "lat": 28.54,
+      "lng": 33.97,
+      "accuracy": "approximate"
+    },
+    "description": "God descended on Mount Sinai in fire and smoke, giving Moses the Ten Commandments and the Mosaic Law. This covenant defined Israel as God's holy nation and established the foundations of biblical ethics.",
+    "people": [
+      "moses",
+      "aaron"
+    ],
+    "tags": [
+      "sinai",
+      "commandments",
+      "law",
+      "covenant",
+      "moses"
+    ],
+    "related_events": [
+      "red-sea-crossing",
+      "jericho-conquest"
+    ]
+  },
+  {
+    "id": "jericho-conquest",
+    "title": "Fall of Jericho",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "Joshua",
+      "chapter": 6,
+      "verse_start": 20,
+      "verse_end": 21
+    },
+    "date_estimate": "-1406",
+    "date_label": "circa 1406 BC",
+    "location": {
+      "name": "Jericho (ancient city), Jordan Valley",
+      "lat": 31.87,
+      "lng": 35.44,
+      "accuracy": "exact"
+    },
+    "description": "Israel marched around Jericho for seven days. On the seventh day, after the priests blew their trumpets and the people shouted, Jericho's walls collapsed. The city was destroyed and Rahab's family spared.",
+    "people": [
+      "joshua",
+      "rahab"
+    ],
+    "tags": [
+      "jericho",
+      "conquest",
+      "battle",
+      "miracle",
+      "canaan"
+    ],
+    "related_events": [
+      "mt-sinai",
+      "david-vs-goliath"
+    ]
+  },
+  {
+    "id": "david-vs-goliath",
+    "title": "David vs. Goliath",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "1 Samuel",
+      "chapter": 17,
+      "verse_start": 49,
+      "verse_end": 50
+    },
+    "date_estimate": "-1025",
+    "date_label": "circa 1025 BC",
+    "location": {
+      "name": "Valley of Elah, Judah",
+      "lat": 31.7,
+      "lng": 34.96,
+      "accuracy": "approximate"
+    },
+    "description": "The young shepherd David faced the Philistine giant Goliath with only a sling and five stones. Trusting in God, David struck Goliath in the forehead, killing him and routing the Philistine army.",
+    "people": [
+      "david",
+      "goliath"
+    ],
+    "tags": [
+      "david",
+      "goliath",
+      "battle",
+      "faith",
+      "philistines"
+    ],
+    "related_events": [
+      "jerusalem-conquered",
+      "jericho-conquest"
+    ]
+  },
+  {
+    "id": "jerusalem-conquered",
+    "title": "David Captures Jerusalem",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Samuel",
+      "chapter": 5,
+      "verse_start": 7,
+      "verse_end": 9
+    },
+    "date_estimate": "-1000",
+    "date_label": "circa 1000 BC",
+    "location": {
+      "name": "Jerusalem (City of David)",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "exact"
+    },
+    "description": "King David captured the Jebusite stronghold of Jerusalem, calling it the City of David. He established it as his capital and brought the Ark of the Covenant there, making Jerusalem the political and religious center of Israel.",
+    "people": [
+      "david"
+    ],
+    "tags": [
+      "david",
+      "jerusalem",
+      "conquest",
+      "capital",
+      "ark"
+    ],
+    "related_events": [
+      "david-vs-goliath",
+      "solomons-temple"
+    ]
+  },
+  {
+    "id": "solomons-temple",
+    "title": "Dedication of Solomon's Temple",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "1 Kings",
+      "chapter": 8,
+      "verse_start": 10,
+      "verse_end": 11
+    },
+    "date_estimate": "-959",
+    "date_label": "circa 959 BC",
+    "location": {
+      "name": "Temple Mount, Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "exact"
+    },
+    "description": "Solomon dedicated the magnificent temple he built for God in Jerusalem. As the priests brought the Ark of the Covenant into the Holy of Holies, the glory of God filled the temple as a cloud so that the priests could not stand to minister.",
+    "people": [
+      "solomon"
+    ],
+    "tags": [
+      "solomon",
+      "temple",
+      "worship",
+      "jerusalem",
+      "glory"
+    ],
+    "related_events": [
+      "jerusalem-conquered",
+      "kingdom-split"
+    ]
+  },
+  {
+    "id": "kingdom-split",
+    "title": "Division of the Kingdom",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "1 Kings",
+      "chapter": 12,
+      "verse_start": 16,
+      "verse_end": 19
+    },
+    "date_estimate": "-930",
+    "date_label": "circa 930 BC",
+    "location": {
+      "name": "Shechem, Samaria",
+      "lat": 32.21,
+      "lng": 35.28,
+      "accuracy": "approximate"
+    },
+    "description": "After Solomon's death, his son Rehoboam's harsh response to the people's plea caused ten northern tribes to rebel under Jeroboam, splitting Israel into the northern Kingdom of Israel and the southern Kingdom of Judah.",
+    "people": [
+      "rehoboam",
+      "jeroboam"
+    ],
+    "tags": [
+      "kingdom",
+      "split",
+      "israel",
+      "judah",
+      "rebellion"
+    ],
+    "related_events": [
+      "solomons-temple",
+      "elijah-mt-carmel"
+    ]
+  },
+  {
+    "id": "elijah-mt-carmel",
+    "title": "Elijah's Contest on Mount Carmel",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "1 Kings",
+      "chapter": 18,
+      "verse_start": 38,
+      "verse_end": 39
+    },
+    "date_estimate": "-875",
+    "date_label": "circa 875 BC",
+    "location": {
+      "name": "Mount Carmel, Israel",
+      "lat": 32.73,
+      "lng": 35.06,
+      "accuracy": "approximate"
+    },
+    "description": "Prophet Elijah challenged 450 prophets of Baal to a contest on Mount Carmel. When the prophets of Baal failed, Elijah prayed and God sent fire from heaven that consumed the sacrifice, the altar, and the water, proving He alone is God.",
+    "people": [
+      "elijah",
+      "ahab"
+    ],
+    "tags": [
+      "elijah",
+      "carmel",
+      "baal",
+      "miracle",
+      "fire",
+      "prophecy"
+    ],
+    "related_events": [
+      "kingdom-split",
+      "assyrian-conquest"
+    ]
+  },
+  {
+    "id": "assyrian-conquest",
+    "title": "Assyrian Conquest of Israel",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 17,
+      "verse_start": 6,
+      "verse_end": 7
+    },
+    "date_estimate": "-722",
+    "date_label": "circa 722 BC",
+    "location": {
+      "name": "Nineveh / Samaria (Assyrian Empire)",
+      "lat": 33.36,
+      "lng": 43.79,
+      "accuracy": "approximate"
+    },
+    "description": "The Assyrian king Shalmaneser V besieged Samaria for three years before taking it. The northern Kingdom of Israel was destroyed and its people carried into exile, fulfilling God's judgment for their persistent idolatry.",
+    "people": [
+      "shalmaneser"
+    ],
+    "tags": [
+      "assyria",
+      "israel",
+      "exile",
+      "judgment",
+      "conquest"
+    ],
+    "related_events": [
+      "kingdom-split",
+      "daniel-babylon"
+    ]
+  },
+  {
+    "id": "daniel-babylon",
+    "title": "Daniel in Babylon",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Daniel",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 6
+    },
+    "date_estimate": "-605",
+    "date_label": "circa 605 BC",
+    "location": {
+      "name": "Babylon (ancient Babylonia)",
+      "lat": 32.54,
+      "lng": 44.42,
+      "accuracy": "approximate"
+    },
+    "description": "Daniel and his three friends were taken captive to Babylon where they faithfully served God amid a pagan empire. Daniel received visions of world empires and the coming Messiah, and was miraculously delivered from the lions' den.",
+    "people": [
+      "daniel",
+      "nebuchadnezzar",
+      "shadrach",
+      "meshach",
+      "abednego"
+    ],
+    "tags": [
+      "daniel",
+      "babylon",
+      "prophecy",
+      "exile",
+      "faithful"
+    ],
+    "related_events": [
+      "assyrian-conquest",
+      "return-from-exile"
+    ]
+  },
+  {
+    "id": "return-from-exile",
+    "title": "Return from Babylonian Exile",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Ezra",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 4
+    },
+    "date_estimate": "-538",
+    "date_label": "circa 538 BC",
+    "location": {
+      "name": "Jerusalem, Judea",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "exact"
+    },
+    "description": "King Cyrus of Persia issued a decree allowing Jews to return to Judah and rebuild the temple in Jerusalem. Under Zerubbabel and later Ezra and Nehemiah, the exiles returned and rebuilt the city and temple.",
+    "people": [
+      "ezra",
+      "nehemiah",
+      "zerubbabel",
+      "cyrus"
+    ],
+    "tags": [
+      "exile",
+      "return",
+      "jerusalem",
+      "temple",
+      "cyrus",
+      "restoration"
+    ],
+    "related_events": [
+      "daniel-babylon",
+      "solomons-temple"
+    ]
+  },
+  {
+    "id": "annunciation",
+    "title": "Annunciation to Mary",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Luke",
+      "chapter": 1,
+      "verse_start": 30,
+      "verse_end": 35
+    },
+    "date_estimate": "5",
+    "date_label": "circa 5 BC",
+    "location": {
+      "name": "Nazareth, Galilee",
+      "lat": 32.7,
+      "lng": 35.3,
+      "accuracy": "approximate"
+    },
+    "description": "The angel Gabriel appeared to Mary in Nazareth, announcing that she would conceive and bear the Son of God through the Holy Spirit. Mary responded with humble faith: 'Let it be to me according to your word.'",
+    "people": [
+      "mary",
+      "gabriel"
+    ],
+    "tags": [
+      "annunciation",
+      "mary",
+      "angel",
+      "nazareth",
+      "incarnation"
+    ],
+    "related_events": [
+      "birth-of-jesus",
+      "baptism-of-jesus"
+    ]
+  },
+  {
+    "id": "birth-of-jesus",
+    "title": "Birth of Jesus in Bethlehem",
+    "category": "birth-death",
+    "testament": "new",
+    "reference": {
+      "book": "Luke",
+      "chapter": 2,
+      "verse_start": 6,
+      "verse_end": 12
+    },
+    "date_estimate": "-5",
+    "date_label": "circa 5 BC",
+    "location": {
+      "name": "Bethlehem, Judea",
+      "lat": 31.7,
+      "lng": 35.2,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus was born in Bethlehem of Judea, fulfilling Micah's prophecy. Laid in a manger because there was no room in the inn, shepherds came to worship Him after angels announced His birth. Wise men followed a star from the east.",
+    "people": [
+      "jesus",
+      "mary",
+      "joseph"
+    ],
+    "tags": [
+      "nativity",
+      "bethlehem",
+      "birth",
+      "christmas",
+      "messiah"
+    ],
+    "related_events": [
+      "annunciation",
+      "flight-to-egypt"
+    ]
+  },
+  {
+    "id": "flight-to-egypt",
+    "title": "Flight to Egypt",
+    "category": "journey",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 2,
+      "verse_start": 13,
+      "verse_end": 15
+    },
+    "date_estimate": "-4",
+    "date_label": "circa 4 BC",
+    "location": {
+      "name": "Egypt (Nile Delta region)",
+      "lat": 30.06,
+      "lng": 31.24,
+      "accuracy": "approximate"
+    },
+    "description": "An angel warned Joseph in a dream to flee to Egypt with Mary and the infant Jesus to escape Herod's slaughter of the innocents. They remained in Egypt until Herod died, fulfilling the prophecy: 'Out of Egypt I called my son.'",
+    "people": [
+      "jesus",
+      "mary",
+      "joseph",
+      "herod"
+    ],
+    "tags": [
+      "egypt",
+      "flight",
+      "herod",
+      "prophecy",
+      "massacre"
+    ],
+    "related_events": [
+      "birth-of-jesus",
+      "baptism-of-jesus"
+    ]
+  },
+  {
+    "id": "baptism-of-jesus",
+    "title": "Baptism of Jesus",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 3,
+      "verse_start": 16,
+      "verse_end": 17
+    },
+    "date_estimate": "27",
+    "date_label": "circa AD 27",
+    "location": {
+      "name": "Jordan River (Bethany beyond Jordan)",
+      "lat": 31.83,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "John baptized Jesus in the Jordan River. As Jesus came up from the water, heaven opened and the Spirit of God descended like a dove, while the Father's voice declared: 'This is my beloved Son, with whom I am well pleased.'",
+    "people": [
+      "jesus",
+      "john-the-baptist"
+    ],
+    "tags": [
+      "baptism",
+      "jordan",
+      "trinity",
+      "holy spirit",
+      "john"
+    ],
+    "related_events": [
+      "annunciation",
+      "temptation-wilderness"
+    ]
+  },
+  {
+    "id": "temptation-wilderness",
+    "title": "Temptation in the Wilderness",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 4,
+      "verse_start": 1,
+      "verse_end": 11
+    },
+    "date_estimate": "27",
+    "date_label": "circa AD 27",
+    "location": {
+      "name": "Judean Wilderness",
+      "lat": 31.7,
+      "lng": 35.45,
+      "accuracy": "approximate"
+    },
+    "description": "After His baptism, Jesus was led by the Spirit into the Judean wilderness where He fasted forty days and nights. Satan tempted Him three times — with bread, spectacle, and worldly power — and Jesus overcame each temptation with Scripture.",
+    "people": [
+      "jesus",
+      "satan"
+    ],
+    "tags": [
+      "temptation",
+      "wilderness",
+      "fasting",
+      "satan",
+      "victory"
+    ],
+    "related_events": [
+      "baptism-of-jesus",
+      "sermon-on-mount"
+    ]
+  },
+  {
+    "id": "sermon-on-mount",
+    "title": "Sermon on the Mount",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 5,
+      "verse_start": 1,
+      "verse_end": 12
+    },
+    "date_estimate": "28",
+    "date_label": "circa AD 28",
+    "location": {
+      "name": "Mount of Beatitudes, Sea of Galilee",
+      "lat": 32.87,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus delivered His most extensive recorded teaching on a hillside by the Sea of Galilee. The Beatitudes, the Lord's Prayer, and teachings on the kingdom of God established the ethics of the new covenant.",
+    "people": [
+      "jesus"
+    ],
+    "tags": [
+      "sermon",
+      "beatitudes",
+      "teaching",
+      "kingdom",
+      "galilee"
+    ],
+    "related_events": [
+      "feeding-5000",
+      "temptation-wilderness"
+    ]
+  },
+  {
+    "id": "feeding-5000",
+    "title": "Feeding of the 5,000",
+    "category": "miracle",
+    "testament": "new",
+    "reference": {
+      "book": "John",
+      "chapter": 6,
+      "verse_start": 11,
+      "verse_end": 13
+    },
+    "date_estimate": "29",
+    "date_label": "circa AD 29",
+    "location": {
+      "name": "Tabgha, Sea of Galilee",
+      "lat": 32.87,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus fed a crowd of five thousand men, plus women and children, with only five loaves of bread and two fish. After everyone ate and was satisfied, twelve baskets of fragments were collected — a sign of His divine provision.",
+    "people": [
+      "jesus",
+      "philip",
+      "andrew"
+    ],
+    "tags": [
+      "miracle",
+      "feeding",
+      "bread",
+      "fish",
+      "galilee",
+      "provision"
+    ],
+    "related_events": [
+      "sermon-on-mount",
+      "transfiguration"
+    ]
+  },
+  {
+    "id": "transfiguration",
+    "title": "Transfiguration of Jesus",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 17,
+      "verse_start": 1,
+      "verse_end": 5
+    },
+    "date_estimate": "29",
+    "date_label": "circa AD 29",
+    "location": {
+      "name": "Mount Hermon (or Mount Tabor), Galilee",
+      "lat": 33.4,
+      "lng": 35.84,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus was transfigured before Peter, James, and John on a high mountain. His face shone like the sun and His clothes became dazzling white. Moses and Elijah appeared with Him, and the Father's voice confirmed Jesus as His beloved Son.",
+    "people": [
+      "jesus",
+      "peter",
+      "james",
+      "john",
+      "moses",
+      "elijah"
+    ],
+    "tags": [
+      "transfiguration",
+      "glory",
+      "moses",
+      "elijah",
+      "revelation"
+    ],
+    "related_events": [
+      "feeding-5000",
+      "triumphal-entry"
+    ]
+  },
+  {
+    "id": "triumphal-entry",
+    "title": "Triumphal Entry into Jerusalem",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 21,
+      "verse_start": 8,
+      "verse_end": 11
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Jerusalem (Palm Sunday route)",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus entered Jerusalem riding on a donkey while crowds spread cloaks and palm branches on the road, shouting 'Hosanna to the Son of David!' This fulfilled Zechariah's prophecy and marked the beginning of Passion Week.",
+    "people": [
+      "jesus"
+    ],
+    "tags": [
+      "palm sunday",
+      "jerusalem",
+      "hosanna",
+      "prophecy",
+      "passion week"
+    ],
+    "related_events": [
+      "transfiguration",
+      "last-supper"
+    ]
+  },
+  {
+    "id": "last-supper",
+    "title": "The Last Supper",
+    "category": "worship",
+    "testament": "new",
+    "reference": {
+      "book": "Luke",
+      "chapter": 22,
+      "verse_start": 19,
+      "verse_end": 20
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Upper Room, Jerusalem",
+      "lat": 31.77,
+      "lng": 35.22,
+      "accuracy": "approximate"
+    },
+    "description": "On the night before His crucifixion, Jesus shared the Passover meal with His disciples in an upper room in Jerusalem. He instituted the Lord's Supper, broke bread and poured wine as symbols of His body and blood for the new covenant.",
+    "people": [
+      "jesus",
+      "peter",
+      "john",
+      "judas"
+    ],
+    "tags": [
+      "communion",
+      "passover",
+      "covenant",
+      "bread",
+      "wine",
+      "upper room"
+    ],
+    "related_events": [
+      "triumphal-entry",
+      "garden-of-gethsemane"
+    ]
+  },
+  {
+    "id": "garden-of-gethsemane",
+    "title": "Agony in Gethsemane",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Luke",
+      "chapter": 22,
+      "verse_start": 42,
+      "verse_end": 44
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Garden of Gethsemane, Mount of Olives",
+      "lat": 31.78,
+      "lng": 35.24,
+      "accuracy": "approximate"
+    },
+    "description": "After the Last Supper, Jesus withdrew to the Garden of Gethsemane on the Mount of Olives and prayed in anguish, sweating drops of blood, surrendering to the Father's will. Judas arrived with soldiers and betrayed Him with a kiss.",
+    "people": [
+      "jesus",
+      "judas",
+      "peter"
+    ],
+    "tags": [
+      "gethsemane",
+      "prayer",
+      "betrayal",
+      "judas",
+      "olive mount"
+    ],
+    "related_events": [
+      "last-supper",
+      "crucifixion"
+    ]
+  },
+  {
+    "id": "crucifixion",
+    "title": "Crucifixion of Jesus",
+    "category": "birth-death",
+    "testament": "new",
+    "reference": {
+      "book": "John",
+      "chapter": 19,
+      "verse_start": 30,
+      "verse_end": 30
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Golgotha (Place of the Skull), Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus was crucified at Golgotha outside Jerusalem. After six hours on the cross, He declared 'It is finished' and gave up His spirit. Darkness covered the land, the temple veil was torn in two, and an earthquake shook the ground.",
+    "people": [
+      "jesus",
+      "pilate",
+      "mary",
+      "john"
+    ],
+    "tags": [
+      "crucifixion",
+      "cross",
+      "golgotha",
+      "atonement",
+      "salvation"
+    ],
+    "related_events": [
+      "garden-of-gethsemane",
+      "resurrection"
+    ]
+  },
+  {
+    "id": "resurrection",
+    "title": "Resurrection of Jesus",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 28,
+      "verse_start": 5,
+      "verse_end": 7
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Garden Tomb, Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "On the third day, Mary Magdalene and the other Mary found the tomb empty with the stone rolled away. An angel announced that Jesus had risen. Jesus appeared to Mary, then to His disciples, confirming His resurrection victory over death.",
+    "people": [
+      "jesus",
+      "mary-magdalene",
+      "peter",
+      "john"
+    ],
+    "tags": [
+      "resurrection",
+      "easter",
+      "tomb",
+      "victory",
+      "risen"
+    ],
+    "related_events": [
+      "crucifixion",
+      "ascension"
+    ]
+  },
+  {
+    "id": "ascension",
+    "title": "Ascension of Jesus",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 1,
+      "verse_start": 9,
+      "verse_end": 11
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Mount of Olives, Jerusalem",
+      "lat": 31.78,
+      "lng": 35.25,
+      "accuracy": "approximate"
+    },
+    "description": "Forty days after His resurrection, Jesus led His disciples to the Mount of Olives, gave the Great Commission, and was taken up into heaven in a cloud. Two angels promised He would return in the same way He had gone.",
+    "people": [
+      "jesus"
+    ],
+    "tags": [
+      "ascension",
+      "heaven",
+      "olivet",
+      "commission",
+      "return"
+    ],
+    "related_events": [
+      "resurrection",
+      "pentecost"
+    ]
+  },
+  {
+    "id": "pentecost",
+    "title": "Day of Pentecost",
+    "category": "early-church",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 2,
+      "verse_start": 1,
+      "verse_end": 4
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Jerusalem (Upper Room / Temple area)",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "Fifty days after Passover, the Holy Spirit descended on the disciples gathered in Jerusalem. Tongues of fire rested on each one; they spoke in other languages. Peter preached and three thousand were baptized, birthing the church.",
+    "people": [
+      "peter",
+      "james",
+      "john"
+    ],
+    "tags": [
+      "pentecost",
+      "holy spirit",
+      "fire",
+      "tongues",
+      "church",
+      "peter"
+    ],
+    "related_events": [
+      "ascension",
+      "stephens-martyrdom"
+    ]
+  },
+  {
+    "id": "stephens-martyrdom",
+    "title": "Martyrdom of Stephen",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 7,
+      "verse_start": 59,
+      "verse_end": 60
+    },
+    "date_estimate": "34",
+    "date_label": "circa AD 34",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "Stephen, full of the Holy Spirit, preached boldly to the Sanhedrin about Israel's history of rejecting God's messengers. The crowd stoned him to death — the first Christian martyr. A young man named Saul watched, approving of the execution.",
+    "people": [
+      "stephen",
+      "saul-paul"
+    ],
+    "tags": [
+      "stephen",
+      "martyr",
+      "stoning",
+      "paul",
+      "jerusalem"
+    ],
+    "related_events": [
+      "pentecost",
+      "pauls-conversion"
+    ]
+  },
+  {
+    "id": "pauls-conversion",
+    "title": "Paul's Conversion on the Road to Damascus",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 9,
+      "verse_start": 3,
+      "verse_end": 6
+    },
+    "date_estimate": "35",
+    "date_label": "circa AD 35",
+    "location": {
+      "name": "Road to Damascus, Syria",
+      "lat": 33.51,
+      "lng": 36.29,
+      "accuracy": "approximate"
+    },
+    "description": "While traveling to Damascus to persecute Christians, Saul was struck down by a blinding light. The risen Jesus spoke to him: 'Saul, Saul, why do you persecute me?' Saul was blinded for three days, then baptized and became the apostle Paul.",
+    "people": [
+      "paul",
+      "ananias",
+      "jesus"
+    ],
+    "tags": [
+      "paul",
+      "conversion",
+      "damascus",
+      "light",
+      "apostle"
+    ],
+    "related_events": [
+      "stephens-martyrdom",
+      "pauls-journey-1-start"
+    ]
+  },
+  {
+    "id": "pauls-journey-1-start",
+    "title": "Paul's First Missionary Journey",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 13,
+      "verse_start": 2,
+      "verse_end": 4
+    },
+    "date_estimate": "47",
+    "date_label": "circa AD 47",
+    "location": {
+      "name": "Antioch, Syria (departure point)",
+      "lat": 36.2,
+      "lng": 36.16,
+      "accuracy": "approximate"
+    },
+    "description": "The Holy Spirit set apart Paul and Barnabas in Antioch for the first organized missionary journey. They traveled through Cyprus, Pisidian Antioch, Iconium, Lystra, and Derbe — establishing churches and preaching to both Jews and Gentiles.",
+    "people": [
+      "paul",
+      "barnabas"
+    ],
+    "tags": [
+      "paul",
+      "missionary",
+      "antioch",
+      "barnabas",
+      "journey",
+      "gentiles"
+    ],
+    "related_events": [
+      "pauls-conversion",
+      "pauls-voyage-rome"
+    ]
+  },
+  {
+    "id": "pauls-voyage-rome",
+    "title": "Paul's Voyage to Rome (Shipwreck on Malta)",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 27,
+      "verse_start": 41,
+      "verse_end": 44
+    },
+    "date_estimate": "60",
+    "date_label": "circa AD 60",
+    "location": {
+      "name": "Malta (Melita), Mediterranean Sea",
+      "lat": 35.9,
+      "lng": 14.51,
+      "accuracy": "approximate"
+    },
+    "description": "On his voyage to Rome as a prisoner, Paul's ship was caught in a violent storm and wrecked on the island of Malta. All 276 people on board survived, fulfilling an angelic promise. Paul healed the sick on the island before continuing to Rome.",
+    "people": [
+      "paul",
+      "luke"
+    ],
+    "tags": [
+      "paul",
+      "rome",
+      "shipwreck",
+      "malta",
+      "voyage",
+      "miracle"
+    ],
+    "related_events": [
+      "pauls-journey-1-start",
+      "johns-exile-patmos"
+    ]
+  },
+  {
+    "id": "johns-exile-patmos",
+    "title": "John's Exile to Patmos",
+    "category": "prophecy",
+    "testament": "new",
+    "reference": {
+      "book": "Revelation",
+      "chapter": 1,
+      "verse_start": 9,
+      "verse_end": 11
+    },
+    "date_estimate": "95",
+    "date_label": "circa AD 95",
+    "location": {
+      "name": "Island of Patmos, Aegean Sea",
+      "lat": 37.3,
+      "lng": 26.55,
+      "accuracy": "approximate"
+    },
+    "description": "The apostle John was exiled to the Greek island of Patmos under Emperor Domitian. There he received the Revelation — visions of the risen Christ, the seven churches, cosmic tribulation, and the New Jerusalem — the final book of Scripture.",
+    "people": [
+      "john"
+    ],
+    "tags": [
+      "john",
+      "patmos",
+      "revelation",
+      "exile",
+      "vision",
+      "apocalypse"
+    ],
+    "related_events": [
+      "pauls-voyage-rome",
+      "pentecost"
+    ]
+  },
+  {
+    "id": "cain-and-abel",
+    "title": "Cain Murders Abel",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 4,
+      "verse_start": 8,
+      "verse_end": 8
+    },
+    "date_estimate": "-3900",
+    "date_label": "circa 3900 BC",
+    "location": {
+      "name": "Mesopotamia",
+      "lat": 33.2,
+      "lng": 44.1,
+      "accuracy": "approximate"
+    },
+    "description": "Cain murdered his brother Abel out of jealousy over God's acceptance of Abel's offering and rejection of his own. Abel's blood cried out from the ground and God confronted Cain, cursing him to be a restless wanderer on the earth. This first act of murder established the devastating consequences of unchecked sin and envy.",
+    "people": [
+      "cain",
+      "abel"
+    ],
+    "tags": [
+      "murder",
+      "sin",
+      "jealousy",
+      "judgment",
+      "curse"
+    ],
+    "related_events": [
+      "creation-adam-eve"
+    ]
+  },
+  {
+    "id": "enoch-taken",
+    "title": "Enoch Taken by God",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 5,
+      "verse_start": 24,
+      "verse_end": 24
+    },
+    "date_estimate": "-3400",
+    "date_label": "circa 3400 BC",
+    "location": {
+      "name": "Mesopotamia",
+      "lat": 33.5,
+      "lng": 44.4,
+      "accuracy": "approximate"
+    },
+    "description": "Enoch walked faithfully with God for 300 years and was taken by God without experiencing death, making him one of only two humans in Scripture never to taste death. His extraordinary translation to God's presence was a testimony to his remarkable righteous walk amid a corrupt generation. The New Testament cites Enoch as a model of faith who pleased God.",
+    "people": [
+      "enoch"
+    ],
+    "tags": [
+      "translation",
+      "faith",
+      "righteousness",
+      "immortality"
+    ],
+    "related_events": [
+      "elijah-ascends-heaven"
+    ]
+  },
+  {
+    "id": "abrahams-journey-canaan",
+    "title": "Abraham Arrives in Canaan",
+    "category": "journey",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 12,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-2091",
+    "date_label": "circa 2091 BC",
+    "location": {
+      "name": "Shechem, Canaan",
+      "lat": 32.21,
+      "lng": 35.28,
+      "accuracy": "approximate"
+    },
+    "description": "Abraham, Sarah, and Lot arrived at Shechem in Canaan after departing from Haran in obedience to God's call. At Shechem God appeared to Abraham and promised to give the land to his offspring, and Abraham built an altar there to the Lord. He then continued journeying south through Canaan, building altars and calling on God's name.",
+    "people": [
+      "abraham",
+      "sarah",
+      "lot"
+    ],
+    "tags": [
+      "canaan",
+      "promise",
+      "land",
+      "altar",
+      "obedience"
+    ],
+    "related_events": [
+      "covenant-of-pieces",
+      "binding-of-isaac"
+    ]
+  },
+  {
+    "id": "covenant-of-pieces",
+    "title": "The Covenant of Pieces",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 15,
+      "verse_start": 17,
+      "verse_end": 17
+    },
+    "date_estimate": "-2086",
+    "date_label": "circa 2086 BC",
+    "location": {
+      "name": "Mamre, Hebron",
+      "lat": 31.52,
+      "lng": 35.1,
+      "accuracy": "approximate"
+    },
+    "description": "God made a formal covenant with Abraham in a mysterious ceremony involving split animal carcasses arranged in two rows. A smoking firepot and flaming torch passed between the pieces as God ratified His unconditional promises of land spanning from Egypt to the Euphrates and of countless descendants. This covenant ceremony followed ancient Near Eastern treaty customs, with God alone passing through, signifying He bore all the covenant obligations.",
+    "people": [
+      "abraham"
+    ],
+    "tags": [
+      "covenant",
+      "land",
+      "promise",
+      "descendants",
+      "ratification"
+    ],
+    "related_events": [
+      "abrahams-journey-canaan",
+      "binding-of-isaac"
+    ]
+  },
+  {
+    "id": "hagar-ishmael-wilderness",
+    "title": "Hagar and Ishmael in the Wilderness",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 21,
+      "verse_start": 17,
+      "verse_end": 17
+    },
+    "date_estimate": "-2080",
+    "date_label": "circa 2080 BC",
+    "location": {
+      "name": "Beer-lahai-roi, Negev",
+      "lat": 30.7,
+      "lng": 34.9,
+      "accuracy": "approximate"
+    },
+    "description": "After Abraham sent Hagar and her son Ishmael away at Sarah's insistence, their water ran out in the Beersheba wilderness and Hagar wept, unable to watch her son die. An angel of God called to her from heaven, opened her eyes to see a nearby well, and reaffirmed that Ishmael would become a great nation. God's care for the outcast Hagar and Ishmael demonstrated His compassion extending beyond the covenant line.",
+    "people": [
+      "hagar",
+      "ishmael",
+      "abraham"
+    ],
+    "tags": [
+      "wilderness",
+      "water",
+      "angel",
+      "promise",
+      "ishmael"
+    ],
+    "related_events": [
+      "binding-of-isaac",
+      "abrahams-journey-canaan"
+    ]
+  },
+  {
+    "id": "binding-of-isaac",
+    "title": "The Binding of Isaac",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 22,
+      "verse_start": 9,
+      "verse_end": 9
+    },
+    "date_estimate": "-2056",
+    "date_label": "circa 2056 BC",
+    "location": {
+      "name": "Mount Moriah, Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "God tested Abraham by commanding him to offer his beloved son Isaac as a burnt offering on Mount Moriah, the same ridge where Solomon's Temple would later stand. Abraham obeyed in extraordinary faith, fully prepared to sacrifice Isaac, trusting God could raise the dead. At the last moment God intervened and provided a ram caught in a thicket as a substitute, foreshadowing the substitutionary sacrifice of Christ.",
+    "people": [
+      "abraham",
+      "isaac"
+    ],
+    "tags": [
+      "sacrifice",
+      "faith",
+      "obedience",
+      "foreshadowing",
+      "ram"
+    ],
+    "related_events": [
+      "covenant-of-pieces",
+      "abrahams-journey-canaan"
+    ]
+  },
+  {
+    "id": "death-of-sarah",
+    "title": "Death and Burial of Sarah",
+    "category": "birth-death",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 23,
+      "verse_start": 19,
+      "verse_end": 19
+    },
+    "date_estimate": "-2030",
+    "date_label": "circa 2030 BC",
+    "location": {
+      "name": "Machpelah, Hebron",
+      "lat": 31.52,
+      "lng": 35.1,
+      "accuracy": "approximate"
+    },
+    "description": "Sarah died at the age of 127 in Kiriath-arba, the only woman in Scripture whose age at death is recorded, underscoring her significance. Abraham mourned for her and negotiated the purchase of the cave of Machpelah and the field around it from Ephron the Hittite for four hundred shekels of silver. This transaction made Machpelah the first piece of the Promised Land formally owned by Abraham's family, where the patriarchs and matriarchs would be buried.",
+    "people": [
+      "sarah",
+      "abraham"
+    ],
+    "tags": [
+      "burial",
+      "machpelah",
+      "hebron",
+      "death",
+      "land-purchase"
+    ],
+    "related_events": [
+      "abrahams-journey-canaan",
+      "binding-of-isaac"
+    ]
+  },
+  {
+    "id": "rebekah-at-well",
+    "title": "Rebekah Chosen at the Well",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 24,
+      "verse_start": 15,
+      "verse_end": 15
+    },
+    "date_estimate": "-2026",
+    "date_label": "circa 2026 BC",
+    "location": {
+      "name": "Nahor, Mesopotamia",
+      "lat": 36.8,
+      "lng": 39,
+      "accuracy": "approximate"
+    },
+    "description": "Abraham's servant Eliezer prayed for a specific divine sign at the well outside the city of Nahor: the young woman who offered water to both him and his camels would be God's chosen wife for Isaac. Rebekah appeared and fulfilled the sign exactly and completely, confirming God's providential selection before Eliezer had finished praying. Rebekah agreed to return immediately to Canaan, demonstrating the same faith in God's call that Abraham had shown.",
+    "people": [
+      "rebekah",
+      "eliezer"
+    ],
+    "tags": [
+      "marriage",
+      "providence",
+      "prayer",
+      "sign",
+      "isaac"
+    ],
+    "related_events": [
+      "binding-of-isaac",
+      "jacob-wrestles-god"
+    ]
+  },
+  {
+    "id": "jacob-wrestles-god",
+    "title": "Jacob Wrestles with God at Jabbok",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 32,
+      "verse_start": 28,
+      "verse_end": 28
+    },
+    "date_estimate": "-1908",
+    "date_label": "circa 1908 BC",
+    "location": {
+      "name": "Jabbok River",
+      "lat": 32.2,
+      "lng": 35.6,
+      "accuracy": "approximate"
+    },
+    "description": "Jacob wrestled through the night with a mysterious divine figure at the ford of the Jabbok River on the eve of his reunion with Esau. At dawn the figure touched Jacob's hip socket and dislocated it, yet Jacob refused to let go until he received a blessing. The man blessed him, renaming him Israel meaning he who strives with God, marking a profound transformation in Jacob's identity and destiny.",
+    "people": [
+      "jacob"
+    ],
+    "tags": [
+      "wrestling",
+      "blessing",
+      "israel",
+      "transformation",
+      "angel"
+    ],
+    "related_events": [
+      "rebekah-at-well",
+      "joseph-coat"
+    ]
+  },
+  {
+    "id": "joseph-coat",
+    "title": "Joseph Sold into Slavery",
+    "category": "journey",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 37,
+      "verse_start": 3,
+      "verse_end": 3
+    },
+    "date_estimate": "-1900",
+    "date_label": "circa 1900 BC",
+    "location": {
+      "name": "Dothan, Canaan",
+      "lat": 32.41,
+      "lng": 35.22,
+      "accuracy": "approximate"
+    },
+    "description": "Jacob's favoritism toward Joseph, expressed through the famous coat of many colors, inflamed his older brothers' jealousy and resentment. When Joseph came to check on them at Dothan they plotted to kill him, but Reuben persuaded them to throw him into a pit instead; Judah then proposed selling him to Ishmaelite traders heading to Egypt. The brothers dipped the coat in goat's blood and brought it to Jacob, who tore his clothes and mourned inconsolably.",
+    "people": [
+      "joseph",
+      "jacob"
+    ],
+    "tags": [
+      "slavery",
+      "jealousy",
+      "betrayal",
+      "coat",
+      "egypt"
+    ],
+    "related_events": [
+      "jacob-wrestles-god",
+      "joseph-prison",
+      "joseph-pharaoh-dreams"
+    ]
+  },
+  {
+    "id": "joseph-prison",
+    "title": "Joseph Interprets Dreams in Prison",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 39,
+      "verse_start": 20,
+      "verse_end": 20
+    },
+    "date_estimate": "-1896",
+    "date_label": "circa 1896 BC",
+    "location": {
+      "name": "Memphis, Egypt",
+      "lat": 29.87,
+      "lng": 31.25,
+      "accuracy": "approximate"
+    },
+    "description": "After Potiphar's wife falsely accused Joseph of assault, he was imprisoned despite his innocence, yet the Lord was with him and gave him favor in the prison warden's eyes. Joseph interpreted the dreams of Pharaoh's cupbearer and baker with precision, explaining that the cupbearer would be restored in three days and the baker executed. Both interpretations came true exactly as Joseph declared, establishing his reputation as a divinely gifted interpreter of dreams.",
+    "people": [
+      "joseph"
+    ],
+    "tags": [
+      "prison",
+      "dreams",
+      "interpretation",
+      "cupbearer",
+      "baker"
+    ],
+    "related_events": [
+      "joseph-coat",
+      "joseph-pharaoh-dreams"
+    ]
+  },
+  {
+    "id": "joseph-pharaoh-dreams",
+    "title": "Joseph Interprets Pharaoh's Dreams",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 41,
+      "verse_start": 41,
+      "verse_end": 41
+    },
+    "date_estimate": "-1886",
+    "date_label": "circa 1886 BC",
+    "location": {
+      "name": "Memphis, Egypt",
+      "lat": 29.87,
+      "lng": 31.25,
+      "accuracy": "approximate"
+    },
+    "description": "Pharaoh was troubled by two dreams of seven fat cows devoured by seven gaunt cows and seven plump heads of grain swallowed by thin ones; Joseph declared these meant seven years of abundance followed by seven devastating years of famine across the earth. Joseph proposed storing a fifth of the harvest during the good years, and Pharaoh was so impressed that he appointed him as ruler over all Egypt, second only to himself. This stunning reversal from slave to viceroy fulfilled God's purposes and set the stage for the preservation of Jacob's family.",
+    "people": [
+      "joseph",
+      "pharaoh"
+    ],
+    "tags": [
+      "dreams",
+      "famine",
+      "grain",
+      "egypt",
+      "ruler"
+    ],
+    "related_events": [
+      "joseph-prison",
+      "jacob-to-egypt"
+    ]
+  },
+  {
+    "id": "jacob-to-egypt",
+    "title": "Jacob's Family Migrates to Egypt",
+    "category": "journey",
+    "testament": "old",
+    "reference": {
+      "book": "Genesis",
+      "chapter": 46,
+      "verse_start": 6,
+      "verse_end": 6
+    },
+    "date_estimate": "-1876",
+    "date_label": "circa 1876 BC",
+    "location": {
+      "name": "Goshen, Egypt",
+      "lat": 30.7,
+      "lng": 32.3,
+      "accuracy": "approximate"
+    },
+    "description": "After decades of believing Joseph was dead, Jacob was overwhelmed with joy upon learning his beloved son was alive and ruler of Egypt. He set out with all his household, seventy souls in total, and God appeared to him at Beersheba to confirm that Israel would become a great nation in Egypt. Pharaoh welcomed them and settled them in the fertile land of Goshen where they multiplied greatly over the following generations.",
+    "people": [
+      "jacob",
+      "joseph"
+    ],
+    "tags": [
+      "migration",
+      "egypt",
+      "goshen",
+      "reunion",
+      "seventy-souls"
+    ],
+    "related_events": [
+      "joseph-pharaoh-dreams",
+      "passover-instituted"
+    ]
+  },
+  {
+    "id": "passover-instituted",
+    "title": "The Passover Instituted",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 12,
+      "verse_start": 13,
+      "verse_end": 13
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Goshen, Egypt",
+      "lat": 30.7,
+      "lng": 32.3,
+      "accuracy": "approximate"
+    },
+    "description": "God instituted the Passover feast on the eve of the Exodus, commanding each Israelite household to slaughter an unblemished lamb and apply its blood to their doorposts and lintel. The death angel passed through Egypt striking the firstborn of every household but passed over every home marked with the sacrificial blood. This foundational act of redemption became Israel's central annual feast, pointing forward to Christ the Passover Lamb who takes away the sins of the world.",
+    "people": [
+      "moses",
+      "aaron"
+    ],
+    "tags": [
+      "passover",
+      "lamb",
+      "blood",
+      "redemption",
+      "plague"
+    ],
+    "related_events": [
+      "jacob-to-egypt",
+      "pillar-of-cloud",
+      "crossing-the-jordan"
+    ]
+  },
+  {
+    "id": "pillar-of-cloud",
+    "title": "Pillar of Cloud and Fire",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 13,
+      "verse_start": 21,
+      "verse_end": 21
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Wilderness of Shur",
+      "lat": 30.5,
+      "lng": 33,
+      "accuracy": "approximate"
+    },
+    "description": "God guided the entire nation of Israel through the Sinai wilderness with a pillar of cloud by day to shield and lead them and a pillar of fire by night to provide light and warmth. This divine presence never departed from before the people throughout their entire wilderness journey, giving visible, constant assurance of God's guidance. The dual pillars represented God's tender shepherding of His newly redeemed people through unknown and hostile terrain.",
+    "people": [
+      "moses"
+    ],
+    "tags": [
+      "cloud",
+      "fire",
+      "guidance",
+      "wilderness",
+      "presence"
+    ],
+    "related_events": [
+      "passover-instituted",
+      "water-from-rock-horeb"
+    ]
+  },
+  {
+    "id": "water-from-rock-horeb",
+    "title": "Water from the Rock at Horeb",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 17,
+      "verse_start": 6,
+      "verse_end": 6
+    },
+    "date_estimate": "-1446",
+    "date_label": "circa 1446 BC",
+    "location": {
+      "name": "Rephidim, Sinai",
+      "lat": 28.65,
+      "lng": 34.02,
+      "accuracy": "approximate"
+    },
+    "description": "The Israelites quarreled bitterly with Moses at Rephidim because of lack of water, testing the Lord and nearly ready to stone Moses in their desperation. God commanded Moses to strike the rock at Horeb with his staff in the sight of the elders of Israel, and water gushed out abundantly to satisfy the whole congregation and their livestock. Paul later identified this rock as Christ, who was struck so that living water might flow to all who believe.",
+    "people": [
+      "moses"
+    ],
+    "tags": [
+      "water",
+      "rock",
+      "wilderness",
+      "provision",
+      "miracle"
+    ],
+    "related_events": [
+      "pillar-of-cloud",
+      "golden-calf",
+      "bronze-serpent"
+    ]
+  },
+  {
+    "id": "golden-calf",
+    "title": "The Golden Calf",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 32,
+      "verse_start": 4,
+      "verse_end": 4
+    },
+    "date_estimate": "-1445",
+    "date_label": "circa 1445 BC",
+    "location": {
+      "name": "Mount Sinai",
+      "lat": 28.54,
+      "lng": 33.97,
+      "accuracy": "approximate"
+    },
+    "description": "While Moses spent forty days on Mount Sinai receiving the Law, the impatient Israelites pressured Aaron to make a golden calf idol which they declared to be the god who brought them out of Egypt. God's anger burned against the people for their rapid apostasy and He threatened to consume them, but Moses interceded passionately on their behalf. When Moses descended and saw the revelry he smashed the tablets, ground up the calf, and the Levites struck down about three thousand idolaters that day.",
+    "people": [
+      "moses",
+      "aaron"
+    ],
+    "tags": [
+      "idolatry",
+      "golden-calf",
+      "apostasy",
+      "intercession",
+      "judgment"
+    ],
+    "related_events": [
+      "tabernacle-completed",
+      "water-from-rock-horeb"
+    ]
+  },
+  {
+    "id": "tabernacle-completed",
+    "title": "The Tabernacle Completed and Filled",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "Exodus",
+      "chapter": 40,
+      "verse_start": 34,
+      "verse_end": 34
+    },
+    "date_estimate": "-1445",
+    "date_label": "circa 1445 BC",
+    "location": {
+      "name": "Sinai Wilderness",
+      "lat": 28.54,
+      "lng": 33.97,
+      "accuracy": "approximate"
+    },
+    "description": "The Tabernacle was completed and erected on the first day of the first month of the second year after the Exodus, exactly as God had commanded Moses in every detail. When the cloud of God's glory filled the Tabernacle it was so overwhelming that even Moses could not enter the tent, signaling that the holy God now formally dwelt among His people. The craftsman Bezalel, filled with the Spirit of God, led the skilled construction of the portable sanctuary.",
+    "people": [
+      "moses",
+      "bezalel"
+    ],
+    "tags": [
+      "tabernacle",
+      "glory",
+      "worship",
+      "dwelling",
+      "construction"
+    ],
+    "related_events": [
+      "golden-calf",
+      "twelve-spies"
+    ]
+  },
+  {
+    "id": "twelve-spies",
+    "title": "The Twelve Spies Explore Canaan",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Numbers",
+      "chapter": 13,
+      "verse_start": 25,
+      "verse_end": 25
+    },
+    "date_estimate": "-1444",
+    "date_label": "circa 1444 BC",
+    "location": {
+      "name": "Kadesh Barnea",
+      "lat": 30.65,
+      "lng": 34.69,
+      "accuracy": "approximate"
+    },
+    "description": "Moses sent twelve spies to reconnoiter Canaan for forty days; they returned with a cluster of grapes so large it required two men to carry on a pole, confirming the land's abundance. Caleb and Joshua urged immediate faithful advance trusting God's promise, but the other ten gave a terrifying report of fortified cities and giant inhabitants that spread despair through the entire congregation. The people's unbelief and rebellion condemned an entire generation to die in the wilderness over forty years of wandering.",
+    "people": [
+      "caleb",
+      "joshua",
+      "moses"
+    ],
+    "tags": [
+      "spies",
+      "canaan",
+      "unbelief",
+      "wilderness",
+      "forty-years"
+    ],
+    "related_events": [
+      "tabernacle-completed",
+      "crossing-the-jordan"
+    ]
+  },
+  {
+    "id": "bronze-serpent",
+    "title": "The Bronze Serpent",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Numbers",
+      "chapter": 21,
+      "verse_start": 9,
+      "verse_end": 9
+    },
+    "date_estimate": "-1407",
+    "date_label": "circa 1407 BC",
+    "location": {
+      "name": "Negev Wilderness",
+      "lat": 30.5,
+      "lng": 35.1,
+      "accuracy": "approximate"
+    },
+    "description": "When Israel spoke against God and Moses during their wilderness journey, the Lord sent venomous serpents among them and many people died from their bites. God instructed Moses to make a bronze serpent and set it on a pole so that anyone bitten who looked at it would live, and exactly so it happened. Jesus explicitly applied this sign to himself, declaring that as Moses lifted up the serpent so the Son of Man must be lifted up so that everyone who believes in Him may have eternal life.",
+    "people": [
+      "moses"
+    ],
+    "tags": [
+      "serpent",
+      "bronze",
+      "healing",
+      "foreshadowing",
+      "wilderness"
+    ],
+    "related_events": [
+      "water-from-rock-horeb",
+      "twelve-spies",
+      "death-of-moses"
+    ]
+  },
+  {
+    "id": "balaam-donkey",
+    "title": "Balaam's Donkey Speaks",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Numbers",
+      "chapter": 22,
+      "verse_start": 28,
+      "verse_end": 28
+    },
+    "date_estimate": "-1406",
+    "date_label": "circa 1406 BC",
+    "location": {
+      "name": "Plains of Moab",
+      "lat": 31.76,
+      "lng": 35.56,
+      "accuracy": "approximate"
+    },
+    "description": "As Balaam rode toward Balak of Moab to curse Israel for pay, the Angel of the Lord stood in the road with a drawn sword and Balaam's donkey saw the angel and turned aside three times while Balaam beat her in frustration. God then opened the donkey's mouth and she spoke to Balaam asking what she had done to deserve being struck, before God opened Balaam's eyes to see the angel. The angel rebuked Balaam for his perverse journey and warned him to speak only the words God gave him.",
+    "people": [
+      "balaam"
+    ],
+    "tags": [
+      "donkey",
+      "angel",
+      "prophecy",
+      "moab",
+      "talking-animal"
+    ],
+    "related_events": [
+      "twelve-spies",
+      "death-of-moses"
+    ]
+  },
+  {
+    "id": "death-of-moses",
+    "title": "Death of Moses on Mount Nebo",
+    "category": "birth-death",
+    "testament": "old",
+    "reference": {
+      "book": "Deuteronomy",
+      "chapter": 34,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-1406",
+    "date_label": "circa 1406 BC",
+    "location": {
+      "name": "Mount Nebo, Jordan",
+      "lat": 31.77,
+      "lng": 35.73,
+      "accuracy": "approximate"
+    },
+    "description": "God brought Moses to the top of Mount Nebo and showed him the entire sweep of the Promised Land from Gilead to the Mediterranean before he died there at 120 years old, his eyes undimmed and vigor unabated. God Himself buried Moses in a valley in Moab and no one has ever known the location of his grave. The eulogy declares that no prophet has since arisen in Israel like Moses whom the Lord knew face to face.",
+    "people": [
+      "moses"
+    ],
+    "tags": [
+      "death",
+      "nebo",
+      "promised-land",
+      "farewell",
+      "burial"
+    ],
+    "related_events": [
+      "balaam-donkey",
+      "crossing-the-jordan",
+      "twelve-spies"
+    ]
+  },
+  {
+    "id": "rahab-hides-spies",
+    "title": "Rahab Hides Joshua's Spies",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Joshua",
+      "chapter": 2,
+      "verse_start": 6,
+      "verse_end": 6
+    },
+    "date_estimate": "-1406",
+    "date_label": "circa 1406 BC",
+    "location": {
+      "name": "Jericho",
+      "lat": 31.87,
+      "lng": 35.44,
+      "accuracy": "approximate"
+    },
+    "description": "Rahab, an innkeeper in Jericho, risked her life to hide Joshua's two spies under stalks of flax on her roof when the king's soldiers came searching for them, then helped them escape down the city wall by a rope through her window. She declared her faith that the Lord had given Israel the land, recounting how the whole land had melted in fear since hearing of the Exodus and the Red Sea crossing. In exchange for her courageous loyalty the spies promised safety for her entire household when Israel attacked, sealed by the sign of a scarlet cord in her window.",
+    "people": [
+      "rahab",
+      "joshua"
+    ],
+    "tags": [
+      "spies",
+      "jericho",
+      "faith",
+      "scarlet-cord",
+      "protection"
+    ],
+    "related_events": [
+      "crossing-the-jordan",
+      "death-of-moses"
+    ]
+  },
+  {
+    "id": "crossing-the-jordan",
+    "title": "Israel Crosses the Jordan River",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Joshua",
+      "chapter": 3,
+      "verse_start": 17,
+      "verse_end": 17
+    },
+    "date_estimate": "-1406",
+    "date_label": "circa 1406 BC",
+    "location": {
+      "name": "Jordan River",
+      "lat": 31.85,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "As the priests carrying the Ark of the Covenant stepped into the flooded Jordan River, the waters stopped flowing upstream as far as the town of Adam while the waters below drained into the Dead Sea, leaving the riverbed dry. The entire nation of Israel crossed on dry ground at flood season, a deliberate echo of the Red Sea miracle that exalted Joshua in the eyes of the people. Joshua commanded twelve memorial stones to be taken from the middle of the river and set up at Gilgal as a perpetual reminder of this crossing for future generations.",
+    "people": [
+      "joshua"
+    ],
+    "tags": [
+      "jordan",
+      "ark",
+      "miracle",
+      "dry-ground",
+      "memorial-stones"
+    ],
+    "related_events": [
+      "rahab-hides-spies",
+      "battle-of-ai",
+      "twelve-spies"
+    ]
+  },
+  {
+    "id": "battle-of-ai",
+    "title": "Battle of Ai",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "Joshua",
+      "chapter": 8,
+      "verse_start": 28,
+      "verse_end": 28
+    },
+    "date_estimate": "-1405",
+    "date_label": "circa 1405 BC",
+    "location": {
+      "name": "Ai, Canaan",
+      "lat": 31.9,
+      "lng": 35.29,
+      "accuracy": "approximate"
+    },
+    "description": "After Achan's hidden sin caused a humiliating initial defeat at Ai that cost thirty-six Israelite lives, God revealed the transgressor and commanded a new military strategy using an ambush. Joshua split his forces with a large ambush force concealed west of the city while a smaller contingent feigned retreat to draw Ai's defenders outside the gates. Israel then surrounded and utterly destroyed Ai, burning it to a permanent ruin and hanging its king on a tree until evening.",
+    "people": [
+      "joshua",
+      "achan"
+    ],
+    "tags": [
+      "battle",
+      "ambush",
+      "sin",
+      "conquest",
+      "canaan"
+    ],
+    "related_events": [
+      "crossing-the-jordan",
+      "rahab-hides-spies"
+    ]
+  },
+  {
+    "id": "deborah-and-barak",
+    "title": "Deborah and Barak Defeat Sisera",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 4,
+      "verse_start": 15,
+      "verse_end": 15
+    },
+    "date_estimate": "-1125",
+    "date_label": "circa 1125 BC",
+    "location": {
+      "name": "Megiddo Plain",
+      "lat": 32.58,
+      "lng": 35.18,
+      "accuracy": "approximate"
+    },
+    "description": "Prophetess and judge Deborah summoned Barak to lead ten thousand men against the Canaanite general Sisera and his nine hundred iron chariots at the Kishon River on the Megiddo plain. God threw the entire enemy army into confusion and routed them; a sudden flood in the Kishon swept away the chariot forces. The fleeing Sisera sought refuge in the tent of Jael who killed him with a tent peg through his temple while he slept, fulfilling Deborah's prophecy that the victory would go to a woman.",
+    "people": [
+      "deborah",
+      "barak",
+      "jael",
+      "sisera"
+    ],
+    "tags": [
+      "battle",
+      "chariots",
+      "prophetess",
+      "victory",
+      "jael"
+    ],
+    "related_events": [
+      "gideons-300",
+      "samson-lion"
+    ]
+  },
+  {
+    "id": "gideons-fleece",
+    "title": "Gideon's Fleece",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 6,
+      "verse_start": 37,
+      "verse_end": 37
+    },
+    "date_estimate": "-1162",
+    "date_label": "circa 1162 BC",
+    "location": {
+      "name": "Ophrah, Manasseh",
+      "lat": 32.55,
+      "lng": 35.38,
+      "accuracy": "approximate"
+    },
+    "description": "When the Angel of the Lord called Gideon to deliver Israel from the Midianites, Gideon sought confirmation by laying a wool fleece on the threshing floor overnight and asking God to wet the fleece while the surrounding ground stayed dry. God did so, and the next night Gideon asked the reverse sign, which God again performed, leaving the ground wet with dew while the fleece was completely dry. These miraculous confirmations gave Gideon the assurance he needed to obey despite his self-assessed weakness as the least in the weakest clan.",
+    "people": [
+      "gideon"
+    ],
+    "tags": [
+      "fleece",
+      "sign",
+      "faith",
+      "confirmation",
+      "midianites"
+    ],
+    "related_events": [
+      "gideons-300",
+      "deborah-and-barak"
+    ]
+  },
+  {
+    "id": "gideons-300",
+    "title": "Gideon's 300 Men Defeat Midian",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 7,
+      "verse_start": 20,
+      "verse_end": 20
+    },
+    "date_estimate": "-1162",
+    "date_label": "circa 1162 BC",
+    "location": {
+      "name": "Jezreel Valley",
+      "lat": 32.53,
+      "lng": 35.42,
+      "accuracy": "approximate"
+    },
+    "description": "God whittled Gideon's army from 32,000 to a mere 300 men who lapped water like dogs, ensuring Israel could not boast of their own strength in the coming victory. In the dead of night the 300 men surrounded the vast Midianite camp in three companies armed only with trumpets, empty clay jars, and torches hidden inside the jars. At Gideon's signal they smashed the jars, blew the trumpets, and shouted, throwing the entire enemy camp into panic and causing the Midianites to turn their swords on each other and flee.",
+    "people": [
+      "gideon"
+    ],
+    "tags": [
+      "300",
+      "battle",
+      "trumpets",
+      "torches",
+      "midianites"
+    ],
+    "related_events": [
+      "gideons-fleece",
+      "deborah-and-barak"
+    ]
+  },
+  {
+    "id": "jephthah-vow",
+    "title": "Jephthah's Rash Vow",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 11,
+      "verse_start": 30,
+      "verse_end": 30
+    },
+    "date_estimate": "-1100",
+    "date_label": "circa 1100 BC",
+    "location": {
+      "name": "Gilead, Jordan",
+      "lat": 32.21,
+      "lng": 35.75,
+      "accuracy": "approximate"
+    },
+    "description": "Before his battle against the Ammonites, Jephthah made a solemn vow to the Lord that he would sacrifice as a burnt offering whatever first came out of his house to meet him if God gave him victory. He defeated the Ammonites with great slaughter but his only daughter was the first to come out dancing to celebrate his return. Jephthah fulfilled his vow with great grief, and she became a source of annual mourning among the daughters of Israel.",
+    "people": [
+      "jephthah"
+    ],
+    "tags": [
+      "vow",
+      "daughter",
+      "sacrifice",
+      "ammonites",
+      "tragedy"
+    ],
+    "related_events": [
+      "deborah-and-barak",
+      "samson-lion"
+    ]
+  },
+  {
+    "id": "samson-lion",
+    "title": "Samson Kills a Lion with His Bare Hands",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 14,
+      "verse_start": 6,
+      "verse_end": 6
+    },
+    "date_estimate": "-1075",
+    "date_label": "circa 1075 BC",
+    "location": {
+      "name": "Timnah, Shephelah",
+      "lat": 31.72,
+      "lng": 34.92,
+      "accuracy": "approximate"
+    },
+    "description": "As Samson traveled through the vineyards near Timnah to visit the Philistine woman he intended to marry, a young lion came roaring toward him and the Spirit of the Lord came powerfully upon him. He tore the lion apart with his bare hands as easily as tearing a young goat, an act of extraordinary supernatural strength that he kept secret from both his parents. Later returning that way he found a swarm of bees and honey in the lion's carcass, which became the subject of his famous riddle at the wedding feast.",
+    "people": [
+      "samson"
+    ],
+    "tags": [
+      "strength",
+      "lion",
+      "spirit",
+      "miracle",
+      "philistines"
+    ],
+    "related_events": [
+      "samson-delilah",
+      "jephthah-vow"
+    ]
+  },
+  {
+    "id": "samson-delilah",
+    "title": "Samson and Delilah",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 16,
+      "verse_start": 19,
+      "verse_end": 19
+    },
+    "date_estimate": "-1070",
+    "date_label": "circa 1070 BC",
+    "location": {
+      "name": "Sorek Valley",
+      "lat": 31.77,
+      "lng": 34.97,
+      "accuracy": "approximate"
+    },
+    "description": "Delilah was bribed by Philistine leaders with eleven hundred shekels of silver each to discover the secret of Samson's strength, and she persistently nagged him through days of relentless pressure until he broke down and revealed that his uncut hair was the source of his Nazirite consecration and strength. While Samson slept on her knees she had his seven braids shaved off and his strength left him entirely. The Philistines seized him, gouged out his eyes, and set him to grinding grain like an animal in the prison at Gaza.",
+    "people": [
+      "samson",
+      "delilah"
+    ],
+    "tags": [
+      "betrayal",
+      "hair",
+      "strength",
+      "philistines",
+      "captivity"
+    ],
+    "related_events": [
+      "samson-lion",
+      "samson-temple"
+    ]
+  },
+  {
+    "id": "samson-temple",
+    "title": "Samson Pulls Down the Philistine Temple",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "Judges",
+      "chapter": 16,
+      "verse_start": 30,
+      "verse_end": 30
+    },
+    "date_estimate": "-1069",
+    "date_label": "circa 1069 BC",
+    "location": {
+      "name": "Gaza",
+      "lat": 31.5,
+      "lng": 34.47,
+      "accuracy": "approximate"
+    },
+    "description": "During a great Philistine festival to their god Dagon, the blinded and humiliated Samson was brought out to entertain the crowd of about three thousand gathered on the roof and inside the temple. His hair had grown back in prison and he prayed desperately for God to restore his strength one final time so he could avenge his two eyes. Samson pushed the two central supporting pillars apart and the entire temple collapsed, killing more Philistines in his death than he had slain during his entire life.",
+    "people": [
+      "samson"
+    ],
+    "tags": [
+      "temple",
+      "pillars",
+      "death",
+      "philistines",
+      "revenge"
+    ],
+    "related_events": [
+      "samson-delilah",
+      "samson-lion"
+    ]
+  },
+  {
+    "id": "ruth-and-naomi",
+    "title": "Ruth's Pledge to Naomi",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Ruth",
+      "chapter": 1,
+      "verse_start": 16,
+      "verse_end": 16
+    },
+    "date_estimate": "-1100",
+    "date_label": "circa 1100 BC",
+    "location": {
+      "name": "Moab",
+      "lat": 31.21,
+      "lng": 35.8,
+      "accuracy": "approximate"
+    },
+    "description": "After the deaths of her husband and two sons in Moab, Naomi urged her Moabite daughters-in-law to return to their own families, and Orpah tearfully departed. But Ruth clung to Naomi and declared her magnificent pledge of loyalty: where you go I will go, where you lodge I will lodge, your people shall be my people and your God my God. This remarkable expression of covenantal love from a foreigner has become one of the most beloved passages in all of Scripture.",
+    "people": [
+      "ruth",
+      "naomi"
+    ],
+    "tags": [
+      "loyalty",
+      "covenant",
+      "moab",
+      "bethlehem",
+      "faithfulness"
+    ],
+    "related_events": [
+      "ruth-and-boaz"
+    ]
+  },
+  {
+    "id": "ruth-and-boaz",
+    "title": "Ruth and Boaz: The Kinsman Redeemer",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Ruth",
+      "chapter": 2,
+      "verse_start": 3,
+      "verse_end": 3
+    },
+    "date_estimate": "-1100",
+    "date_label": "circa 1100 BC",
+    "location": {
+      "name": "Bethlehem",
+      "lat": 31.7,
+      "lng": 35.2,
+      "accuracy": "approximate"
+    },
+    "description": "Ruth gleaned barley in the harvest fields of Bethlehem and by God's providence came to the field belonging to Boaz, a wealthy and honorable relative of Naomi's deceased husband. Boaz showed her exceptional kindness, leaving extra grain for her, offering his protection, and sharing his meals with her, declaring he had heard of her loyal love for Naomi. Acting as kinsman-redeemer Boaz purchased Naomi's land and married Ruth, placing this faithful Moabite woman in the direct ancestral line of King David and ultimately Jesus Christ.",
+    "people": [
+      "ruth",
+      "boaz",
+      "naomi"
+    ],
+    "tags": [
+      "kinsman-redeemer",
+      "marriage",
+      "harvest",
+      "ancestry",
+      "david"
+    ],
+    "related_events": [
+      "ruth-and-naomi",
+      "samuel-anoints-david"
+    ]
+  },
+  {
+    "id": "samuel-anoints-saul",
+    "title": "Samuel Anoints Saul as King",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "1 Samuel",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1
+    },
+    "date_estimate": "-1050",
+    "date_label": "circa 1050 BC",
+    "location": {
+      "name": "Mizpah",
+      "lat": 31.86,
+      "lng": 35.18,
+      "accuracy": "approximate"
+    },
+    "description": "The prophet Samuel privately anointed Saul with oil as the first king of Israel and gave him three confirming signs that all came true that day, including the Spirit of God coming powerfully upon him. At the public assembly at Mizpah, lots were cast to identify the king and Saul was chosen, yet he was found hiding among the baggage in humility or fear. When he stood among the people he was head and shoulders taller than anyone present and the people shouted their acclamation: Long live the king!",
+    "people": [
+      "samuel",
+      "saul"
+    ],
+    "tags": [
+      "anointing",
+      "king",
+      "israel",
+      "monarchy",
+      "mizpah"
+    ],
+    "related_events": [
+      "samuel-anoints-david",
+      "death-of-saul"
+    ]
+  },
+  {
+    "id": "samuel-anoints-david",
+    "title": "Samuel Anoints David as King",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "1 Samuel",
+      "chapter": 16,
+      "verse_start": 13,
+      "verse_end": 13
+    },
+    "date_estimate": "-1025",
+    "date_label": "circa 1025 BC",
+    "location": {
+      "name": "Bethlehem",
+      "lat": 31.7,
+      "lng": 35.2,
+      "accuracy": "approximate"
+    },
+    "description": "After God rejected Saul for his disobedience, He sent Samuel to Bethlehem to anoint a new king from among the sons of Jesse, warning Samuel not to look at outward appearance as God looks at the heart. Seven impressive older sons of Jesse passed before Samuel and God rejected each one; when the youngest shepherd boy David was summoned from the fields, God confirmed him as His chosen. Samuel anointed David with oil in the presence of his brothers and from that day on the Spirit of the Lord came powerfully upon the young shepherd.",
+    "people": [
+      "samuel",
+      "david",
+      "jesse"
+    ],
+    "tags": [
+      "anointing",
+      "david",
+      "shepherd",
+      "heart",
+      "king"
+    ],
+    "related_events": [
+      "samuel-anoints-saul",
+      "ark-to-jerusalem",
+      "david-and-bathsheba"
+    ]
+  },
+  {
+    "id": "ark-to-jerusalem",
+    "title": "The Ark Brought to Jerusalem",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "2 Samuel",
+      "chapter": 6,
+      "verse_start": 15,
+      "verse_end": 15
+    },
+    "date_estimate": "-1000",
+    "date_label": "circa 1000 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "After a failed first attempt that cost Uzzah his life for touching the Ark, David brought the Ark of the Covenant to Jerusalem with proper reverence accompanied by sacrifices every six steps. David danced before the Lord with all his might dressed only in a linen ephod, celebrating God's presence returning to his capital city, while the whole house of Israel brought up the Ark with shouting and the sound of the horn. His wife Michal despised him in her heart for what she saw as undignified celebration, while David declared he would be even more undignified for the Lord.",
+    "people": [
+      "david",
+      "michal"
+    ],
+    "tags": [
+      "ark",
+      "jerusalem",
+      "worship",
+      "dancing",
+      "presence"
+    ],
+    "related_events": [
+      "samuel-anoints-david",
+      "david-and-bathsheba"
+    ]
+  },
+  {
+    "id": "david-and-bathsheba",
+    "title": "David and Bathsheba",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "2 Samuel",
+      "chapter": 11,
+      "verse_start": 4,
+      "verse_end": 4
+    },
+    "date_estimate": "-990",
+    "date_label": "circa 990 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "During a spring season when kings normally went to war, David remained in Jerusalem and from his palace rooftop saw the beautiful Bathsheba bathing; he summoned her and committed adultery with her, resulting in her pregnancy. To cover his sin David arranged for her loyal husband Uriah the Hittite to be placed at the front of the fiercest fighting and withdrawn so he would die, effectively arranging murder. The prophet Nathan confronted David with a parable of a rich man who stole a poor man's beloved ewe lamb, and David's adultery and murder brought lasting consequences on his house.",
+    "people": [
+      "david",
+      "bathsheba",
+      "uriah",
+      "nathan"
+    ],
+    "tags": [
+      "adultery",
+      "murder",
+      "sin",
+      "judgment",
+      "nathan"
+    ],
+    "related_events": [
+      "samuel-anoints-david",
+      "ark-to-jerusalem",
+      "absaloms-revolt"
+    ]
+  },
+  {
+    "id": "death-of-saul",
+    "title": "Death of Saul at Mount Gilboa",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "1 Samuel",
+      "chapter": 31,
+      "verse_start": 4,
+      "verse_end": 4
+    },
+    "date_estimate": "-1010",
+    "date_label": "circa 1010 BC",
+    "location": {
+      "name": "Mount Gilboa",
+      "lat": 32.47,
+      "lng": 35.42,
+      "accuracy": "approximate"
+    },
+    "description": "The Philistines pressed hard against Saul and his army on Mount Gilboa and his three sons including the beloved Jonathan fell in battle that day. Saul was critically wounded by Philistine archers and commanded his armor-bearer to run him through with a sword rather than face capture and humiliation, but the armor-bearer refused in fear. Saul fell on his own sword and died, and when the Philistines found his body the next day they cut off his head and fastened his body to the wall of Beth Shan.",
+    "people": [
+      "saul",
+      "jonathan"
+    ],
+    "tags": [
+      "battle",
+      "death",
+      "philistines",
+      "gilboa",
+      "saul"
+    ],
+    "related_events": [
+      "samuel-anoints-saul",
+      "samuel-anoints-david"
+    ]
+  },
+  {
+    "id": "elijah-ravens-brook",
+    "title": "Elijah Fed by Ravens at Cherith Brook",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "1 Kings",
+      "chapter": 17,
+      "verse_start": 6,
+      "verse_end": 6
+    },
+    "date_estimate": "-875",
+    "date_label": "circa 875 BC",
+    "location": {
+      "name": "Cherith Brook",
+      "lat": 32.2,
+      "lng": 35.6,
+      "accuracy": "approximate"
+    },
+    "description": "After boldly announcing a drought to King Ahab, Elijah was directed by God to hide by the Cherith Brook east of the Jordan River, away from Ahab's search parties. God providentially commanded ravens, normally scavengers that compete with humans for food, to bring Elijah bread and meat twice daily while he drank from the brook. This miraculous provision in the very drought Elijah had announced demonstrated God's complete control over nature and His care for His faithful prophet.",
+    "people": [
+      "elijah"
+    ],
+    "tags": [
+      "ravens",
+      "provision",
+      "wilderness",
+      "drought",
+      "famine"
+    ],
+    "related_events": [
+      "elijah-widow-zarephath",
+      "elijah-ascends-heaven"
+    ]
+  },
+  {
+    "id": "elijah-widow-zarephath",
+    "title": "Elijah and the Widow of Zarephath",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "1 Kings",
+      "chapter": 17,
+      "verse_start": 16,
+      "verse_end": 16
+    },
+    "date_estimate": "-875",
+    "date_label": "circa 875 BC",
+    "location": {
+      "name": "Zarephath, Lebanon",
+      "lat": 33.36,
+      "lng": 35.3,
+      "accuracy": "approximate"
+    },
+    "description": "God sent Elijah north to Zarephath in Phoenicia where a widow was gathering sticks to prepare a final meal for herself and her son before they starved; she had only a handful of flour in a jar and a little oil in a jug. Elijah asked her to make him a small cake first as an act of faith, promising that her flour and oil would not run out until the drought ended, and she obeyed. Her jar of flour and jug of oil miraculously replenished themselves throughout the famine, and when her son died Elijah raised him to life, deepening her faith.",
+    "people": [
+      "elijah"
+    ],
+    "tags": [
+      "widow",
+      "flour",
+      "oil",
+      "miracle",
+      "resurrection"
+    ],
+    "related_events": [
+      "elijah-ravens-brook",
+      "elijah-ascends-heaven"
+    ]
+  },
+  {
+    "id": "elijah-ascends-heaven",
+    "title": "Elijah Taken to Heaven in a Whirlwind",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 2,
+      "verse_start": 11,
+      "verse_end": 11
+    },
+    "date_estimate": "-848",
+    "date_label": "circa 848 BC",
+    "location": {
+      "name": "Jordan River",
+      "lat": 31.85,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "Elijah and his successor Elisha crossed the Jordan River on dry ground after Elijah struck the water with his folded cloak, and as they continued walking and talking a chariot of fire and horses of fire appeared and separated them. Elijah was taken up to heaven in a whirlwind, making him the second person in Scripture, along with Enoch, never to experience physical death. Elisha picked up Elijah's fallen mantle, struck the Jordan and it divided again, confirming he had received the double portion of Elijah's spirit that he had requested.",
+    "people": [
+      "elijah",
+      "elisha"
+    ],
+    "tags": [
+      "translation",
+      "chariot",
+      "whirlwind",
+      "mantle",
+      "elisha"
+    ],
+    "related_events": [
+      "elijah-ravens-brook",
+      "elisha-heals-naaman",
+      "enoch-taken"
+    ]
+  },
+  {
+    "id": "elisha-heals-naaman",
+    "title": "Elisha Heals Naaman of Leprosy",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 5,
+      "verse_start": 14,
+      "verse_end": 14
+    },
+    "date_estimate": "-845",
+    "date_label": "circa 845 BC",
+    "location": {
+      "name": "Jordan River",
+      "lat": 31.85,
+      "lng": 35.55,
+      "accuracy": "approximate"
+    },
+    "description": "Naaman, the highly decorated commander of the Syrian army, came to Israel with horses, chariots, and payment seeking a cure for his leprosy; Elisha sent a messenger telling him simply to dip seven times in the Jordan River. Naaman was furious at both the prophet's refusal to see him personally and the perceived indignity of bathing in Israel's muddy river instead of cleaner Syrian rivers, but his servants persuaded him to obey. He dipped seven times in the Jordan and his skin became completely clean like that of a young child, and he returned declaring his faith in the God of Israel alone.",
+    "people": [
+      "elisha",
+      "naaman"
+    ],
+    "tags": [
+      "leprosy",
+      "healing",
+      "jordan",
+      "naaman",
+      "faith"
+    ],
+    "related_events": [
+      "elijah-ascends-heaven",
+      "elisha-purifies-water"
+    ]
+  },
+  {
+    "id": "hezekiah-tunnel",
+    "title": "Hezekiah's Tunnel and Assyrian Deliverance",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 20,
+      "verse_start": 20,
+      "verse_end": 20
+    },
+    "date_estimate": "-701",
+    "date_label": "circa 701 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "When Sennacherib's massive Assyrian army besieged Jerusalem and his commander Rabshakeh blasphemously taunted God and urged the city to surrender, Hezekiah spread the threatening letter before the Lord and prayed in faith. God sent the prophet Isaiah to promise deliverance, and that very night the Angel of the Lord struck down 185,000 Assyrian soldiers in their camp, causing Sennacherib to withdraw in disgrace and return to Nineveh. Hezekiah had also prepared for siege by engineering a remarkable underground tunnel channeling water from the Gihon Spring into Jerusalem, which survives and is walkable to this day.",
+    "people": [
+      "hezekiah",
+      "isaiah"
+    ],
+    "tags": [
+      "siege",
+      "assyrian",
+      "angel",
+      "deliverance",
+      "tunnel"
+    ],
+    "related_events": [
+      "fall-of-jerusalem",
+      "isaiahs-temple-vision"
+    ]
+  },
+  {
+    "id": "josiahs-reform",
+    "title": "Josiah's Great Reform",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 23,
+      "verse_start": 3,
+      "verse_end": 3
+    },
+    "date_estimate": "-621",
+    "date_label": "circa 621 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "When the high priest Hilkiah found the Book of the Law during temple repairs and it was read to King Josiah, the king tore his robes in grief recognizing how far Judah had strayed from God's commands. He led the greatest religious reform in Israel's history, personally destroying every pagan altar, Asherah pole, and idol throughout Judah, Samaria, and beyond. Josiah reinstated the Passover celebration in Jerusalem on a scale unseen since the days of the judges, and he renewed the covenant before God with all the people of Judah and Jerusalem.",
+    "people": [
+      "josiah",
+      "hilkiah"
+    ],
+    "tags": [
+      "reform",
+      "covenant",
+      "passover",
+      "idols",
+      "law"
+    ],
+    "related_events": [
+      "fall-of-jerusalem",
+      "jeremiahs-call"
+    ]
+  },
+  {
+    "id": "fall-of-jerusalem",
+    "title": "The Fall of Jerusalem to Babylon",
+    "category": "judgment",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 25,
+      "verse_start": 9,
+      "verse_end": 9
+    },
+    "date_estimate": "-586",
+    "date_label": "circa 586 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "After an eighteen-month siege that reduced the population to desperate starvation, Nebuchadnezzar's Babylonian army breached Jerusalem's walls and King Zedekiah attempted to flee but was captured on the plains of Jericho. The Babylonians burned Solomon's magnificent Temple that had stood for over 370 years, the royal palace, and every great house in Jerusalem, reducing the holy city to rubble. Most of the surviving population was marched into exile in Babylon, fulfilling the warnings of the prophets who had preached repentance for decades.",
+    "people": [
+      "nebuchadnezzar",
+      "zedekiah",
+      "jeremiah"
+    ],
+    "tags": [
+      "exile",
+      "babylon",
+      "temple-destroyed",
+      "siege",
+      "judgment"
+    ],
+    "related_events": [
+      "josiahs-reform",
+      "jeremiahs-call",
+      "nebuchadnezzar-siege",
+      "ezekiel-dry-bones"
+    ]
+  },
+  {
+    "id": "isaiahs-temple-vision",
+    "title": "Isaiah's Vision in the Temple",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Isaiah",
+      "chapter": 6,
+      "verse_start": 1,
+      "verse_end": 1
+    },
+    "date_estimate": "-740",
+    "date_label": "circa 740 BC",
+    "location": {
+      "name": "Jerusalem Temple",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "In the year King Uzziah died, Isaiah was granted a stunning vision of the Lord seated on a high and exalted throne with the train of His robe filling the temple, surrounded by six-winged seraphim. The seraphim called to one another proclaiming the triple holiness of God while the temple shook and filled with smoke, causing Isaiah to cry out in undone awareness of his own sinfulness and that of his people. A seraph flew to him with a burning coal from the altar, touched his lips to purify him, and Isaiah responded to God's call with the famous words: Here am I, send me.",
+    "people": [
+      "isaiah"
+    ],
+    "tags": [
+      "vision",
+      "holiness",
+      "seraphim",
+      "call",
+      "temple"
+    ],
+    "related_events": [
+      "jeremiahs-call",
+      "hezekiah-tunnel",
+      "josiahs-reform"
+    ]
+  },
+  {
+    "id": "jeremiahs-call",
+    "title": "The Call of Jeremiah",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Jeremiah",
+      "chapter": 1,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-626",
+    "date_label": "circa 626 BC",
+    "location": {
+      "name": "Anathoth",
+      "lat": 31.83,
+      "lng": 35.27,
+      "accuracy": "approximate"
+    },
+    "description": "God revealed to Jeremiah that He had known him, set him apart, and appointed him as a prophet to the nations even before his formation in the womb, an extraordinary declaration of divine foreknowledge and election. Though Jeremiah protested that he did not know how to speak and was too young, God refused to accept his hesitation, promising to put His words in Jeremiah's mouth and to be with him. God then touched Jeremiah's mouth as the sign of commissioning, beginning one of the most emotionally honest and costly prophetic ministries in Scripture.",
+    "people": [
+      "jeremiah"
+    ],
+    "tags": [
+      "call",
+      "prophet",
+      "nations",
+      "mouth",
+      "commissioning"
+    ],
+    "related_events": [
+      "isaiahs-temple-vision",
+      "josiahs-reform",
+      "fall-of-jerusalem"
+    ]
+  },
+  {
+    "id": "ezekiel-dry-bones",
+    "title": "Ezekiel's Vision of the Dry Bones",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Ezekiel",
+      "chapter": 37,
+      "verse_start": 7,
+      "verse_end": 7
+    },
+    "date_estimate": "-593",
+    "date_label": "circa 593 BC",
+    "location": {
+      "name": "Babylon",
+      "lat": 32.54,
+      "lng": 44.42,
+      "accuracy": "approximate"
+    },
+    "description": "In Babylon God transported Ezekiel in a vision to a vast valley filled with very dry human bones representing the house of Israel cut off in hopeless exile; God asked whether these bones could live and commanded Ezekiel to prophesy to them. As Ezekiel spoke there was a tremendous rattling sound as bones came together, joined by sinew and flesh, and then the breath of God entered them and an exceedingly great army stood to their feet. The vision promised Israel's national restoration from spiritual death and political exile, pointing ultimately to resurrection and the gift of God's Spirit.",
+    "people": [
+      "ezekiel"
+    ],
+    "tags": [
+      "dry-bones",
+      "resurrection",
+      "restoration",
+      "vision",
+      "israel"
+    ],
+    "related_events": [
+      "fall-of-jerusalem",
+      "jeremiahs-call",
+      "daniels-fiery-furnace"
+    ]
+  },
+  {
+    "id": "daniels-fiery-furnace",
+    "title": "The Fiery Furnace",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Daniel",
+      "chapter": 3,
+      "verse_start": 25,
+      "verse_end": 25
+    },
+    "date_estimate": "-587",
+    "date_label": "circa 587 BC",
+    "location": {
+      "name": "Babylon",
+      "lat": 32.54,
+      "lng": 44.42,
+      "accuracy": "approximate"
+    },
+    "description": "Shadrach, Meshach, and Abednego refused to bow down to Nebuchadnezzar's 90-foot golden image and declared boldly that their God was able to deliver them but they would not serve other gods even if He chose not to. Nebuchadnezzar had the furnace heated seven times hotter than usual and the soldiers who threw the three men in were killed by the intense heat. Looking into the furnace the astonished king saw four figures walking unbound in the flames with the fourth having the appearance of a son of the gods, leading him to praise the God who sent His angel to rescue His faithful servants.",
+    "people": [
+      "shadrach",
+      "meshach",
+      "abednego",
+      "nebuchadnezzar"
+    ],
+    "tags": [
+      "furnace",
+      "fire",
+      "faith",
+      "angel",
+      "deliverance"
+    ],
+    "related_events": [
+      "daniels-lions-den",
+      "ezekiel-dry-bones"
+    ]
+  },
+  {
+    "id": "daniels-lions-den",
+    "title": "Daniel in the Lions' Den",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Daniel",
+      "chapter": 6,
+      "verse_start": 22,
+      "verse_end": 22
+    },
+    "date_estimate": "-538",
+    "date_label": "circa 538 BC",
+    "location": {
+      "name": "Babylon",
+      "lat": 32.54,
+      "lng": 44.42,
+      "accuracy": "approximate"
+    },
+    "description": "Jealous administrators tricked King Darius the Mede into issuing an irrevocable decree forbidding prayer to anyone except the king, knowing Daniel would continue his faithful practice of praying three times daily toward Jerusalem. Daniel was found praying as expected and thrown into the sealed den of lions despite the king's great distress and frantic efforts to find a legal way to save him. At first light Darius rushed to the den and found Daniel completely unharmed, who declared that God had sent His angel to shut the mouths of the lions because he was found innocent before both God and king.",
+    "people": [
+      "daniel",
+      "darius"
+    ],
+    "tags": [
+      "lions",
+      "prayer",
+      "faith",
+      "deliverance",
+      "angel"
+    ],
+    "related_events": [
+      "daniels-fiery-furnace",
+      "daniels-vision"
+    ]
+  },
+  {
+    "id": "jonah-great-fish",
+    "title": "Jonah and the Great Fish",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "Jonah",
+      "chapter": 1,
+      "verse_start": 17,
+      "verse_end": 17
+    },
+    "date_estimate": "-760",
+    "date_label": "circa 760 BC",
+    "location": {
+      "name": "Mediterranean Sea",
+      "lat": 33,
+      "lng": 32,
+      "accuracy": "approximate"
+    },
+    "description": "Jonah boarded a ship for Tarshish to flee from God's command to preach to Nineveh; God sent a violent storm and when the sailors cast lots to identify the cause Jonah was revealed and admitted his guilt. He instructed them to throw him into the sea and the storm immediately calmed, causing the sailors to fear God greatly; the Lord appointed a great fish to swallow Jonah. Jonah prayed from inside the fish for three days and three nights before the fish vomited him onto dry land, a sign Jesus later explicitly connected to his own death and resurrection.",
+    "people": [
+      "jonah"
+    ],
+    "tags": [
+      "fish",
+      "storm",
+      "disobedience",
+      "prayer",
+      "foreshadowing"
+    ],
+    "related_events": [
+      "jonah-nineveh"
+    ]
+  },
+  {
+    "id": "jonah-nineveh",
+    "title": "Jonah Preaches to Nineveh",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Jonah",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-760",
+    "date_label": "circa 760 BC",
+    "location": {
+      "name": "Nineveh",
+      "lat": 36.36,
+      "lng": 43.15,
+      "accuracy": "approximate"
+    },
+    "description": "Jonah walked a day's journey into the enormous city of Nineveh declaring that in forty days the city would be overthrown, and the people of Nineveh responded with an astonishing collective repentance unlike any other recorded in the Old Testament. The king of Nineveh rose from his throne, covered himself in sackcloth and sat in ashes, and issued a royal decree commanding fasting and mourning from the greatest to the least including even the animals. God relented of the disaster He had planned, demonstrating that His mercy and compassion extend even to Israel's greatest enemies when they genuinely repent.",
+    "people": [
+      "jonah"
+    ],
+    "tags": [
+      "nineveh",
+      "repentance",
+      "mercy",
+      "preaching",
+      "assyria"
+    ],
+    "related_events": [
+      "jonah-great-fish"
+    ]
+  },
+  {
+    "id": "esther-saves-jews",
+    "title": "Esther Saves the Jewish People",
+    "category": "covenant",
+    "testament": "old",
+    "reference": {
+      "book": "Esther",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-479",
+    "date_label": "circa 479 BC",
+    "location": {
+      "name": "Susa, Persia",
+      "lat": 32.19,
+      "lng": 48.25,
+      "accuracy": "approximate"
+    },
+    "description": "Mordecai persuaded his cousin Queen Esther to risk approaching King Xerxes unbidden, a potentially fatal act under Persian law, with the urgent challenge that perhaps she had come to her royal position for such a time as this. Esther fasted three days and then approached the king who extended his scepter in welcome; she exposed Haman's genocidal plot against the Jews at a second banquet she prepared. The king ordered Haman hanged on the gallows he had built for Mordecai and granted the Jews throughout the empire permission to defend themselves, resulting in the establishment of the Purim feast celebrated to this day.",
+    "people": [
+      "esther",
+      "mordecai",
+      "xerxes",
+      "haman"
+    ],
+    "tags": [
+      "purim",
+      "deliverance",
+      "genocide",
+      "persia",
+      "courage"
+    ],
+    "related_events": [
+      "nehemiahs-wall",
+      "ezra-reads-law"
+    ]
+  },
+  {
+    "id": "nehemiahs-wall",
+    "title": "Nehemiah Rebuilds Jerusalem's Walls",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "Nehemiah",
+      "chapter": 6,
+      "verse_start": 15,
+      "verse_end": 15
+    },
+    "date_estimate": "-444",
+    "date_label": "circa 444 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "Nehemiah arrived in Jerusalem with royal authorization and rallied the returned exiles to rebuild the city's broken walls despite sustained opposition from Sanballat, Tobiah, and Geshem who mocked, threatened, and plotted against the work. The builders worked with one hand on the work and one hand holding a weapon, and Nehemiah stationed guards day and night throughout the construction. The entire wall was completed in a remarkable fifty-two days, and when the surrounding enemies heard of it they feared and lost their confidence, recognizing that this work had been accomplished with the help of God.",
+    "people": [
+      "nehemiah"
+    ],
+    "tags": [
+      "walls",
+      "jerusalem",
+      "restoration",
+      "opposition",
+      "completion"
+    ],
+    "related_events": [
+      "ezra-reads-law",
+      "esther-saves-jews"
+    ]
+  },
+  {
+    "id": "ezra-reads-law",
+    "title": "Ezra Reads the Law to the People",
+    "category": "worship",
+    "testament": "old",
+    "reference": {
+      "book": "Nehemiah",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5
+    },
+    "date_estimate": "-444",
+    "date_label": "circa 444 BC",
+    "location": {
+      "name": "Jerusalem Water Gate",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "On the first day of the seventh month all the people assembled as one man in the square before the Water Gate and asked Ezra to bring the Book of the Law of Moses; he stood on a wooden platform built for the occasion and read aloud from early morning until noon. The Levites circulated through the crowd helping the people understand what was being read, and the people wept as they grasped how far they had drifted from God's commands. Nehemiah and Ezra told the people not to grieve but to celebrate because this was a holy day, and they then observed the Festival of Tabernacles with a joy not seen since the days of Joshua.",
+    "people": [
+      "ezra",
+      "nehemiah"
+    ],
+    "tags": [
+      "law",
+      "reading",
+      "covenant-renewal",
+      "tabernacles",
+      "understanding"
+    ],
+    "related_events": [
+      "nehemiahs-wall",
+      "josiahs-reform"
+    ]
+  },
+  {
+    "id": "absaloms-revolt",
+    "title": "Absalom's Revolt Against David",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Samuel",
+      "chapter": 15,
+      "verse_start": 14,
+      "verse_end": 14
+    },
+    "date_estimate": "-979",
+    "date_label": "circa 979 BC",
+    "location": {
+      "name": "Jerusalem and Hebron",
+      "lat": 31.52,
+      "lng": 35.1,
+      "accuracy": "approximate"
+    },
+    "description": "Absalom spent four years winning the hearts of Israel through strategic flattery at the city gate, then raised the flag of rebellion in Hebron, the city where David had first been made king. David fled Jerusalem barefoot and weeping up the Mount of Olives while cursed by Shimei, crossing the Kidron Valley with his faithful servants and a host of loyalists in a scene of profound humiliation. The rebellion was ultimately crushed in the Forest of Ephraim but Absalom, caught by his head in the branches of a great oak while fleeing on his mule, was killed by Joab against David's explicit orders to deal gently with his son.",
+    "people": [
+      "absalom",
+      "david",
+      "joab"
+    ],
+    "tags": [
+      "revolt",
+      "rebellion",
+      "exile",
+      "civil-war",
+      "absalom"
+    ],
+    "related_events": [
+      "david-and-bathsheba",
+      "samuel-anoints-david"
+    ]
+  },
+  {
+    "id": "nebuchadnezzar-siege",
+    "title": "Nebuchadnezzar Besieges Jerusalem",
+    "category": "battle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 25,
+      "verse_start": 1,
+      "verse_end": 1
+    },
+    "date_estimate": "-589",
+    "date_label": "circa 589 BC",
+    "location": {
+      "name": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.23,
+      "accuracy": "approximate"
+    },
+    "description": "On the tenth day of the tenth month of the ninth year of Zedekiah's reign, Nebuchadnezzar king of Babylon came with his entire army against Jerusalem and laid siege to it, building siege works all around. The city was besieged for eighteen months while the famine intensified until there was no bread left for the people of the land. The siege fulfilled Jeremiah's repeated prophecies about Babylonian judgment on Judah for generations of covenant unfaithfulness, and its breaking led directly to the temple's destruction and the exile.",
+    "people": [
+      "nebuchadnezzar",
+      "zedekiah"
+    ],
+    "tags": [
+      "siege",
+      "babylon",
+      "famine",
+      "judgment",
+      "exile"
+    ],
+    "related_events": [
+      "fall-of-jerusalem",
+      "jeremiahs-call"
+    ]
+  },
+  {
+    "id": "daniels-vision",
+    "title": "Daniel's Vision of the Son of Man",
+    "category": "prophecy",
+    "testament": "old",
+    "reference": {
+      "book": "Daniel",
+      "chapter": 7,
+      "verse_start": 13,
+      "verse_end": 13
+    },
+    "date_estimate": "-553",
+    "date_label": "circa 553 BC",
+    "location": {
+      "name": "Babylon",
+      "lat": 32.54,
+      "lng": 44.42,
+      "accuracy": "approximate"
+    },
+    "description": "Daniel saw a night vision of four terrifying beasts rising from the sea representing successive world empires — Babylon, Persia, Greece, and Rome — each more brutal than the last. Then the Ancient of Days took His throne in blazing glory and the court sat in judgment, stripping the beasts of their dominion. One like a Son of Man came with the clouds of heaven and was presented before the Ancient of Days and given eternal dominion, glory, and a kingdom encompassing all peoples and nations, a title Jesus applied to Himself more than any other.",
+    "people": [
+      "daniel"
+    ],
+    "tags": [
+      "vision",
+      "son-of-man",
+      "empires",
+      "kingdom",
+      "prophecy"
+    ],
+    "related_events": [
+      "daniels-lions-den",
+      "daniels-fiery-furnace"
+    ]
+  },
+  {
+    "id": "elisha-purifies-water",
+    "title": "Elisha Purifies the Waters of Jericho",
+    "category": "miracle",
+    "testament": "old",
+    "reference": {
+      "book": "2 Kings",
+      "chapter": 2,
+      "verse_start": 21,
+      "verse_end": 21
+    },
+    "date_estimate": "-848",
+    "date_label": "circa 848 BC",
+    "location": {
+      "name": "Jericho",
+      "lat": 31.87,
+      "lng": 35.44,
+      "accuracy": "approximate"
+    },
+    "description": "The men of Jericho reported to Elisha that despite the city's pleasant location the water source was bad and the land was causing miscarriages and unfruitfulness, a persistent problem afflicting the entire region. Elisha asked for a new bowl with salt and went to the spring, throwing the salt into it and declaring in God's name that He had healed the water so that it would never again cause death or barrenness. The spring was immediately and permanently healed, its water flowing pure and life-giving to Jericho from that day to this.",
+    "people": [
+      "elisha"
+    ],
+    "tags": [
+      "healing",
+      "water",
+      "spring",
+      "jericho",
+      "miracle"
+    ],
+    "related_events": [
+      "elijah-ascends-heaven",
+      "elisha-heals-naaman"
+    ]
+  },
+  {
+    "id": "walking-on-water",
+    "title": "Jesus Walks on Water",
+    "category": "miracle",
+    "testament": "new",
+    "reference": {
+      "book": "Matthew",
+      "chapter": 14,
+      "verse_start": 25,
+      "verse_end": 29
+    },
+    "date_estimate": "29",
+    "date_label": "circa AD 29",
+    "location": {
+      "name": "Sea of Galilee",
+      "lat": 32.83,
+      "lng": 35.6,
+      "accuracy": "approximate"
+    },
+    "description": "During the fourth watch of the night Jesus came to His disciples walking on the Sea of Galilee. Peter stepped out of the boat at Jesus invitation and walked on water, but sank when his faith wavered. Jesus rescued him, and the disciples worshiped Him as the Son of God.",
+    "people": [
+      "jesus",
+      "peter"
+    ],
+    "tags": [
+      "miracle",
+      "water",
+      "galilee",
+      "faith",
+      "peter"
+    ],
+    "related_events": [
+      "feeding-5000",
+      "sermon-on-mount"
+    ]
+  },
+  {
+    "id": "raising-of-lazarus",
+    "title": "Raising of Lazarus",
+    "category": "miracle",
+    "testament": "new",
+    "reference": {
+      "book": "John",
+      "chapter": 11,
+      "verse_start": 43,
+      "verse_end": 44
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Bethany, near Jerusalem",
+      "lat": 31.76,
+      "lng": 35.27,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus raised His friend Lazarus from the dead four days after burial. Standing before the tomb, Jesus declared I am the resurrection and the life and called Lazarus forth still wrapped in burial cloths. This greatest of His miracles provoked both mass belief and the Sanhedrin decision to have Jesus killed.",
+    "people": [
+      "jesus",
+      "lazarus",
+      "mary-magdalene",
+      "martha"
+    ],
+    "tags": [
+      "miracle",
+      "resurrection",
+      "lazarus",
+      "bethany",
+      "life"
+    ],
+    "related_events": [
+      "triumphal-entry",
+      "crucifixion"
+    ]
+  },
+  {
+    "id": "philip-ethiopian-eunuch",
+    "title": "Philip and the Ethiopian Eunuch",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 8,
+      "verse_start": 26,
+      "verse_end": 38
+    },
+    "date_estimate": "34",
+    "date_label": "circa AD 34",
+    "location": {
+      "name": "Gaza Road, southern Judea",
+      "lat": 31.4,
+      "lng": 34.75,
+      "accuracy": "approximate"
+    },
+    "description": "An angel directed Philip to the desert road toward Gaza, where he encountered an Ethiopian court official reading Isaiah 53. Philip explained that Isaiah spoke of Jesus, and baptized the Ethiopian in water along the road. The eunuch went on his way rejoicing, carrying the gospel to Africa.",
+    "people": [
+      "philip",
+      "ethiopian-eunuch"
+    ],
+    "tags": [
+      "philip",
+      "ethiopia",
+      "baptism",
+      "isaiah",
+      "gospel",
+      "africa"
+    ],
+    "related_events": [
+      "stephens-martyrdom",
+      "pauls-conversion"
+    ]
+  },
+  {
+    "id": "pauls-journey-2",
+    "title": "Paul's Second Missionary Journey",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 15,
+      "verse_start": 40,
+      "verse_end": 41
+    },
+    "date_estimate": "49",
+    "date_label": "circa AD 49",
+    "location": {
+      "name": "Philippi, Macedonia (Greece)",
+      "lat": 41.01,
+      "lng": 24.29,
+      "accuracy": "approximate"
+    },
+    "description": "Paul and Silas traveled through Macedonia and Greece, establishing churches at Philippi, Thessalonica, Berea, Athens, and Corinth. In Philippi they were imprisoned and miraculously freed by an earthquake. At Athens Paul preached at the Areopagus. He spent eighteen months in Corinth strengthening the new church.",
+    "people": [
+      "paul",
+      "silas",
+      "timothy",
+      "lydia"
+    ],
+    "tags": [
+      "paul",
+      "missionary",
+      "macedonia",
+      "corinth",
+      "athens",
+      "philippi"
+    ],
+    "related_events": [
+      "pauls-journey-1-start",
+      "pauls-journey-3"
+    ]
+  },
+  {
+    "id": "pauls-journey-3",
+    "title": "Paul's Third Missionary Journey",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 19,
+      "verse_start": 1,
+      "verse_end": 10
+    },
+    "date_estimate": "53",
+    "date_label": "circa AD 53",
+    "location": {
+      "name": "Ephesus, Asia Minor (Turkey)",
+      "lat": 37.94,
+      "lng": 27.34,
+      "accuracy": "approximate"
+    },
+    "description": "Paul spent three years at Ephesus, the longest he stayed anywhere, with extraordinary miracles and teaching. The gospel spread throughout Asia Minor from Ephesus. A silversmith riot erupted when the gospel threatened the idol trade. Paul then revisited Macedonia and Greece before heading to Jerusalem.",
+    "people": [
+      "paul",
+      "apollos",
+      "priscilla",
+      "aquila"
+    ],
+    "tags": [
+      "paul",
+      "ephesus",
+      "missionary",
+      "asia minor",
+      "riot",
+      "teaching"
+    ],
+    "related_events": [
+      "pauls-journey-2",
+      "pauls-voyage-rome"
+    ]
+  },
+  {
+    "id": "healing-blind-bartimaeus",
+    "title": "Healing of Blind Bartimaeus",
+    "category": "miracle",
+    "testament": "new",
+    "reference": {
+      "book": "Mark",
+      "chapter": 10,
+      "verse_start": 51,
+      "verse_end": 52
+    },
+    "date_estimate": "30",
+    "date_label": "circa AD 30",
+    "location": {
+      "name": "Jericho, Jordan Valley",
+      "lat": 31.87,
+      "lng": 35.44,
+      "accuracy": "approximate"
+    },
+    "description": "As Jesus left Jericho, blind Bartimaeus cried out for mercy. Though the crowd tried to silence him, Jesus stopped and asked what he wanted. Bartimaeus said Rabbi let me see. Jesus said Go; your faith has made you well and immediately he received his sight and followed Jesus.",
+    "people": [
+      "jesus",
+      "bartimaeus"
+    ],
+    "tags": [
+      "healing",
+      "blind",
+      "jericho",
+      "faith",
+      "miracle",
+      "sight"
+    ],
+    "related_events": [
+      "triumphal-entry",
+      "raising-of-lazarus"
+    ]
+  },
+  {
+    "id": "woman-at-well",
+    "title": "Jesus and the Woman at the Well",
+    "category": "gospel",
+    "testament": "new",
+    "reference": {
+      "book": "John",
+      "chapter": 4,
+      "verse_start": 13,
+      "verse_end": 14
+    },
+    "date_estimate": "28",
+    "date_label": "circa AD 28",
+    "location": {
+      "name": "Sychar (Shechem), Samaria",
+      "lat": 32.21,
+      "lng": 35.29,
+      "accuracy": "approximate"
+    },
+    "description": "Jesus stopped at Jacob Well in Samaria and spoke to a Samaritan woman, crossing cultural and religious barriers. He revealed knowledge of her life and offered her living water meaning eternal life. She became an evangelist, bringing her entire village to meet Jesus. Many Samaritans believed He was the Savior of the world.",
+    "people": [
+      "jesus",
+      "samaritan-woman"
+    ],
+    "tags": [
+      "samaria",
+      "well",
+      "living water",
+      "gospel",
+      "evangelism"
+    ],
+    "related_events": [
+      "sermon-on-mount",
+      "baptism-of-jesus"
+    ]
+  },
+  {
+    "id": "pauls-areopagus-speech",
+    "title": "Paul at the Areopagus, Athens",
+    "category": "apostolic",
+    "testament": "new",
+    "reference": {
+      "book": "Acts",
+      "chapter": 17,
+      "verse_start": 22,
+      "verse_end": 31
+    },
+    "date_estimate": "50",
+    "date_label": "circa AD 50",
+    "location": {
+      "name": "Areopagus (Mars Hill), Athens, Greece",
+      "lat": 37.97,
+      "lng": 23.72,
+      "accuracy": "approximate"
+    },
+    "description": "Standing before the philosophers of Athens at the Areopagus, Paul preached the unknown God revealed in Jesus Christ. He engaged Greek intellectual culture with the message of creation, judgment, and resurrection. Some mocked, but others believed, including Dionysius the Areopagite.",
+    "people": [
+      "paul",
+      "dionysius"
+    ],
+    "tags": [
+      "paul",
+      "athens",
+      "areopagus",
+      "philosophy",
+      "resurrection",
+      "greece"
+    ],
+    "related_events": [
+      "pauls-journey-2",
+      "pauls-journey-1-start"
+    ]
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "abrahams-journey",
+    "title": "Abraham's Journey",
+    "person": "abraham",
+    "reference": "Genesis 12–23",
+    "color": "#F59E0B",
+    "testament": "old",
+    "description": "Abraham's call from Ur through Haran to Canaan, down to Egypt, and back to Canaan where God fulfilled His covenant promise.",
+    "waypoints": [
+      { "lat": 30.96, "lng": 46.1,  "label": "Ur of the Chaldees (departure)" },
+      { "lat": 36.86, "lng": 38.97, "label": "Haran" },
+      { "lat": 32.21, "lng": 35.28, "label": "Shechem, Canaan" },
+      { "lat": 31.92, "lng": 35.22, "label": "Bethel" },
+      { "lat": 30.9,  "lng": 34.8,  "label": "The Negev" },
+      { "lat": 30.06, "lng": 31.24, "label": "Egypt (famine)" },
+      { "lat": 31.92, "lng": 35.22, "label": "Return to Bethel" },
+      { "lat": 31.53, "lng": 35.1,  "label": "Hebron (Mamre)" }
+    ]
+  },
+  {
+    "id": "exodus-route",
+    "title": "The Exodus Route",
+    "person": "moses",
+    "reference": "Exodus 12–19",
+    "color": "#10B981",
+    "testament": "old",
+    "description": "Israel's departure from Egypt under Moses, through the wilderness, to Mount Sinai where God gave the Law.",
+    "waypoints": [
+      { "lat": 30.85, "lng": 31.83, "label": "Rameses / Goshen (departure)" },
+      { "lat": 30.55, "lng": 32.27, "label": "Succoth" },
+      { "lat": 30.3,  "lng": 32.55, "label": "Etham (edge of wilderness)" },
+      { "lat": 29.85, "lng": 32.57, "label": "Red Sea Crossing" },
+      { "lat": 29.5,  "lng": 32.9,  "label": "Wilderness of Shur / Marah" },
+      { "lat": 29.1,  "lng": 33.07, "label": "Elim (twelve springs)" },
+      { "lat": 28.9,  "lng": 33.3,  "label": "Wilderness of Sin" },
+      { "lat": 28.67, "lng": 33.6,  "label": "Rephidim (water from rock)" },
+      { "lat": 28.54, "lng": 33.97, "label": "Mount Sinai" }
+    ]
+  },
+  {
+    "id": "flight-to-egypt",
+    "title": "Flight to Egypt",
+    "person": "joseph-mary-jesus",
+    "reference": "Matthew 2:13–23",
+    "color": "#EC4899",
+    "testament": "new",
+    "description": "Joseph, Mary, and the infant Jesus flee to Egypt to escape Herod's slaughter, then return to Nazareth after Herod's death.",
+    "waypoints": [
+      { "lat": 31.7,  "lng": 35.2,  "label": "Bethlehem (departure)" },
+      { "lat": 31.4,  "lng": 34.75, "label": "Gaza Road" },
+      { "lat": 30.5,  "lng": 32.5,  "label": "Sinai crossing" },
+      { "lat": 30.06, "lng": 31.24, "label": "Egypt (refuge)" },
+      { "lat": 30.5,  "lng": 32.5,  "label": "Return journey" },
+      { "lat": 32.7,  "lng": 35.3,  "label": "Nazareth (home)" }
+    ]
+  },
+  {
+    "id": "jesus-ministry",
+    "title": "Jesus's Ministry Travels",
+    "person": "jesus",
+    "reference": "Matthew–John",
+    "color": "#FBBF24",
+    "testament": "new",
+    "description": "The travels of Jesus throughout Galilee, Samaria, and Judea during His three-year public ministry.",
+    "waypoints": [
+      { "lat": 32.7,  "lng": 35.3,  "label": "Nazareth (home)" },
+      { "lat": 31.83, "lng": 35.55, "label": "Jordan River (Baptism)" },
+      { "lat": 31.7,  "lng": 35.45, "label": "Judean Wilderness (Temptation)" },
+      { "lat": 32.88, "lng": 35.57, "label": "Capernaum (base of ministry)" },
+      { "lat": 32.87, "lng": 35.55, "label": "Mount of Beatitudes (Sermon)" },
+      { "lat": 32.83, "lng": 35.6,  "label": "Sea of Galilee" },
+      { "lat": 32.21, "lng": 35.29, "label": "Sychar, Samaria (woman at well)" },
+      { "lat": 33.4,  "lng": 35.84, "label": "Mount Hermon (Transfiguration)" },
+      { "lat": 31.87, "lng": 35.44, "label": "Jericho (Bartimaeus)" },
+      { "lat": 31.76, "lng": 35.27, "label": "Bethany (Lazarus)" },
+      { "lat": 31.78, "lng": 35.23, "label": "Jerusalem (Passion Week)" }
+    ]
+  },
+  {
+    "id": "paul-journey-1",
+    "title": "Paul's First Missionary Journey",
+    "person": "paul",
+    "reference": "Acts 13–14",
+    "color": "#E8A838",
+    "testament": "new",
+    "description": "Paul and Barnabas sent out from Antioch, traveling through Cyprus and southern Asia Minor establishing churches.",
+    "waypoints": [
+      { "lat": 36.2,  "lng": 36.16, "label": "Antioch, Syria (departure)" },
+      { "lat": 36.11, "lng": 35.93, "label": "Seleucia" },
+      { "lat": 35.16, "lng": 33.9,  "label": "Salamis, Cyprus" },
+      { "lat": 34.77, "lng": 32.42, "label": "Paphos, Cyprus" },
+      { "lat": 36.96, "lng": 30.85, "label": "Perga, Pamphylia" },
+      { "lat": 38.28, "lng": 30.69, "label": "Pisidian Antioch" },
+      { "lat": 37.87, "lng": 32.48, "label": "Iconium" },
+      { "lat": 37.59, "lng": 32.13, "label": "Lystra" },
+      { "lat": 37.35, "lng": 33.4,  "label": "Derbe" },
+      { "lat": 37.59, "lng": 32.13, "label": "Lystra (return)" },
+      { "lat": 37.87, "lng": 32.48, "label": "Iconium (return)" },
+      { "lat": 38.28, "lng": 30.69, "label": "Pisidian Antioch (return)" },
+      { "lat": 36.96, "lng": 30.85, "label": "Perga (return)" },
+      { "lat": 36.88, "lng": 30.7,  "label": "Attalia" },
+      { "lat": 36.2,  "lng": 36.16, "label": "Antioch, Syria (return)" }
+    ]
+  },
+  {
+    "id": "paul-journey-2",
+    "title": "Paul's Second Missionary Journey",
+    "person": "paul",
+    "reference": "Acts 15–18",
+    "color": "#3B82F6",
+    "testament": "new",
+    "description": "Paul and Silas travel through Asia Minor into Europe for the first time, planting churches in Philippi, Thessalonica, Corinth, and beyond.",
+    "waypoints": [
+      { "lat": 36.2,  "lng": 36.16, "label": "Antioch, Syria (departure)" },
+      { "lat": 37.59, "lng": 32.13, "label": "Lystra (Timothy joins)" },
+      { "lat": 37.87, "lng": 32.48, "label": "Iconium" },
+      { "lat": 39.77, "lng": 26.17, "label": "Troas (Macedonian vision)" },
+      { "lat": 40.84, "lng": 24.6,  "label": "Neapolis" },
+      { "lat": 41.01, "lng": 24.29, "label": "Philippi" },
+      { "lat": 40.64, "lng": 22.94, "label": "Thessalonica" },
+      { "lat": 40.47, "lng": 22.21, "label": "Berea" },
+      { "lat": 37.97, "lng": 23.72, "label": "Athens (Areopagus)" },
+      { "lat": 37.94, "lng": 22.93, "label": "Corinth (18 months)" },
+      { "lat": 37.94, "lng": 27.34, "label": "Ephesus (brief visit)" },
+      { "lat": 32.5,  "lng": 34.9,  "label": "Caesarea" },
+      { "lat": 36.2,  "lng": 36.16, "label": "Antioch, Syria (return)" }
+    ]
+  },
+  {
+    "id": "paul-journey-3",
+    "title": "Paul's Third Missionary Journey",
+    "person": "paul",
+    "reference": "Acts 18–21",
+    "color": "#8B5CF6",
+    "testament": "new",
+    "description": "Paul's longest journey, centered on three years in Ephesus, then revisiting Macedonia and Greece before returning to Jerusalem.",
+    "waypoints": [
+      { "lat": 36.2,  "lng": 36.16, "label": "Antioch, Syria (departure)" },
+      { "lat": 38.28, "lng": 30.69, "label": "Pisidian Antioch" },
+      { "lat": 37.87, "lng": 32.48, "label": "Iconium" },
+      { "lat": 37.94, "lng": 27.34, "label": "Ephesus (3 years)" },
+      { "lat": 40.64, "lng": 22.94, "label": "Thessalonica" },
+      { "lat": 37.94, "lng": 22.93, "label": "Corinth (3 months)" },
+      { "lat": 40.64, "lng": 22.94, "label": "Thessalonica (return)" },
+      { "lat": 39.77, "lng": 26.17, "label": "Troas (Eutychus raised)" },
+      { "lat": 37.52, "lng": 27.27, "label": "Miletus (elders farewell)" },
+      { "lat": 33.27, "lng": 35.2,  "label": "Tyre" },
+      { "lat": 32.93, "lng": 35.07, "label": "Ptolemais" },
+      { "lat": 32.5,  "lng": 34.9,  "label": "Caesarea (Philip)" },
+      { "lat": 31.78, "lng": 35.23, "label": "Jerusalem (arrest)" }
+    ]
+  },
+  {
+    "id": "paul-voyage-rome",
+    "title": "Paul's Voyage to Rome",
+    "person": "paul",
+    "reference": "Acts 27–28",
+    "color": "#EF4444",
+    "testament": "new",
+    "description": "Paul sails to Rome as a prisoner, survives a catastrophic shipwreck on Malta, and eventually reaches Rome to appeal to Caesar.",
+    "waypoints": [
+      { "lat": 32.5,  "lng": 34.9,  "label": "Caesarea (departure)" },
+      { "lat": 36.2,  "lng": 29.97, "label": "Myra, Lycia" },
+      { "lat": 35.0,  "lng": 24.5,  "label": "Fair Havens, Crete" },
+      { "lat": 35.9,  "lng": 14.51, "label": "Malta (shipwreck)" },
+      { "lat": 37.5,  "lng": 15.1,  "label": "Syracuse, Sicily" },
+      { "lat": 38.11, "lng": 15.65, "label": "Rhegium" },
+      { "lat": 40.83, "lng": 14.25, "label": "Puteoli" },
+      { "lat": 41.9,  "lng": 12.48, "label": "Rome" }
+    ]
+  },
+  {
+    "id": "johns-exile-patmos",
+    "title": "John's Exile to Patmos",
+    "person": "john",
+    "reference": "Revelation 1:9",
+    "color": "#22D3EE",
+    "testament": "new",
+    "description": "The apostle John is exiled from Ephesus to the island of Patmos by Emperor Domitian, where he receives the Revelation.",
+    "waypoints": [
+      { "lat": 31.78, "lng": 35.23, "label": "Jerusalem" },
+      { "lat": 37.94, "lng": 27.34, "label": "Ephesus (base of ministry)" },
+      { "lat": 37.3,  "lng": 26.55, "label": "Patmos (exile, Revelation)" }
+    ]
+  }
+]

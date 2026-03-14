@@ -1,0 +1,276 @@
+[
+  {
+    "year": 30,
+    "label": "AD 30 — Pentecost",
+    "regions": [
+      { "id": "judea", "name": "Judea & Galilee", "density": 0.9 }
+    ],
+    "churches": [
+      { "city": "Jerusalem", "lat": 31.78, "lng": 35.21, "note": "The Church is born at Pentecost" }
+    ]
+  },
+  {
+    "year": 50,
+    "label": "AD 50 — Paul's Missions Begin",
+    "regions": [
+      { "id": "judea", "name": "Judea & Galilee", "density": 0.9 },
+      { "id": "syria", "name": "Syria", "density": 0.65 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.4 },
+      { "id": "greece", "name": "Greece & Macedonia", "density": 0.2 }
+    ],
+    "churches": [
+      { "city": "Jerusalem", "lat": 31.78, "lng": 35.21, "note": "Mother church of Christianity" },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16, "note": "Base for Gentile mission" },
+      { "city": "Corinth", "lat": 37.94, "lng": 22.93, "note": "Founded by Paul c. AD 49" },
+      { "city": "Ephesus", "lat": 37.94, "lng": 27.34, "note": "Major Asia Minor centre" },
+      { "city": "Philippi", "lat": 41.01, "lng": 24.29, "note": "First European church" }
+    ]
+  },
+  {
+    "year": 70,
+    "label": "AD 70 — Fall of Jerusalem",
+    "regions": [
+      { "id": "judea", "name": "Judea & Galilee", "density": 0.85 },
+      { "id": "syria", "name": "Syria", "density": 0.7 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.6 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.3 },
+      { "id": "greece", "name": "Greece & Macedonia", "density": 0.5 },
+      { "id": "egypt", "name": "Egypt", "density": 0.35 },
+      { "id": "rome-italy", "name": "Italy & Rome", "density": 0.3 }
+    ],
+    "churches": [
+      { "city": "Jerusalem", "lat": 31.78, "lng": 35.21, "note": "Destroyed by Rome; church flees to Pella" },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16, "note": "Growing centre" },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92, "note": "Early Egyptian church (Mark)" },
+      { "city": "Rome", "lat": 41.9, "lng": 12.48, "note": "Paul & Peter martyred here" },
+      { "city": "Ephesus", "lat": 37.94, "lng": 27.34, "note": "John's base; Revelation churches" },
+      { "city": "Corinth", "lat": 37.94, "lng": 22.93 },
+      { "city": "Thessalonica", "lat": 40.64, "lng": 22.94 }
+    ]
+  },
+  {
+    "year": 100,
+    "label": "AD 100 — The Apostolic Age Ends",
+    "regions": [
+      { "id": "judea", "name": "Judea & Galilee", "density": 0.7 },
+      { "id": "syria", "name": "Syria", "density": 0.75 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.75 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.5 },
+      { "id": "greece", "name": "Greece & Macedonia", "density": 0.65 },
+      { "id": "egypt", "name": "Egypt", "density": 0.55 },
+      { "id": "rome-italy", "name": "Italy & Rome", "density": 0.55 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.2 },
+      { "id": "persia", "name": "Persia & Mesopotamia", "density": 0.15 }
+    ],
+    "churches": [
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92, "note": "Major theological school" },
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Ephesus", "lat": 37.94, "lng": 27.34 },
+      { "city": "Smyrna", "lat": 38.42, "lng": 27.14 },
+      { "city": "Pergamum", "lat": 39.12, "lng": 27.18 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32, "note": "Growing North African church" }
+    ]
+  },
+  {
+    "year": 150,
+    "label": "AD 150 — Apologists & Growth",
+    "regions": [
+      { "id": "judea", "name": "Judea & Galilee", "density": 0.65 },
+      { "id": "syria", "name": "Syria", "density": 0.8 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.82 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.65 },
+      { "id": "greece", "name": "Greece & Macedonia", "density": 0.72 },
+      { "id": "egypt", "name": "Egypt", "density": 0.65 },
+      { "id": "rome-italy", "name": "Italy & Rome", "density": 0.65 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.45 },
+      { "id": "persia", "name": "Persia & Mesopotamia", "density": 0.25 },
+      { "id": "gaul", "name": "Gaul (France)", "density": 0.15 }
+    ],
+    "churches": [
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32 },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Lyon", "lat": 45.75, "lng": 4.83, "note": "Early Gallic church" },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Edessa", "lat": 37.16, "lng": 38.79, "note": "Syriac Christianity" }
+    ]
+  },
+  {
+    "year": 200,
+    "label": "AD 200 — Tertullian & Origen",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.6 },
+      { "id": "syria", "name": "Syria", "density": 0.82 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.85 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.72 },
+      { "id": "greece", "name": "Greece", "density": 0.78 },
+      { "id": "egypt", "name": "Egypt", "density": 0.72 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.72 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.62 },
+      { "id": "persia", "name": "Persia", "density": 0.35 },
+      { "id": "gaul", "name": "Gaul", "density": 0.35 },
+      { "id": "spain", "name": "Iberian Peninsula", "density": 0.2 },
+      { "id": "britain", "name": "Britain", "density": 0.1 }
+    ],
+    "churches": [
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32, "note": "Tertullian writes here" },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92, "note": "Origen's catechetical school" },
+      { "city": "Lyon", "lat": 45.75, "lng": 4.83 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Ctesiphon", "lat": 33.09, "lng": 44.58, "note": "Church of the East" }
+    ]
+  },
+  {
+    "year": 250,
+    "label": "AD 250 — Widespread but Persecuted",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.55 },
+      { "id": "syria", "name": "Syria", "density": 0.85 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.88 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.78 },
+      { "id": "greece", "name": "Greece", "density": 0.82 },
+      { "id": "egypt", "name": "Egypt", "density": 0.78 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.78 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.72 },
+      { "id": "persia", "name": "Persia", "density": 0.42 },
+      { "id": "gaul", "name": "Gaul", "density": 0.5 },
+      { "id": "spain", "name": "Spain", "density": 0.38 },
+      { "id": "britain", "name": "Britain", "density": 0.22 },
+      { "id": "arabia", "name": "Arabia", "density": 0.2 },
+      { "id": "ethiopia", "name": "Ethiopia", "density": 0.15 }
+    ],
+    "churches": [
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32 },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Caesarea", "lat": 32.5, "lng": 34.9 },
+      { "city": "Milan", "lat": 45.46, "lng": 9.19 }
+    ]
+  },
+  {
+    "year": 301,
+    "label": "AD 301 — Armenia: First Christian Nation",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.5 },
+      { "id": "syria", "name": "Syria", "density": 0.87 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.9 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.82 },
+      { "id": "armenia", "name": "Armenia", "density": 0.9 },
+      { "id": "greece", "name": "Greece", "density": 0.85 },
+      { "id": "egypt", "name": "Egypt", "density": 0.82 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.82 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.78 },
+      { "id": "persia", "name": "Persia", "density": 0.48 },
+      { "id": "gaul", "name": "Gaul", "density": 0.6 },
+      { "id": "spain", "name": "Spain", "density": 0.5 },
+      { "id": "britain", "name": "Britain", "density": 0.3 },
+      { "id": "arabia", "name": "Arabia", "density": 0.25 },
+      { "id": "ethiopia", "name": "Ethiopia", "density": 0.3 }
+    ],
+    "churches": [
+      { "city": "Vagharshapat (Etchmiadzin)", "lat": 40.16, "lng": 44.29, "note": "Armenia adopts Christianity as state religion" },
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32 }
+    ]
+  },
+  {
+    "year": 313,
+    "label": "AD 313 — Edict of Milan: Christianity Legalized",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.5 },
+      { "id": "syria", "name": "Syria", "density": 0.88 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.92 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.85 },
+      { "id": "armenia", "name": "Armenia", "density": 0.92 },
+      { "id": "greece", "name": "Greece", "density": 0.88 },
+      { "id": "egypt", "name": "Egypt", "density": 0.85 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.88 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.82 },
+      { "id": "persia", "name": "Persia", "density": 0.52 },
+      { "id": "gaul", "name": "Gaul", "density": 0.68 },
+      { "id": "spain", "name": "Spain", "density": 0.6 },
+      { "id": "britain", "name": "Britain", "density": 0.4 },
+      { "id": "arabia", "name": "Arabia", "density": 0.3 },
+      { "id": "ethiopia", "name": "Ethiopia", "density": 0.35 }
+    ],
+    "churches": [
+      { "city": "Rome", "lat": 41.9, "lng": 12.48, "note": "Constantine legalizes Christianity" },
+      { "city": "Milan", "lat": 45.46, "lng": 9.19, "note": "Edict of Milan signed here" },
+      { "city": "Nicea", "lat": 40.43, "lng": 29.72, "note": "First Ecumenical Council AD 325" },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32 }
+    ]
+  },
+  {
+    "year": 380,
+    "label": "AD 380 — Christianity: State Religion of Rome",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.5 },
+      { "id": "syria", "name": "Syria", "density": 0.9 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.95 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.9 },
+      { "id": "armenia", "name": "Armenia", "density": 0.95 },
+      { "id": "greece", "name": "Greece", "density": 0.93 },
+      { "id": "egypt", "name": "Egypt", "density": 0.88 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.93 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.88 },
+      { "id": "persia", "name": "Persia", "density": 0.58 },
+      { "id": "gaul", "name": "Gaul", "density": 0.8 },
+      { "id": "spain", "name": "Spain", "density": 0.78 },
+      { "id": "britain", "name": "Britain", "density": 0.55 },
+      { "id": "arabia", "name": "Arabia", "density": 0.38 },
+      { "id": "ethiopia", "name": "Ethiopia", "density": 0.62 },
+      { "id": "germany", "name": "Germanic lands", "density": 0.2 }
+    ],
+    "churches": [
+      { "city": "Constantinople", "lat": 41.01, "lng": 28.97, "note": "New Christian capital of the Empire" },
+      { "city": "Rome", "lat": 41.9, "lng": 12.48 },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Jerusalem", "lat": 31.78, "lng": 35.23, "note": "Patriarchate established" },
+      { "city": "Carthage", "lat": 36.86, "lng": 10.32, "note": "Augustine's territory" },
+      { "city": "Axum", "lat": 14.12, "lng": 38.72, "note": "Ethiopian Orthodox established" }
+    ]
+  },
+  {
+    "year": 500,
+    "label": "AD 500 — End of Western Empire",
+    "regions": [
+      { "id": "judea", "name": "Judea", "density": 0.5 },
+      { "id": "syria", "name": "Syria", "density": 0.9 },
+      { "id": "asia-minor-west", "name": "Western Asia Minor", "density": 0.95 },
+      { "id": "asia-minor-east", "name": "Eastern Asia Minor", "density": 0.92 },
+      { "id": "armenia", "name": "Armenia", "density": 0.95 },
+      { "id": "greece", "name": "Greece", "density": 0.95 },
+      { "id": "egypt", "name": "Egypt", "density": 0.9 },
+      { "id": "rome-italy", "name": "Italy", "density": 0.9 },
+      { "id": "north-africa", "name": "North Africa", "density": 0.9 },
+      { "id": "persia", "name": "Persia", "density": 0.65 },
+      { "id": "gaul", "name": "Gaul", "density": 0.88 },
+      { "id": "spain", "name": "Spain", "density": 0.88 },
+      { "id": "britain", "name": "Britain", "density": 0.7 },
+      { "id": "arabia", "name": "Arabia", "density": 0.42 },
+      { "id": "ethiopia", "name": "Ethiopia", "density": 0.78 },
+      { "id": "germany", "name": "Germanic lands", "density": 0.4 },
+      { "id": "india-thomas", "name": "India (Thomas tradition)", "density": 0.3 }
+    ],
+    "churches": [
+      { "city": "Constantinople", "lat": 41.01, "lng": 28.97, "note": "Eastern Empire capital" },
+      { "city": "Rome", "lat": 41.9, "lng": 12.48, "note": "Western Empire falls 476 AD" },
+      { "city": "Alexandria", "lat": 31.2, "lng": 29.92 },
+      { "city": "Antioch", "lat": 36.2, "lng": 36.16 },
+      { "city": "Jerusalem", "lat": 31.78, "lng": 35.23 },
+      { "city": "Axum", "lat": 14.12, "lng": 38.72 },
+      { "city": "Ctesiphon", "lat": 33.09, "lng": 44.58, "note": "Church of the East" },
+      { "city": "Toledo", "lat": 39.86, "lng": -4.02, "note": "Visigothic Spain" },
+      { "city": "Armagh", "lat": 54.35, "lng": -6.66, "note": "Patrick's Irish church" },
+      { "city": "Edessa", "lat": 37.16, "lng": 38.79, "note": "Syriac transmission to East" }
+    ]
+  }
+]

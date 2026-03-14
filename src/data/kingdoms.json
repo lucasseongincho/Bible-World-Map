@@ -1,0 +1,168 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kingdom-israel-north",
+        "name": "Kingdom of Israel (Northern)",
+        "period": "930–722 BC",
+        "period_start": -930,
+        "period_end": -722,
+        "color": "#3B82F6",
+        "description": "The northern kingdom split from Judah under Jeroboam after Solomon's death. It fell to Assyria in 722 BC."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.9, 32.3], [35.7, 32.3], [36.0, 33.0], [35.8, 33.3],
+          [35.4, 33.5], [35.0, 33.2], [34.6, 32.9], [34.5, 32.5],
+          [34.9, 32.3]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kingdom-judah",
+        "name": "Kingdom of Judah (Southern)",
+        "period": "930–586 BC",
+        "period_start": -930,
+        "period_end": -586,
+        "color": "#F59E0B",
+        "description": "The southern kingdom, centered on Jerusalem and the Davidic dynasty. Fell to Babylon in 586 BC."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.5, 30.5], [35.5, 30.5], [35.9, 31.2], [35.7, 31.9],
+          [35.5, 32.2], [34.9, 32.3], [34.5, 32.0], [34.3, 31.3],
+          [34.5, 30.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "philistia",
+        "name": "Philistia",
+        "period": "1200–600 BC",
+        "period_start": -1200,
+        "period_end": -600,
+        "color": "#EF4444",
+        "description": "Territory of the Philistines along the Mediterranean coastal plain. Their five cities: Gaza, Ashkelon, Ashdod, Ekron, Gath."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.2, 31.2], [34.7, 31.2], [35.0, 31.7], [34.8, 32.0],
+          [34.4, 31.9], [34.2, 31.5], [34.2, 31.2]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "assyrian-empire",
+        "name": "Assyrian Empire",
+        "period": "900–612 BC (peak)",
+        "period_start": -900,
+        "period_end": -612,
+        "color": "#8B5CF6",
+        "description": "The dominant Near Eastern superpower that conquered the northern Kingdom of Israel in 722 BC and besieged Jerusalem."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.5, 30.0], [39.0, 30.0], [48.0, 30.5], [50.0, 33.0],
+          [46.0, 37.5], [40.0, 38.5], [36.0, 37.0], [34.5, 35.5],
+          [34.5, 32.5], [35.5, 30.5], [34.5, 30.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "babylonian-empire",
+        "name": "Neo-Babylonian Empire",
+        "period": "626–539 BC",
+        "period_start": -626,
+        "period_end": -539,
+        "color": "#F97316",
+        "description": "Successor to Assyria. Nebuchadnezzar destroyed Jerusalem in 586 BC and took Judah into the Babylonian exile."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.5, 29.5], [40.0, 29.5], [50.0, 30.0], [54.0, 33.0],
+          [48.0, 38.0], [42.0, 39.0], [36.0, 37.5], [34.0, 35.0],
+          [34.5, 31.0], [34.5, 29.5]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "persian-empire",
+        "name": "Persian (Achaemenid) Empire",
+        "period": "550–330 BC",
+        "period_start": -550,
+        "period_end": -330,
+        "color": "#10B981",
+        "description": "The empire of Cyrus the Great, who issued the decree allowing Jews to return from Babylon (538 BC). It stretched from Egypt to India."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [25.0, 22.0], [37.0, 22.0], [58.0, 22.0], [70.0, 25.0],
+          [72.0, 35.0], [64.0, 42.0], [50.0, 42.0], [38.0, 40.0],
+          [34.0, 37.0], [34.0, 31.0], [29.0, 28.0], [25.0, 25.0],
+          [25.0, 22.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "roman-empire-nt",
+        "name": "Roman Empire (NT era)",
+        "period": "27 BC – AD 284",
+        "period_start": -27,
+        "period_end": 284,
+        "color": "#DC2626",
+        "description": "The Roman Empire at its height during the New Testament period. Jesus was born under Augustus; Paul traveled and died under Nero."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-6.0, 36.0], [36.5, 30.0], [37.0, 29.5], [35.5, 29.5],
+          [25.0, 22.0], [20.0, 22.0], [10.0, 23.0], [-5.5, 30.0],
+          [-8.0, 35.0], [-9.0, 43.0], [-5.0, 48.0], [0.5, 51.0],
+          [2.5, 51.5], [10.0, 55.0], [14.0, 54.5], [24.0, 48.0],
+          [30.0, 46.0], [35.0, 42.0], [39.0, 42.0], [42.0, 38.0],
+          [38.0, 36.5], [36.0, 36.0], [36.5, 30.0]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "davidic-kingdom",
+        "name": "United Kingdom of Israel",
+        "period": "1050–930 BC",
+        "period_start": -1050,
+        "period_end": -930,
+        "color": "#FBBF24",
+        "description": "The united monarchy under Saul, David, and Solomon, at its greatest extent under Solomon."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [34.2, 29.5], [35.7, 29.5], [36.5, 30.5], [38.5, 32.0],
+          [37.5, 33.5], [36.5, 34.5], [35.8, 35.5], [35.0, 35.0],
+          [34.5, 33.5], [34.2, 32.5], [34.0, 31.0], [34.2, 29.5]
+        ]]
+      }
+    }
+  ]
+}

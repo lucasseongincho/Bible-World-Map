@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Lato', sans-serif; background: #0a0e1a; color: #e8dcc8; overflow: hidden; }
+#root { width: 100vw; height: 100vh; }
+.font-cinzel { font-family: 'Cinzel', serif; }
+
+/* Hide cesium default credits */
+.cesium-widget-credits { display: none !important; }
+
+/* ── Accessibility ── */
+
+/* Visible focus rings for keyboard users */
+:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* High-contrast mode support */
+@media (prefers-contrast: more) {
+  body { background: #000; color: #fff; }
+  .bg-gray-900\/95, .bg-gray-800\/90 { background: #000 !important; }
+  .border-gray-700, .border-gray-600 { border-color: #fff !important; }
+  .text-gray-400, .text-gray-500 { color: #ccc !important; }
+}
+
+/* Reduced motion — disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Skip-to-content link (complements index.html inline styles) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Scrollbar styling for dark panels */
+.overflow-y-auto::-webkit-scrollbar { width: 4px; }
+.overflow-y-auto::-webkit-scrollbar-track { background: transparent; }
+.overflow-y-auto::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+.overflow-y-auto::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }

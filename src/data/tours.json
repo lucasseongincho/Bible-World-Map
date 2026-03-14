@@ -1,0 +1,272 @@
+[
+  {
+    "id": "life-of-jesus",
+    "title": "Life of Jesus",
+    "description": "A journey through the life of Jesus Christ — from the Annunciation in Nazareth to the Ascension from the Mount of Olives.",
+    "icon": "✝",
+    "steps": [
+      {
+        "event_id": "annunciation",
+        "narration": "Our journey begins in Nazareth, a small village in Galilee. Here the angel Gabriel appears to a young woman named Mary with an astonishing announcement: she will bear the Son of God. Her humble response — 'Let it be to me according to your word' — sets in motion the greatest story ever told.",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "birth-of-jesus",
+        "narration": "Mary and Joseph travel south to Bethlehem for the Roman census. With no room at the inn, Jesus is born in a stable and laid in a manger. Shepherds from the nearby hills rush to worship Him, while a star draws wise men from the distant East. The Word has become flesh.",
+        "camera_height": 30000
+      },
+      {
+        "event_id": "flight-to-egypt",
+        "narration": "Warned by an angel, Joseph flees with Mary and the infant Jesus into Egypt, escaping Herod's massacre of the innocents. They follow the ancient road southwest through Gaza and across Sinai — fulfilling the prophecy: 'Out of Egypt I called my Son.'",
+        "camera_height": 800000
+      },
+      {
+        "event_id": "baptism-of-jesus",
+        "narration": "Thirty years later, Jesus travels to the Jordan River where His cousin John is baptizing. As Jesus emerges from the water, heaven tears open, the Spirit descends like a dove, and the Father's voice thunders: 'This is my beloved Son.' The public ministry has begun.",
+        "camera_height": 45000
+      },
+      {
+        "event_id": "temptation-wilderness",
+        "narration": "Led by the Spirit into the desolate Judean wilderness, Jesus fasts forty days. Satan comes with three temptations — bread, spectacle, world power. Each time, Jesus answers with Scripture. He emerges victorious, ready to proclaim the Kingdom.",
+        "camera_height": 60000
+      },
+      {
+        "event_id": "woman-at-well",
+        "narration": "Traveling north through Samaria — a region Jews typically avoided — Jesus stops at Jacob's ancient well in Sychar. He offers a Samaritan woman 'living water' that wells up to eternal life. She becomes the first evangelist, bringing her whole village to meet the Messiah.",
+        "camera_height": 35000
+      },
+      {
+        "event_id": "sermon-on-mount",
+        "narration": "On a hillside overlooking the sparkling Sea of Galilee, Jesus delivers the Sermon on the Mount. The Beatitudes, the Lord's Prayer, the Golden Rule — this teaching overturns every expectation of what righteousness looks like. The crowd is astonished: He teaches as one who has authority.",
+        "camera_height": 50000
+      },
+      {
+        "event_id": "feeding-5000",
+        "narration": "Near the shores of the Sea of Galilee, a crowd of five thousand has followed Jesus all day. Evening comes and there is no food — only five loaves and two fish from a boy's lunch. Jesus blesses it, breaks it, and it multiplies. Twelve baskets of fragments remain. The Bread of Life has fed His flock.",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "walking-on-water",
+        "narration": "In the fourth watch of the night, the disciples' boat is battered by a storm on the Sea of Galilee. They see a figure walking on the water and cry out in fear — until Jesus says 'Take heart; it is I. Do not be afraid.' Peter steps out and walks on water, then sinks. Jesus catches him: 'O you of little faith, why did you doubt?'",
+        "camera_height": 50000
+      },
+      {
+        "event_id": "transfiguration",
+        "narration": "Jesus takes Peter, James, and John up a high mountain — likely Mount Hermon in the north. There He is transfigured: His face blazes like the sun, His clothes become dazzling white. Moses and Elijah appear beside Him, discussing His coming 'exodus' in Jerusalem. The Father's voice confirms: 'This is my beloved Son. Listen to Him.'",
+        "camera_height": 55000
+      },
+      {
+        "event_id": "raising-of-lazarus",
+        "narration": "At Bethany, just two miles from Jerusalem, Jesus arrives four days after His friend Lazarus has died and been buried. He weeps at the tomb — the shortest verse in Scripture, 'Jesus wept,' revealing His full humanity. Then He commands: 'Lazarus, come out!' — and the dead man walks out wrapped in burial cloths. Many believe. The religious leaders decide He must die.",
+        "camera_height": 30000
+      },
+      {
+        "event_id": "triumphal-entry",
+        "narration": "Jesus descends the Mount of Olives into Jerusalem riding a donkey, as Zechariah had prophesied five centuries earlier. The crowds spread their cloaks and palm branches, crying 'Hosanna to the Son of David!' Passion Week has begun. The city is in an uproar: 'Who is this?'",
+        "camera_height": 35000
+      },
+      {
+        "event_id": "last-supper",
+        "narration": "In an upper room in Jerusalem, Jesus shares the Passover meal with His twelve disciples for the last time. He washes their feet as a servant. Then He takes bread and wine and says: 'This is my body. This is my blood of the new covenant.' He gives them a new commandment: 'Love one another as I have loved you.'",
+        "camera_height": 25000
+      },
+      {
+        "event_id": "garden-of-gethsemane",
+        "narration": "After the supper, Jesus crosses the Kidron Valley to the Garden of Gethsemane on the Mount of Olives. He prays in such anguish that His sweat falls like drops of blood: 'Father, if it is possible, let this cup pass from me — yet not my will, but yours.' Judas arrives with soldiers. The betrayal is complete with a kiss.",
+        "camera_height": 25000
+      },
+      {
+        "event_id": "crucifixion",
+        "narration": "Jesus is crucified at Golgotha, the Place of the Skull, just outside Jerusalem's walls. For six hours He hangs on the cross. Darkness covers the land. At three in the afternoon He cries 'It is finished!' and gives up His spirit. The temple veil tears from top to bottom. An earthquake shakes the earth. The centurion declares: 'Truly this man was the Son of God.'",
+        "camera_height": 25000
+      },
+      {
+        "event_id": "resurrection",
+        "narration": "On the first day of the week, before dawn, Mary Magdalene comes to the tomb — and finds the stone rolled away. An angel in dazzling white sits where the body had lain: 'He is not here, for He has risen, as He said.' Jesus appears to Mary in the garden, mistaken for the gardener until He speaks her name. Everything has changed.",
+        "camera_height": 25000
+      },
+      {
+        "event_id": "ascension",
+        "narration": "Forty days after His resurrection, Jesus leads His disciples to the Mount of Olives outside Jerusalem. He commissions them to make disciples of all nations, promises the Holy Spirit, and blesses them. Then He is taken up, and a cloud receives Him out of their sight. Two angels promise: 'He will come back in the same way.' The disciples return to Jerusalem with great joy.",
+        "camera_height": 45000
+      }
+    ]
+  },
+  {
+    "id": "pauls-journeys",
+    "title": "Paul's Missionary Journeys",
+    "description": "Follow the apostle Paul across the Roman world — from his dramatic conversion on the Damascus Road to his imprisonment voyage to Rome.",
+    "icon": "⚓",
+    "steps": [
+      {
+        "event_id": "stephens-martyrdom",
+        "narration": "Our story begins in Jerusalem. Stephen, filled with the Holy Spirit, boldly preaches the full sweep of Israel's history to the Sanhedrin — and is dragged outside the city and stoned. A young man named Saul watches approvingly, holding the coats of the executioners. The first Christian martyr falls, but his death scatters the believers — and the gospel goes with them.",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "philip-ethiopian-eunuch",
+        "narration": "Philip, one of the seven deacons, is directed by an angel to the desert road toward Gaza. He finds an Ethiopian royal official reading Isaiah 53 in his chariot — baffled by the Suffering Servant passage. Philip explains that it speaks of Jesus. The official is baptized on the spot, and rides on his way rejoicing — carrying the gospel south toward Africa.",
+        "camera_height": 50000
+      },
+      {
+        "event_id": "pauls-conversion",
+        "narration": "Saul of Tarsus is on the road to Damascus, armed with arrest warrants to imprison Christians. Suddenly, a blinding light flashes from heaven and he falls to the ground. 'Saul, Saul, why do you persecute me?' — it is the risen Jesus. Three days of blindness follow, then healing and baptism. The church's greatest persecutor becomes its greatest missionary.",
+        "camera_height": 60000
+      },
+      {
+        "event_id": "pauls-journey-1-start",
+        "narration": "Years later in Antioch, the church is worshiping and fasting when the Holy Spirit speaks: 'Set apart for me Barnabas and Saul for the work to which I have called them.' They sail for Cyprus, then cross to Asia Minor — preaching in synagogues, healing the sick, enduring stoning, and planting churches across Galatia. The first organized missionary journey has begun.",
+        "camera_height": 1500000
+      },
+      {
+        "event_id": "pauls-journey-2",
+        "narration": "Paul sets out again with Silas. A night vision at Troas changes everything: a Macedonian man pleads 'Come over and help us.' Paul crosses into Europe for the first time. In Philippi, a jailer is converted after an earthquake frees Paul and Silas from prison. In Thessalonica, Berea, Athens, Corinth — churches spring up across the Greek world.",
+        "camera_height": 2000000
+      },
+      {
+        "event_id": "pauls-areopagus-speech",
+        "narration": "In Athens — the intellectual capital of the ancient world — Paul walks among the temples and statues, his spirit stirred by the idolatry. He is invited to the Areopagus, the storied hill of Mars, to explain his 'strange teaching.' Standing before Epicurean and Stoic philosophers, Paul proclaims the Unknown God — the Creator who raised Jesus from the dead. Some sneer, but others believe.",
+        "camera_height": 35000
+      },
+      {
+        "event_id": "pauls-journey-3",
+        "narration": "Paul spends three extraordinary years in Ephesus — his longest stay anywhere. The entire province of Asia hears the gospel. Miracles multiply. A silversmiths' riot erupts when the idol trade is threatened. Paul revisits Macedonia and Greece, then rushes toward Jerusalem for Pentecost, pausing at Miletus to deliver a tearful farewell to the Ephesian elders.",
+        "camera_height": 1800000
+      },
+      {
+        "event_id": "pauls-voyage-rome",
+        "narration": "Paul appeals to Caesar and is shipped to Rome as a prisoner. A catastrophic storm drives the vessel for two weeks until it breaks apart on the coast of Malta. All 276 people survive — as God's angel had promised Paul. After three months on Malta, he finally reaches Rome. Under house arrest, he preaches the Kingdom of God to all who come to him. The gospel has reached the heart of the empire.",
+        "camera_height": 3000000
+      },
+      {
+        "event_id": "johns-exile-patmos",
+        "narration": "Decades after Paul's death, the apostle John — the last living eyewitness of Jesus — is exiled to the tiny rocky island of Patmos by Emperor Domitian. There, 'in the Spirit on the Lord's Day,' he receives a series of overwhelming visions from the risen and glorified Jesus. He writes them down: the Revelation. It is the last word of Scripture.",
+        "camera_height": 80000
+      }
+    ]
+  },
+  {
+    "id": "the-exodus",
+    "title": "The Exodus Route",
+    "description": "Walk with Moses and the children of Israel — from the burning bush in Midian to the giving of the Law at Mount Sinai.",
+    "icon": "🔥",
+    "steps": [
+      {
+        "event_id": "joseph-egypt",
+        "narration": "Our story begins generations earlier. Joseph, the favored son of Jacob, is sold by his jealous brothers to slave traders headed for Egypt. In Egypt, through years of slavery and false imprisonment, God's hand is at work. Joseph rises to become Pharaoh's second-in-command — and when famine strikes Canaan, his family descends to Egypt, setting the stage for the Exodus.",
+        "camera_height": 1200000
+      },
+      {
+        "event_id": "burning-bush",
+        "narration": "Four hundred years later. An Israelite named Moses, raised as an Egyptian prince, now tends sheep in Midian — a broken exile. On Mount Horeb, a bush burns without being consumed. God speaks from the flame: 'I have seen the affliction of my people. I am sending you to Pharaoh to bring my people out of Egypt.' Moses trembles: 'Who am I?' God answers: 'I AM WHO I AM.'",
+        "camera_height": 45000
+      },
+      {
+        "event_id": "ten-plagues",
+        "narration": "Moses and Aaron stand before Pharaoh with God's ultimatum: 'Let my people go.' Pharaoh's heart hardens. Nine plagues shatter Egypt — water to blood, frogs, gnats, flies, livestock disease, boils, hail, locusts, three days of darkness. Still Pharaoh refuses. The tenth plague looms — the angel of death will pass through Egypt. But for Israel: the first Passover.",
+        "camera_height": 80000
+      },
+      {
+        "event_id": "red-sea-crossing",
+        "narration": "Two million people — men, women, children, livestock — march out of Egypt in the night. Pharaoh changes his mind and sends his entire chariot army in pursuit. Israel is trapped: the Red Sea before them, the Egyptian army behind. Moses stretches his staff. The sea parts. Israel walks through on dry ground. The waters return. Egypt's army is destroyed. Israel bursts into song.",
+        "camera_height": 120000
+      },
+      {
+        "event_id": "mt-sinai",
+        "narration": "Three months into the wilderness, Israel camps at the foot of Mount Sinai. God descends in thunder, lightning, thick cloud, and fire. The mountain trembles. A trumpet blast grows louder and louder. Then God speaks the Ten Commandments to all the people — the foundational covenant of the biblical world. Moses goes up into the mountain for forty days and receives the full Law. Israel is now God's holy nation.",
+        "camera_height": 45000
+      }
+    ]
+  },
+  {
+    "id": "kings-of-israel",
+    "title": "Kings of Israel & Judah",
+    "description": "The rise and fall of Israel's monarchy — from David's capture of Jerusalem to the Babylonian exile and the return under Ezra and Nehemiah.",
+    "icon": "👑",
+    "steps": [
+      {
+        "event_id": "david-vs-goliath",
+        "narration": "A teenage shepherd boy stands in the Valley of Elah, facing a nine-foot Philistine champion who has taunted Israel's God for forty days. David refuses Saul's armor, picks five smooth stones from the brook, loads his sling — and lets fly. Goliath crashes to the ground. 'The battle belongs to the Lord.' David will one day be king.",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "jerusalem-conquered",
+        "narration": "After years of war and waiting, King David captures the Jebusite stronghold on this fortified ridge and names it the City of David. He brings the Ark of the Covenant here in a great procession, dancing before the Lord with all his might. Jerusalem — for the first time — becomes the capital of a united Israel and the center of God's dwelling among His people.",
+        "camera_height": 35000
+      },
+      {
+        "event_id": "solomons-temple",
+        "narration": "David's son Solomon builds the most magnificent structure of the ancient world — a temple for God on Mount Moriah in Jerusalem. When the priests carry the Ark of the Covenant into the Holy of Holies and Solomon prays his great dedicatory prayer, the glory of God fills the temple as a cloud so thick that the priests cannot stand to minister. Heaven has touched earth.",
+        "camera_height": 25000
+      },
+      {
+        "event_id": "kingdom-split",
+        "narration": "Solomon's son Rehoboam answers the people's plea for lighter burdens with arrogant threats. Ten northern tribes revolt under Jeroboam. The united kingdom that David built is torn apart — the northern Kingdom of Israel and the southern Kingdom of Judah. Jeroboam sets up golden calves at Bethel and Dan: 'Here are your gods, Israel, who brought you up out of Egypt.' The decline has begun.",
+        "camera_height": 60000
+      },
+      {
+        "event_id": "elijah-mt-carmel",
+        "narration": "In the northern kingdom, Ahab and Jezebel have led Israel deep into Baal worship. The prophet Elijah stands alone on Mount Carmel and proposes a contest: 450 prophets of Baal against one prophet of God. The Baal prophets shout and slash themselves all day — nothing. Elijah drenches his altar with water and prays simply. Fire falls from heaven and consumes the sacrifice, the stones, the dust, and the water in the trench. The people fall on their faces: 'The LORD, He is God!'",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "assyrian-conquest",
+        "narration": "The northern Kingdom of Israel, after two centuries of idolatry and rebellion, faces God's judgment. The Assyrian war machine under Shalmaneser V besieges Samaria for three years. In 722 BC, the city falls. The northern tribes are deported to Assyria — scattered and largely lost to history. The southern Kingdom of Judah watches in horror, knowing their own hour of reckoning will come.",
+        "camera_height": 1500000
+      },
+      {
+        "event_id": "daniel-babylon",
+        "narration": "In 605 BC, Nebuchadnezzar of Babylon besieges Jerusalem and takes the first captives — among them the young nobleman Daniel. In Babylon he refuses to compromise his faith, interprets the king's dreams, and is delivered from a den of lions. His visions of four world empires, the Son of Man, and the resurrection of the dead make the book of Daniel the apocalyptic cornerstone of Scripture.",
+        "camera_height": 80000
+      },
+      {
+        "event_id": "return-from-exile",
+        "narration": "Cyrus the Great of Persia conquers Babylon in 539 BC — and makes an astonishing proclamation: the Jewish exiles are free to return home and rebuild God's temple in Jerusalem. This fulfills Isaiah's prophecy, written 150 years earlier, that named Cyrus by name. Under Zerubbabel, Ezra, and Nehemiah, the exiles return in waves, rebuild the temple, restore the walls, and hear the Law read aloud for the first time in a generation.",
+        "camera_height": 1200000
+      }
+    ]
+  },
+  {
+    "id": "genesis-eden-to-egypt",
+    "title": "Genesis: From Eden to Egypt",
+    "description": "The first book of the Bible — from the creation of the world through the patriarchs Abraham, Isaac, Jacob, and Joseph.",
+    "icon": "🌿",
+    "steps": [
+      {
+        "event_id": "creation-eden",
+        "narration": "In the beginning, God creates. In six days He forms the heavens and the earth, the sea and the sky, the plants, the animals — and finally, in His own image, man and woman. He places them in the Garden of Eden, watered by four rivers including the Tigris and Euphrates. The world is very good. The Creator walks with His creation in the cool of the day.",
+        "camera_height": 3000000
+      },
+      {
+        "event_id": "the-flood",
+        "narration": "Generations pass. Humanity's wickedness grows until 'every intention of the thoughts of the human heart was only evil continually.' God determines to send a flood — but Noah has found grace in God's eyes. He builds an ark. The windows of heaven open and the fountains of the great deep burst forth. For forty days the waters rise. After 150 days they recede. The ark rests on Mount Ararat. A rainbow appears: 'Never again.'",
+        "camera_height": 400000
+      },
+      {
+        "event_id": "tower-of-babel",
+        "narration": "The descendants of Noah migrate to the plain of Shinar — ancient Babylon. United by one language, they build a great city and a tower to make a name for themselves. God comes down, confuses their languages, and scatters them across the earth. What was one humanity becomes the nations of the world. The tower stands as a monument to human pride — and divine judgment.",
+        "camera_height": 80000
+      },
+      {
+        "event_id": "abrahams-call",
+        "narration": "From the ruins of Babel's ambition, God calls one man. Abram lives in Ur of the Chaldees — one of the great cities of the ancient world. God's call is radical: 'Leave your country, your people, your father's house, and go to a land I will show you.' God promises to make him a great nation, to bless all families of the earth through him. Abram obeys. He does not know where he is going.",
+        "camera_height": 1500000
+      },
+      {
+        "event_id": "sodom-gomorrah",
+        "narration": "Abram's nephew Lot has settled near the cities of Sodom and Gomorrah by the Dead Sea — prosperous but wicked cities. Three divine visitors tell Abraham that these cities are about to be destroyed. Abraham intercedes boldly: 'Will you sweep away the righteous with the wicked?' God agrees to spare the city for even ten righteous people. There are not ten. Lot and his daughters escape as fire and sulfur rain from the sky.",
+        "camera_height": 80000
+      },
+      {
+        "event_id": "jacob-bethel",
+        "narration": "Decades later, Abraham's grandson Jacob flees from his brother Esau after stealing the blessing. Alone in the wilderness with only a stone for a pillow, he falls asleep and dreams of a ladder reaching from earth to heaven, with angels ascending and descending — and God at the top, reaffirming the Abrahamic covenant. Jacob wakes and names the place Bethel: 'House of God.' 'Surely the LORD is in this place, and I did not know it.'",
+        "camera_height": 40000
+      },
+      {
+        "event_id": "joseph-egypt",
+        "narration": "Jacob's twelve sons become the fathers of the twelve tribes of Israel. But favoritism tears the family apart. Joseph — given a coat of many colors — is sold by his jealous brothers into Egyptian slavery for twenty pieces of silver. Through Potiphar's house, false imprisonment, and Pharaoh's dream, Joseph rises from slave to second-in-command of Egypt. When famine drives his brothers to Egypt for grain, Joseph reveals himself with tears: 'You meant it for evil — but God meant it for good.' The family is reconciled. The stage is set for the Exodus.",
+        "camera_height": 1200000
+      }
+    ]
+  }
+]

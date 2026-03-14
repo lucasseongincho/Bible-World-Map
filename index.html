@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary Meta -->
+    <title>Bible World Map — Every Verse Has an Address</title>
+    <meta name="description" content="Interactive 3D globe for exploring the entire Bible geographically. Trace the journeys of Abraham, Moses, Paul, and Jesus. Every verse has an address." />
+    <meta name="keywords" content="Bible, map, 3D globe, biblical geography, exodus, paul, jesus, old testament, new testament, interactive" />
+    <meta name="author" content="Bible World Map" />
+
+    <!-- PWA / Theme -->
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="BibleMap" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bible World Map — Every Verse Has an Address" />
+    <meta property="og:description" content="Interactive 3D globe for exploring the entire Bible geographically. Trace journeys of Abraham, Moses, Paul, and Jesus." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bible World Map" />
+    <meta name="twitter:description" content="Interactive 3D globe — every verse has an address." />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Privacy-friendly analytics (Plausible) — swap YOUR-DOMAIN before launch -->
+    <script defer data-domain="YOUR-DOMAIN.com" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Preconnect for fonts and APIs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://bible-api.com" />
+  </head>
+  <body>
+    <!-- Skip to main content for keyboard/screen reader users -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-amber-500 focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold focus:outline-none"
+    >
+      Skip to main content
+    </a>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
