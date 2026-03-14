@@ -148,10 +148,10 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
     }
   }, [viewer])
 
-  // Update entities whenever filtered events change
+  // Update entities whenever filtered events change or viewer first becomes ready
   useEffect(() => {
     const ds = dataSourceRef.current
-    if (!ds) return
+    if (!ds || !viewer || viewer.isDestroyed()) return
 
     ds.entities.removeAll()
     entitiesRef.current = []
@@ -181,7 +181,7 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
       })
       entitiesRef.current.push(entity)
     })
-  }, [events])
+  }, [viewer, events])
 
   // Full cleanup on unmount only: remove datasource without destroying it first
   useEffect(() => {

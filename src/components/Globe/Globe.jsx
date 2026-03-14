@@ -1,4 +1,4 @@
-import { useRef, useEffect, useMemo } from 'react'
+import { useRef, useEffect, useMemo, memo } from 'react'
 import { Viewer } from 'resium'
 import * as Cesium from 'cesium'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
@@ -24,7 +24,7 @@ const TIMELINE_WINDOW = 200
 // Pre-compute all journey IDs once (static data)
 const allJourneyIds = journeys.map(j => j.id)
 
-export default function Globe() {
+export default memo(function Globe() {
   const viewerRef = useRef(null)
   const {
     layers, activeCategories, activeJourneys, timelinePosition, spreadYear,
@@ -117,4 +117,4 @@ export default function Globe() {
       )}
     </Viewer>
   )
-}
+})

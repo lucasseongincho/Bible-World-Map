@@ -7,13 +7,19 @@ import Tooltip from '../UI/Tooltip'
 import TimelineBar from '../UI/TimelineBar'
 import TourPlayer from '../UI/TourPlayer'
 import useMapStore from '../../store/useMapStore'
+import { useShallow } from 'zustand/react/shallow'
 import events from '../../data/events.json'
 import tours from '../../data/tours.json'
 
 const eventById = Object.fromEntries(events.map(e => [e.id, e]))
 
 export default function AppShell() {
-  const { activeTour, startTour, setSelectedEvent, setCameraFly } = useMapStore()
+  const { activeTour, startTour, setSelectedEvent, setCameraFly } = useMapStore(useShallow(state => ({
+    activeTour: state.activeTour,
+    startTour: state.startTour,
+    setSelectedEvent: state.setSelectedEvent,
+    setCameraFly: state.setCameraFly,
+  })))
   const [toursOpen, setToursOpen] = useState(false)
 
   // Deep-link: on mount, read hash and select the event
