@@ -1,6 +1,13 @@
 import { useState } from 'react'
 import useMapStore from '../../store/useMapStore'
 import journeys from '../../data/journeys.json'
+import events from '../../data/events.json'
+
+// Count events per category once at module level
+const categoryCounts = events.reduce((acc, e) => {
+  acc[e.category] = (acc[e.category] || 0) + 1
+  return acc
+}, {})
 
 const LAYERS = [
   { key: 'oldTestament', label: 'Old Testament', color: '#F59E0B' },
@@ -201,7 +208,7 @@ export default function LayerPanel() {
             <div className="flex items-center gap-1.5">
               {!allCatsOn && (
                 <span className="bg-amber-500/20 text-amber-400 rounded px-1 py-0.5 text-xs font-sans normal-case tracking-normal">
-                  {activeCategories?.size ?? 0}/{CATEGORIES.length}
+                  {[...activeCategories].reduce((sum, k) => sum + (categoryCounts[k] ?? 0), 0)} shown
                 </span>
               )}
               <svg
@@ -241,17 +248,17 @@ export default function LayerPanel() {
                       key={cat.key}
                       onClick={() => toggleCategory(cat.key, ALL_CATEGORY_KEYS)}
                       className={`w-full flex items-center gap-2 px-2 py-1.5 rounded text-xs transition-colors ${
-                        on ? 'text-gray-200' : 'text-gray-600 hover:text-gray-500'
+                        on ? 'text-gray-200' : 'text-gray-500 hover:text-gray-400'
                       }`}
                     >
                       <div
                         className="w-2 h-2 rounded-full shrink-0 transition-all"
                         style={{ background: on ? cat.color : '#374151' }}
                       />
-                      <span className="text-left">{cat.label}</span>
-                      {on && (
-                        <div className="ml-auto w-1.5 h-1.5 rounded-full bg-current opacity-60" />
-                      )}
+                      <span className="text-left flex-1">{cat.label}</span>
+                      <span className={`text-xs tabular-nums ${on ? 'text-gray-500' : 'text-gray-700'}`}>
+                        {categoryCounts[cat.key] ?? 0}
+                      </span>
                     </button>
                   )
                 })}
