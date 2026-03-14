@@ -22,9 +22,12 @@ export default function SearchBar() {
       setResults([])
       return
     }
-    const r = fuse.search(query).slice(0, 8)
-    setResults(r.map(r => r.item))
-    setOpen(true)
+    const timer = setTimeout(() => {
+      const r = fuse.search(query).slice(0, 8)
+      setResults(r.map(r => r.item))
+      setOpen(true)
+    }, 200)
+    return () => clearTimeout(timer)
   }, [query])
 
   const handleSelect = (event) => {

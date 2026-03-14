@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useMemo } from 'react'
 import { Viewer } from 'resium'
 import * as Cesium from 'cesium'
 import 'cesium/Build/Cesium/Widgets/widgets.css'
@@ -7,6 +7,7 @@ import JourneyPaths from './JourneyPaths'
 import SpreadAnimation from './SpreadAnimation'
 import KingdomOverlays from './KingdomOverlays'
 import useMapStore from '../../store/useMapStore'
+import { useShallow } from 'zustand/react/shallow'
 import events from '../../data/events.json'
 import journeys from '../../data/journeys.json'
 
@@ -20,9 +21,25 @@ Cesium.Camera.DEFAULT_VIEW_FACTOR = 0
 // Timeline window: show events within ±200 years of the scrubbed position
 const TIMELINE_WINDOW = 200
 
+// Pre-compute all journey IDs once (static data)
+const allJourneyIds = journeys.map(j => j.id)
+
 export default function Globe() {
   const viewerRef = useRef(null)
-  const { layers, activeCategories, activeJourneys, timelinePosition, spreadYear, pendingCameraFly, setCameraFly, setSelectedEvent, setHoveredEvent } = useMapStore()
+  const {
+    layers, activeCategories, activeJourneys, timelinePosition, spreadYear,
+    pendingCameraFly, setCameraFly, setSelectedEvent, setHoveredEvent,
+  } = useMapStore(useShallow(state => ({
+    layers: state.layers,
+    activeCategories: state.activeCategories,
+    activeJourneys: state.activeJourneys,
+    timelinePosition: state.timelinePosition,
+    spreadYear: state.spreadYear,
+    pendingCameraFly: state.pendingCameraFly,
+    setCameraFly: state.setCameraFly,
+    setSelectedEvent: state.setSelectedEvent,
+    setHoveredEvent: state.setHoveredEvent,
+  })))
 
   // Execute camera fly-to when requested by store
   useEffect(() => {
@@ -41,30 +58,25 @@ export default function Globe() {
     setCameraFly(null)
   }, [pendingCameraFly, setCameraFly])
 
+  // Memoize visible journey IDs — only recompute when journey state changes
+  const visibleJourneyIds = useMemo(() => {
+    if (!layers.journeys) return []
+    return activeJourneys === null ? allJourneyIds : [...activeJourneys]
+  }, [layers.journeys, activeJourneys])
 
-  // Resolve which journey IDs are currently visible
-  const allJourneyIds = journeys.map(j => j.id)
-  const visibleJourneyIds = layers.journeys
-    ? (activeJourneys === null ? allJourneyIds : [...activeJourneys])
-    : []
-
-  const filteredEvents = events.filter(event => {
+  // Memoize filtered events — only recompute when filter state changes
+  const filteredEvents = useMemo(() => events.filter(event => {
     if (event.testament === 'old' && !layers.oldTestament) return false
     if (event.testament === 'new' && !layers.newTestament) return false
-
-    // Category sub-filter
     if (activeCategories !== null && !activeCategories.has(event.category)) return false
-
-    // Timeline filter
     if (timelinePosition !== null) {
       const year = parseInt(event.date_estimate, 10)
       if (!isNaN(year)) {
         if (year < timelinePosition - TIMELINE_WINDOW || year > timelinePosition + TIMELINE_WINDOW) return false
       }
     }
-
     return true
-  })
+  }), [layers.oldTestament, layers.newTestament, activeCategories, timelinePosition])
 
   return (
     <Viewer
