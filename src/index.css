@@ -49,8 +49,38 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* ── Cesium ── */
-.cesium-widget-credits { display: none !important; }
+/* ── Leaflet overrides ── */
+.leaflet-container { background: #0a0e1c; font-family: 'Source Sans 3', sans-serif; }
+.leaflet-control-attribution { display: none !important; }
+.leaflet-control-zoom { display: none !important; }
+
+/* Slightly dim + desaturate the terrain tiles to reduce eye strain */
+.map-tiles { filter: brightness(0.82) saturate(0.75) contrast(1.05); }
+
+/* Custom marker — remove Leaflet's default white box */
+.bible-marker { background: none !important; border: none !important; }
+
+/* Journey path marching-dash animation */
+@keyframes journeyMarch { to { stroke-dashoffset: -17; } }
+.journey-march { animation: journeyMarch 0.9s linear infinite; }
+
+/* Tooltip styling */
+.leaflet-tooltip.journey-tooltip,
+.leaflet-tooltip.kingdom-tooltip,
+.leaflet-tooltip.church-tooltip {
+  background: rgba(5,8,15,0.95);
+  border: 1px solid rgba(201,150,58,0.3);
+  border-radius: 6px;
+  color: #ede0c8;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+.leaflet-tooltip.journey-tooltip::before,
+.leaflet-tooltip.kingdom-tooltip::before,
+.leaflet-tooltip.church-tooltip::before { display: none; }
 
 /* ── Panel Glass Utility ── */
 .panel-glass {
