@@ -28,7 +28,7 @@ export default function Tooltip() {
         position: 'fixed',
         left: tooltipPosition.x + 18,
         top:  tooltipPosition.y - 52,
-        zIndex: 50,
+        zIndex: 1200,
         pointerEvents: 'none',
         animation: 'fadeIn 0.15s ease-out',
       }}

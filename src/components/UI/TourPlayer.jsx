@@ -57,7 +57,7 @@ export default function TourPlayer() {
       bottom: 72,
       left: '50%',
       transform: 'translateX(-50%)',
-      zIndex: 40,
+      zIndex: 1100,
       width: 'min(600px, calc(100vw - 32px))',
       animation: 'slideInUp 0.2s ease-out',
     }}>

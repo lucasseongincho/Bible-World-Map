@@ -62,6 +62,7 @@ export default function LayerPanel() {
           maxHeight: 'calc(100vh - 116px)',
           transform: layerPanelOpen ? 'translateX(0)' : `translateX(-${panelW}px)`,
           transition: 'transform 0.28s cubic-bezier(0.4,0,0.2,1)',
+          zIndex: 1080,
         }}
       >
         <div
@@ -326,7 +327,7 @@ export default function LayerPanel() {
           position: 'fixed',
           top: 72,
           left: 0,
-          zIndex: 30,
+          zIndex: 1081,
           background: 'var(--panel-bg)',
           border: '1px solid var(--panel-border)',
           borderLeft: 'none',

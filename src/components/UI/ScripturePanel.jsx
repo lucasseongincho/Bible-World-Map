@@ -73,13 +73,13 @@ export default function ScripturePanel() {
   // Layout
   const mobileStyle = {
     position: 'fixed', bottom: 0, left: 0, right: 0,
-    maxHeight: '65vh', zIndex: 40,
+    maxHeight: '65vh', zIndex: 1090,
     transform: scripturePanelOpen ? 'translateY(0)' : 'translateY(100%)',
     transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
   }
   const desktopStyle = {
     position: 'fixed', right: 0, top: 0, height: '100%',
-    width: 320, zIndex: 40,
+    width: 320, zIndex: 1090,
     transform: scripturePanelOpen ? 'translateX(0)' : 'translateX(100%)',
     transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
   }

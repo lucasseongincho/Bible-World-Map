@@ -88,13 +88,22 @@ export default function Globe() {
       zoomControl={false}
       style={{ width: '100%', height: '100%', background: '#0a0e1c' }}
     >
-      {/* Esri World Physical — terrain-only, no modern political borders */}
+      {/* Esri World Physical — terrain base layer */}
       <TileLayer
         url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}"
         attribution=""
         maxNativeZoom={8}
         maxZoom={16}
-        className="map-tiles"
+        className="map-tiles-terrain"
+      />
+      {/* CartoDB Voyager — borders, city labels, roads overlaid on terrain */}
+      <TileLayer
+        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png"
+        attribution=""
+        maxNativeZoom={19}
+        maxZoom={16}
+        className="map-tiles-labels"
+        subdomains="abcd"
       />
 
       <MapController />

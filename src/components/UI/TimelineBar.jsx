@@ -80,7 +80,7 @@ export default function TimelineBar() {
   return (
     <div
       style={{
-        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 30,
+        position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 1060,
         background: 'linear-gradient(to top, rgba(5,8,15,0.99) 0%, rgba(5,8,15,0.95) 100%)',
         borderTop: '1px solid rgba(201,150,58,0.12)',
         backdropFilter: 'blur(16px)',

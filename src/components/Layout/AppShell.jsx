@@ -45,6 +45,7 @@ export default function AppShell() {
           background: 'linear-gradient(to bottom, rgba(5,8,15,0.98) 0%, rgba(5,8,15,0.92) 100%)',
           borderBottom: '1px solid rgba(201,150,58,0.15)',
           backdropFilter: 'blur(20px)',
+          zIndex: 1100,
         }}
       >
         {/* Brand */}
@@ -121,12 +122,14 @@ export default function AppShell() {
 
             {toursOpen && (
               <div
-                className="absolute right-0 top-full mt-2 overflow-hidden"
+                className="absolute right-0 top-full mt-2"
                 style={{
+                  zIndex: 1200,
                   width: 272,
                   background: 'var(--panel-bg)',
                   border: '1px solid var(--panel-border)',
                   borderRadius: 10,
+                  overflow: 'hidden',
                   boxShadow: '0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,150,58,0.08)',
                   animation: 'slideInUp 0.18s ease-out',
                 }}
