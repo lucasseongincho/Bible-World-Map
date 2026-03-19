@@ -29,7 +29,7 @@ const CATEGORY_LABELS = {
 }
 
 export default function ScripturePanel() {
-  const { selectedEvent, scripturePanelOpen, setSelectedEvent, setScripturePanelOpen } = useMapStore()
+  const { selectedEvent, scripturePanelOpen, setSelectedEvent, setScripturePanelOpen, setSearchResults } = useMapStore()
   const [scripture, setScripture] = useState(null)
   const [loading, setLoading] = useState(false)
   const [fetchError, setFetchError] = useState(false)
@@ -70,6 +70,7 @@ export default function ScripturePanel() {
   const handleClose = () => {
     setSelectedEvent(null)
     setScripturePanelOpen(false)
+    setSearchResults([])   // restore normal map filtering when panel is closed
     window.location.hash = ''
   }
 

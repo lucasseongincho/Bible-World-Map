@@ -39,7 +39,7 @@ export default function SearchBar() {
     window.location.hash = `/event/${event.id}`
     setQuery('')
     setResults([])
-    setSearchResults([])   // restore normal map filtering
+    setSearchResults([event])  // keep only this event on the map until search is cleared
     setOpen(false)
   }
 
