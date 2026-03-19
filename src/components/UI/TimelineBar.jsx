@@ -219,17 +219,40 @@ export default function TimelineBar() {
           )}
 
           {/* Hover ghost */}
-          {hoverPct !== null && thumbPct === null && (
-            <div style={{
-              position: 'absolute', top: '50%',
-              left: `${hoverPct}%`,
-              transform: 'translate(-50%, -50%)',
-              pointerEvents: 'none',
-              width: 10, height: 10, borderRadius: '50%',
-              background: 'rgba(201,150,58,0.25)',
-              border: '1px solid rgba(201,150,58,0.3)',
-            }} />
-          )}
+          {hoverPct !== null && thumbPct === null && (() => {
+            const hoverYear = Math.round(TOTAL_START + (hoverPct / 100) * TOTAL_SPAN)
+            return (
+              <div style={{
+                position: 'absolute', top: '50%',
+                left: `${hoverPct}%`,
+                transform: 'translate(-50%, -50%)',
+                pointerEvents: 'none',
+                zIndex: 9,
+              }}>
+                {/* Year label */}
+                <div style={{
+                  position: 'absolute', bottom: '100%', left: '50%',
+                  transform: 'translateX(-50%)',
+                  marginBottom: 6,
+                  background: 'rgba(5,8,15,0.85)',
+                  border: '1px solid rgba(201,150,58,0.3)',
+                  borderRadius: 5,
+                  padding: '2px 7px',
+                  fontSize: 11, color: 'rgba(201,150,58,0.8)',
+                  fontFamily: 'Cinzel, serif',
+                  whiteSpace: 'nowrap',
+                }}>
+                  {formatYear(hoverYear)}
+                </div>
+                {/* Ghost circle */}
+                <div style={{
+                  width: 10, height: 10, borderRadius: '50%',
+                  background: 'rgba(201,150,58,0.35)',
+                  border: '1px solid rgba(201,150,58,0.5)',
+                }} />
+              </div>
+            )
+          })()}
         </div>
       </div>
 
