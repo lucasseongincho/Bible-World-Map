@@ -26,7 +26,7 @@ const useMapStore = create((set) => ({
   selectedEvent: null,
   selectedPerson: null,
   cameraPosition: { lat: 31.5, lng: 35.0, height: 3000000 },
-  layerPanelOpen: true,
+  layerPanelOpen: window.innerWidth >= 1024,
   scripturePanelOpen: false,
   activeTour: null,
   tourStep: 0,
@@ -38,7 +38,18 @@ const useMapStore = create((set) => ({
   setSelectedEvent: (event) => set({ selectedEvent: event, scripturePanelOpen: !!event }),
   setHoveredEvent: (event, position) => set({ hoveredEvent: event, tooltipPosition: position || { x: 0, y: 0 } }),
   toggleLayer: (layer) => set((state) => ({ layers: { ...state.layers, [layer]: !state.layers[layer] } })),
-  setTimelinePosition: (pos) => set({ timelinePosition: pos }),
+  setTimelinePosition: (pos) => set((state) => {
+    const WINDOW = 200
+    const updates = { timelinePosition: pos }
+    if (pos !== null && state.selectedEvent?.date_estimate) {
+      const year = parseInt(state.selectedEvent.date_estimate, 10)
+      if (!isNaN(year) && (year < pos - WINDOW || year > pos + WINDOW)) {
+        updates.selectedEvent = null
+        updates.scripturePanelOpen = false
+      }
+    }
+    return updates
+  }),
   setLayerPanelOpen: (open) => set({ layerPanelOpen: open }),
   setScripturePanelOpen: (open) => set({ scripturePanelOpen: open }),
   setSearchQuery: (query) => set({ searchQuery: query }),

@@ -158,7 +158,9 @@ export default function AppShell() {
                         {tour.title}
                       </div>
                       <div style={{ color: 'var(--text-body)', fontSize: 11 }}>
-                        {tour.steps.length} stops · {tour.description.slice(0, 48)}…
+                        {tour.steps.length} stops · {tour.description.length > 52
+                          ? tour.description.slice(0, tour.description.lastIndexOf(' ', 52)) + '…'
+                          : tour.description}
                       </div>
                     </div>
                     {activeTour === tour.id && (

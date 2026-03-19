@@ -21,7 +21,7 @@ function hexToRgb(hex) {
 function mix(ch, t) { return Math.min(255, Math.round(ch + (255 - ch) * t)) }
 
 // ─────────────────────────────────────────────
-// Marker icon — inline SVG, resolution-independent
+// Standard marker icon
 // ─────────────────────────────────────────────
 const iconCache = new Map()
 
@@ -54,19 +54,63 @@ function createLeafletIcon(hex) {
   <circle cx="24" cy="23.5" r="2"   fill="rgba(255,255,255,1)"/>
 </svg>`
 
-  const icon = L.divIcon({
-    html:       svg,
-    className:  'bible-marker',
-    iconSize:   [36, 36],
-    iconAnchor: [18, 18],
-  })
-
+  const icon = L.divIcon({ html: svg, className: 'bible-marker', iconSize: [36, 36], iconAnchor: [18, 18] })
   iconCache.set(hex, icon)
   return icon
 }
 
 // ─────────────────────────────────────────────
-// Cluster badge icon — dark navy + gold ring
+// Active tour-stop icon — larger, gold ring, pulsing halos
+// ─────────────────────────────────────────────
+const activeTourIconCache = new Map()
+
+function createActiveTourIcon(hex) {
+  if (activeTourIconCache.has(hex)) return activeTourIconCache.get(hex)
+
+  const [r, g, b] = hexToRgb(hex)
+  const light = `rgb(${mix(r,.5)},${mix(g,.5)},${mix(b,.5)})`
+  const uid   = hex.replace('#','') + 'ta'
+
+  // Two halos use CSS animation via className on the divIcon wrapper
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg${uid}" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="${light}"/>
+      <stop offset="100%" stop-color="${hex}"/>
+    </radialGradient>
+    <radialGradient id="hl${uid}" cx="32%" cy="28%" r="58%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <!-- Pulsing halos — animated via CSS -->
+  <circle class="tour-halo-1" cx="32" cy="32" r="30" fill="${hex}" fill-opacity="0" stroke="rgba(201,150,58,0.85)" stroke-width="2"/>
+  <circle class="tour-halo-2" cx="32" cy="32" r="30" fill="${hex}" fill-opacity="0" stroke="rgba(201,150,58,0.55)" stroke-width="1.5"/>
+  <!-- Drop shadow -->
+  <circle cx="32.5" cy="33" r="19.5" fill="rgba(0,0,0,0.28)"/>
+  <!-- Main orb -->
+  <circle cx="32" cy="31.5" r="18" fill="url(#bg${uid})"/>
+  <!-- Gold border -->
+  <circle cx="32" cy="31.5" r="19" fill="none" stroke="rgba(201,150,58,0.9)" stroke-width="2.5"/>
+  <!-- Highlight -->
+  <circle cx="32" cy="31.5" r="17" fill="url(#hl${uid})"/>
+  <!-- Center dot -->
+  <circle cx="32" cy="31.5" r="5.5" fill="rgba(255,255,255,0.97)"/>
+  <circle cx="32" cy="31.5" r="2.5" fill="rgba(255,255,255,1)"/>
+</svg>`
+
+  const icon = L.divIcon({
+    html:       svg,
+    className:  'bible-marker bible-marker-tour-active',
+    iconSize:   [52, 52],
+    iconAnchor: [26, 26],
+  })
+  activeTourIconCache.set(hex, icon)
+  return icon
+}
+
+// ─────────────────────────────────────────────
+// Cluster badge icon — dark navy + gold ring + Cinzel count
 // ─────────────────────────────────────────────
 function createClusterIcon(cluster) {
   const count = cluster.getChildCount()
@@ -81,17 +125,11 @@ function createClusterIcon(cluster) {
     fill="#e8b84b" font-family="Cinzel,serif" font-size="${fs}" font-weight="600" letter-spacing="0.5">${count}</text>
 </svg>`
 
-  return L.divIcon({
-    html:       svg,
-    className:  'bible-cluster-icon',
-    iconSize:   [size, size],
-    iconAnchor: [half, half],
-  })
+  return L.divIcon({ html: svg, className: 'bible-cluster-icon', iconSize: [size, size], iconAnchor: [half, half] })
 }
 
 // ─────────────────────────────────────────────
 // Jitter co-located events into a small circle
-// so zooming in separates them (~330 m radius)
 // ─────────────────────────────────────────────
 const JITTER_RADIUS = 0.003
 const COORD_PREC    = 3
@@ -124,29 +162,31 @@ function jitterColocatedEvents(events) {
 }
 
 // ─────────────────────────────────────────────
-// Component — imperative Leaflet layer so we
-// can wrap everything in MarkerClusterGroup
+// Component
 // ─────────────────────────────────────────────
-export default function EventMarkers({ events, onEventClick, onEventHover }) {
+export default function EventMarkers({ events, onEventClick, onEventHover, activeTourEventId }) {
   const map    = useMap()
   const placed = useMemo(() => jitterColocatedEvents(events), [events])
 
   useEffect(() => {
     const group = L.markerClusterGroup({
       iconCreateFunction:      createClusterIcon,
-      maxClusterRadius:        60,
+      maxClusterRadius:        50,
       spiderfyOnMaxZoom:       true,
       showCoverageOnHover:     false,
       zoomToBoundsOnClick:     true,
-      disableClusteringAtZoom: 12,
+      disableClusteringAtZoom: 9,   // at zoom 9+, all markers individual (tour default zoom)
       animate:                 true,
     })
 
     placed.forEach(({ event, lat, lng }) => {
       if (!isValidCoord(lat, lng)) return
-      const marker = L.marker([lat, lng], {
-        icon: createLeafletIcon(getCategoryColor(event.category)),
-      })
+      const isActive = event.id === activeTourEventId
+      const icon = isActive
+        ? createActiveTourIcon(getCategoryColor(event.category))
+        : createLeafletIcon(getCategoryColor(event.category))
+
+      const marker = L.marker([lat, lng], { icon, zIndexOffset: isActive ? 1000 : 0 })
 
       marker.on('click', (e) => {
         e.originalEvent?.stopPropagation()
@@ -165,7 +205,7 @@ export default function EventMarkers({ events, onEventClick, onEventHover }) {
 
     map.addLayer(group)
     return () => { map.removeLayer(group) }
-  }, [map, placed]) // eslint-disable-line
+  }, [map, placed, activeTourEventId]) // eslint-disable-line
 
   return null
 }

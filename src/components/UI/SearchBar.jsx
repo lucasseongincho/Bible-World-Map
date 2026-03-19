@@ -61,7 +61,10 @@ export default function SearchBar() {
           value={query}
           onChange={e => setQuery(e.target.value)}
           onFocus={() => { setFocused(true); results.length > 0 && setOpen(true) }}
-          onBlur={() => { setFocused(false); setTimeout(() => setOpen(false), 150) }}
+          onBlur={() => { setFocused(false); setTimeout(() => setOpen(false), 200) }}
+          onKeyDown={e => {
+            if (e.key === 'Escape') { setQuery(''); setResults([]); setOpen(false); inputRef.current?.blur() }
+          }}
           placeholder="Search events, places, people…"
           style={{
             background: 'transparent',
@@ -96,7 +99,7 @@ export default function SearchBar() {
             borderRadius: 10,
             boxShadow: '0 16px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,150,58,0.06)',
             animation: 'slideInUp 0.15s ease-out',
-            zIndex: 50,
+            zIndex: 1300,
           }}
         >
           {results.map((event, idx) => {

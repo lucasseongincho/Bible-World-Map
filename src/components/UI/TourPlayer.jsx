@@ -7,6 +7,7 @@ const eventById = Object.fromEntries(events.map(e => [e.id, e]))
 
 export default function TourPlayer() {
   const { activeTour, tourStep, setTourStep, endTour, setSelectedEvent, setCameraFly } = useMapStore()
+
   const [autoPlay, setAutoPlay]   = useState(false)
   const [countdown, setCountdown] = useState(0)
   const autoTimer      = useRef(null)
@@ -28,9 +29,18 @@ export default function TourPlayer() {
 
   useEffect(() => {
     if (!step || !event) return
-    setSelectedEvent(event)
-    setCameraFly({ lat: event.location.lat, lng: event.location.lng, height: step.camera_height ?? 200000 })
+    // Don't auto-open scripture panel during tour (conflicts on mobile with TourPlayer)
+    // Users can click the pulsing marker on the map to open it manually
+    setCameraFly({ lat: event.location.lat, lng: event.location.lng, height: step.camera_height ?? 80000 })
   }, [tourStep, activeTour]) // eslint-disable-line
+
+  // Pause auto-play when user switches to another tab
+  useEffect(() => {
+    if (!autoPlay) return
+    const handler = () => { if (document.hidden) setAutoPlay(false) }
+    document.addEventListener('visibilitychange', handler)
+    return () => document.removeEventListener('visibilitychange', handler)
+  }, [autoPlay])
 
   useEffect(() => {
     clearTimeout(autoTimer.current)

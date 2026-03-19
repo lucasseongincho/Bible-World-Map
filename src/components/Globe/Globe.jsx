@@ -9,6 +9,7 @@ import useMapStore from '../../store/useMapStore'
 import { useShallow } from 'zustand/react/shallow'
 import events from '../../data/events.json'
 import journeys from '../../data/journeys.json'
+import tours from '../../data/tours.json'
 
 const TIMELINE_WINDOW = 200
 const allJourneyIds = journeys.map(j => j.id)
@@ -52,6 +53,7 @@ function MapController() {
 export default function Globe() {
   const {
     layers, activeCategories, activeJourneys, timelinePosition, spreadYear,
+    activeTour, tourStep,
     setSelectedEvent, setHoveredEvent,
   } = useMapStore(useShallow(state => ({
     layers:           state.layers,
@@ -59,9 +61,17 @@ export default function Globe() {
     activeJourneys:   state.activeJourneys,
     timelinePosition: state.timelinePosition,
     spreadYear:       state.spreadYear,
+    activeTour:       state.activeTour,
+    tourStep:         state.tourStep,
     setSelectedEvent: state.setSelectedEvent,
     setHoveredEvent:  state.setHoveredEvent,
   })))
+
+  const activeTourEventId = useMemo(() => {
+    if (!activeTour) return null
+    const tour = tours.find(t => t.id === activeTour)
+    return tour?.steps[tourStep]?.event_id ?? null
+  }, [activeTour, tourStep])
 
   const visibleJourneyIds = useMemo(() => {
     if (!layers.journeys) return []
@@ -113,6 +123,7 @@ export default function Globe() {
         events={filteredEvents}
         onEventClick={setSelectedEvent}
         onEventHover={setHoveredEvent}
+        activeTourEventId={activeTourEventId}
       />
       <JourneyPaths
         journeys={journeys}

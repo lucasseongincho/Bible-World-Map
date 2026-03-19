@@ -22,12 +22,20 @@ export default function Tooltip() {
 
   const color = getCategoryColor(hoveredEvent.category)
 
+  // Clamp so tooltip never goes off-screen
+  const TOOLTIP_W = 236
+  const TOOLTIP_H = 110
+  const rawLeft = tooltipPosition.x + 18
+  const rawTop  = tooltipPosition.y - 58
+  const left = Math.min(rawLeft, window.innerWidth  - TOOLTIP_W - 8)
+  const top  = Math.max(8,       Math.min(rawTop, window.innerHeight - TOOLTIP_H - 8))
+
   return (
     <div
       style={{
         position: 'fixed',
-        left: tooltipPosition.x + 18,
-        top:  tooltipPosition.y - 52,
+        left,
+        top,
         zIndex: 1200,
         pointerEvents: 'none',
         animation: 'fadeIn 0.15s ease-out',

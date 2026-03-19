@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
 import useMapStore from '../../store/useMapStore'
 import { fetchScripture } from '../../utils/scriptureApi'
 import { getCategoryColor } from '../../utils/colorMap'
@@ -32,24 +32,38 @@ export default function ScripturePanel() {
   const { selectedEvent, scripturePanelOpen, setSelectedEvent, setScripturePanelOpen } = useMapStore()
   const [scripture, setScripture] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [fetchError, setFetchError] = useState(false)
   const isMobile = useIsMobile()
+  const retryRef = useRef(0)
+
+  const loadScripture = useCallback((event, signal) => {
+    if (!event?.reference) { setScripture(null); setLoading(false); setFetchError(false); return }
+    setScripture(null)
+    setLoading(true)
+    setFetchError(false)
+    const { book, chapter, verse_start, verse_end } = event.reference
+    fetchScripture(book, chapter, verse_start, verse_end, signal)
+      .then(data => { setScripture(data); setLoading(false) })
+      .catch(err => { if (err?.name !== 'AbortError') { setLoading(false); setFetchError(true) } })
+  }, [])
 
   useEffect(() => {
     if (!selectedEvent) return
-    if (!selectedEvent.reference) { setScripture(null); setLoading(false); return }
-    setScripture(null)
-    setLoading(true)
     const controller = new AbortController()
-    const { book, chapter, verse_start, verse_end } = selectedEvent.reference
-    fetchScripture(book, chapter, verse_start, verse_end, controller.signal).then(data => {
-      setScripture(data)
-      setLoading(false)
-    })
+    retryRef.current = 0
+    loadScripture(selectedEvent, controller.signal)
     if (!window.location.hash.includes(selectedEvent.id)) {
       window.location.hash = `/event/${selectedEvent.id}`
     }
     return () => controller.abort()
-  }, [selectedEvent])
+  }, [selectedEvent, loadScripture])
+
+  // Escape key to close
+  useEffect(() => {
+    const handler = (e) => { if (e.key === 'Escape' && selectedEvent) handleClose() }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }) // no deps — handleClose references selectedEvent
 
   const [copied, setCopied] = useState(false)
 
@@ -70,15 +84,17 @@ export default function ScripturePanel() {
   if (!selectedEvent) return null
   const color = getCategoryColor(selectedEvent.category)
 
-  // Layout
+  // Layout — desktop: below header (52px) and above timeline (64px)
+  //           mobile: above timeline (64px) as bottom sheet
   const mobileStyle = {
-    position: 'fixed', bottom: 0, left: 0, right: 0,
-    maxHeight: '65vh', zIndex: 1090,
+    position: 'fixed', bottom: 64, left: 0, right: 0,
+    maxHeight: 'calc(65vh - 64px)', zIndex: 1090,
     transform: scripturePanelOpen ? 'translateY(0)' : 'translateY(100%)',
     transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
   }
   const desktopStyle = {
-    position: 'fixed', right: 0, top: 0, height: '100%',
+    position: 'fixed', right: 0, top: 52,
+    height: 'calc(100% - 116px)',
     width: 320, zIndex: 1090,
     transform: scripturePanelOpen ? 'translateX(0)' : 'translateX(100%)',
     transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
@@ -102,8 +118,8 @@ export default function ScripturePanel() {
         background: 'var(--panel-bg)',
         borderLeft: isMobile ? 'none' : `1px solid var(--panel-border)`,
         borderTop: isMobile ? 'none' : 'none',
-        height: isMobile ? `calc(65vh - 19px)` : '100%',
-        maxHeight: isMobile ? `calc(65vh - 19px)` : '100%',
+        height: isMobile ? `calc(65vh - 64px - 19px)` : '100%',
+        maxHeight: isMobile ? `calc(65vh - 64px - 19px)` : '100%',
         display: 'flex',
         flexDirection: 'column',
         overflow: 'hidden',
@@ -240,6 +256,20 @@ export default function ScripturePanel() {
                 }}>
                   {scripture.text}
                 </p>
+              </div>
+            ) : fetchError ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                <p style={{ fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic' }}>Could not load scripture.</p>
+                <button
+                  onClick={() => loadScripture(selectedEvent, new AbortController().signal)}
+                  style={{
+                    alignSelf: 'flex-start', fontSize: 12, padding: '5px 12px', borderRadius: 6,
+                    background: 'rgba(201,150,58,0.1)', border: '1px solid rgba(201,150,58,0.25)',
+                    color: 'var(--gold)', cursor: 'pointer',
+                  }}
+                >
+                  Retry
+                </button>
               </div>
             ) : (
               <p style={{ fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic' }}>Scripture unavailable</p>
