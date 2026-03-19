@@ -14,18 +14,18 @@ function useIsMobile() {
 }
 
 const CATEGORY_LABELS = {
-  'creation': 'Creation / Origins',
-  'covenant': 'Covenant / Promise',
-  'battle': 'Battle / War',
-  'miracle': 'Miracle',
-  'prophecy': 'Prophecy',
-  'journey': 'Journey / Travel',
+  'creation':    'Creation / Origins',
+  'covenant':    'Covenant / Promise',
+  'battle':      'Battle / War',
+  'miracle':     'Miracle',
+  'prophecy':    'Prophecy',
+  'journey':     'Journey / Travel',
   'birth-death': 'Birth / Death',
-  'worship': 'Worship / Temple',
-  'judgment': 'Judgment',
-  'gospel': 'Gospel Event',
-  'apostolic': 'Apostolic',
-  'early-church': 'Early Church',
+  'worship':     'Worship / Temple',
+  'judgment':    'Judgment',
+  'gospel':      'Gospel Event',
+  'apostolic':   'Apostolic',
+  'early-church':'Early Church',
 }
 
 export default function ScripturePanel() {
@@ -36,23 +36,15 @@ export default function ScripturePanel() {
 
   useEffect(() => {
     if (!selectedEvent) return
-    // Guard: skip API call if reference metadata is missing
-    if (!selectedEvent.reference) {
-      setScripture(null)
-      setLoading(false)
-      return
-    }
+    if (!selectedEvent.reference) { setScripture(null); setLoading(false); return }
     setScripture(null)
     setLoading(true)
-
-    // B2: Cancel in-flight fetch when the selected event changes (rapid clicking)
     const controller = new AbortController()
     const { book, chapter, verse_start, verse_end } = selectedEvent.reference
     fetchScripture(book, chapter, verse_start, verse_end, controller.signal).then(data => {
       setScripture(data)
       setLoading(false)
     })
-    // Update URL hash for deep-linking (but only if not already set by search/tour)
     if (!window.location.hash.includes(selectedEvent.id)) {
       window.location.hash = `/event/${selectedEvent.id}`
     }
@@ -78,112 +70,198 @@ export default function ScripturePanel() {
   if (!selectedEvent) return null
   const color = getCategoryColor(selectedEvent.category)
 
-  const positionClasses = isMobile
-    ? 'fixed bottom-0 left-0 right-0 max-h-[65vh] z-40'
-    : 'fixed right-0 top-0 h-full w-80 z-40'
-
-  const transformClass = isMobile
-    ? (scripturePanelOpen ? 'translate-y-0' : 'translate-y-full')
-    : (scripturePanelOpen ? 'translate-x-0' : 'translate-x-full')
+  // Layout
+  const mobileStyle = {
+    position: 'fixed', bottom: 0, left: 0, right: 0,
+    maxHeight: '65vh', zIndex: 40,
+    transform: scripturePanelOpen ? 'translateY(0)' : 'translateY(100%)',
+    transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
+  }
+  const desktopStyle = {
+    position: 'fixed', right: 0, top: 0, height: '100%',
+    width: 320, zIndex: 40,
+    transform: scripturePanelOpen ? 'translateX(0)' : 'translateX(100%)',
+    transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
+  }
 
   return (
-    <div
-      className={`${positionClasses} transform transition-transform duration-300 ${transformClass}`}
-    >
-      {/* Drag handle — mobile only */}
+    <div style={isMobile ? mobileStyle : desktopStyle}>
+      {/* Mobile drag handle */}
       {isMobile && (
-        <div className="flex justify-center pt-2 pb-1 bg-gray-900/95 rounded-t-xl">
-          <div className="w-10 h-1 rounded-full bg-gray-600" />
+        <div style={{
+          display: 'flex', justifyContent: 'center', padding: '10px 0 6px',
+          background: 'var(--panel-bg)',
+          borderRadius: '14px 14px 0 0',
+          borderTop: `1px solid ${color}40`,
+        }}>
+          <div style={{ width: 36, height: 3, borderRadius: 2, background: 'rgba(255,255,255,0.2)' }} />
         </div>
       )}
-      <div className={`${isMobile ? 'max-h-[calc(65vh-1.5rem)]' : 'h-full'} bg-gray-900/95 backdrop-blur ${isMobile ? 'border-t' : 'border-l'} border-gray-700 flex flex-col overflow-hidden`}>
-        {/* Header */}
-        <div className="p-4 border-b border-gray-700" style={{ borderLeftColor: color, borderLeftWidth: 4 }}>
-          <div className="flex items-start justify-between gap-2">
-            <div>
-              <div className="text-xs font-medium uppercase tracking-wider mb-1" style={{ color }}>
+
+      <div style={{
+        background: 'var(--panel-bg)',
+        borderLeft: isMobile ? 'none' : `1px solid var(--panel-border)`,
+        borderTop: isMobile ? 'none' : 'none',
+        height: isMobile ? `calc(65vh - 19px)` : '100%',
+        maxHeight: isMobile ? `calc(65vh - 19px)` : '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        overflow: 'hidden',
+        boxShadow: isMobile ? 'none' : '-12px 0 48px rgba(0,0,0,0.5)',
+      }}>
+
+        {/* ── Header ── */}
+        <div style={{
+          padding: '16px 18px 14px',
+          borderBottom: '1px solid var(--panel-border)',
+          borderLeft: `3px solid ${color}`,
+          background: `linear-gradient(to right, ${color}10 0%, transparent 60%)`,
+          flexShrink: 0,
+        }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10 }}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              {/* Category label */}
+              <div style={{
+                fontSize: 9, fontFamily: 'Cinzel, serif',
+                letterSpacing: '0.18em', marginBottom: 6,
+                color, textTransform: 'uppercase',
+              }}>
                 {CATEGORY_LABELS[selectedEvent.category] || selectedEvent.category}
               </div>
-              <h2 className="font-cinzel text-lg font-semibold text-amber-100 leading-tight">
+              {/* Event title */}
+              <h2 style={{
+                fontFamily: 'Cinzel, serif',
+                fontSize: 16, fontWeight: 600, lineHeight: 1.3,
+                color: 'var(--ivory)', marginBottom: 5,
+              }}>
                 {selectedEvent.title}
               </h2>
-              <div className="text-xs text-gray-400 mt-1">
-                {selectedEvent.reference.book} {selectedEvent.reference.chapter}:{selectedEvent.reference.verse_start}
-                {selectedEvent.reference.verse_end &&
-                  selectedEvent.reference.verse_end !== selectedEvent.reference.verse_start
-                  ? `–${selectedEvent.reference.verse_end}`
-                  : ''}
+              {/* Reference + date */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+                <span style={{ fontSize: 12, color: 'var(--text-body)' }}>
+                  {selectedEvent.reference.book} {selectedEvent.reference.chapter}:{selectedEvent.reference.verse_start}
+                  {selectedEvent.reference.verse_end &&
+                   selectedEvent.reference.verse_end !== selectedEvent.reference.verse_start
+                    ? `–${selectedEvent.reference.verse_end}` : ''}
+                </span>
+                <span style={{ fontSize: 11, color: 'var(--gold-dim)', fontStyle: 'italic' }}>
+                  {selectedEvent.date_label}
+                </span>
               </div>
-              <div className="text-xs text-amber-600 mt-0.5">{selectedEvent.date_label}</div>
             </div>
+            {/* Close */}
             <button
               onClick={handleClose}
-              className="text-gray-500 hover:text-gray-300 transition-colors mt-1 shrink-0"
+              style={{ color: 'var(--text-muted)', padding: 4, marginTop: 2, flexShrink: 0, cursor: 'pointer', transition: 'color 0.2s' }}
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--ivory)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto">
+        {/* ── Scrollable body ── */}
+        <div style={{ flex: 1, overflowY: 'auto', padding: '0' }}>
+
           {/* Location */}
-          <div className="px-4 py-3 border-b border-gray-800">
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <span>{selectedEvent.location.name}</span>
-              <span className="text-gray-600 capitalize">({selectedEvent.location.accuracy})</span>
-            </div>
+          <div style={{ padding: '12px 18px', borderBottom: '1px solid rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <svg width="12" height="12" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24" style={{ color: 'var(--text-muted)', flexShrink: 0 }}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span style={{ fontSize: 12, color: 'var(--text-body)' }}>{selectedEvent.location.name}</span>
+            <span style={{ fontSize: 11, color: 'var(--text-muted)', textTransform: 'capitalize' }}>· {selectedEvent.location.accuracy}</span>
           </div>
 
           {/* Description */}
-          <div className="px-4 py-3 border-b border-gray-800">
-            <p className="text-sm text-gray-300 leading-relaxed">{selectedEvent.description}</p>
+          <div style={{ padding: '14px 18px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+            <p style={{
+              fontFamily: 'Cormorant Garamond, Georgia, serif',
+              fontSize: 15, lineHeight: 1.7, color: 'var(--ivory-dim)',
+            }}>
+              {selectedEvent.description}
+            </p>
           </div>
 
-          {/* Scripture Text */}
-          <div className="px-4 py-3">
-            <h3 className="font-cinzel text-xs uppercase tracking-wider text-amber-500 mb-2">Scripture</h3>
+          {/* Scripture */}
+          <div style={{ padding: '14px 18px' }}>
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12
+            }}>
+              <span style={{ fontFamily: 'Cinzel, serif', fontSize: 9, letterSpacing: '0.18em', color: 'var(--gold)', textTransform: 'uppercase' }}>
+                Scripture
+              </span>
+              <div style={{ flex: 1, height: 1, background: 'linear-gradient(to right, rgba(201,150,58,0.2), transparent)' }} />
+            </div>
+
             {loading ? (
-              <div className="flex items-center gap-2 text-sm text-gray-500">
-                <div className="w-4 h-4 border-2 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
-                Loading...
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--text-muted)', fontSize: 13 }}>
+                <div style={{
+                  width: 14, height: 14, borderRadius: '50%',
+                  border: '2px solid var(--gold)',
+                  borderTopColor: 'transparent',
+                  animation: 'spin 0.8s linear infinite',
+                }} />
+                Loading…
               </div>
             ) : scripture?.verses ? (
-              <div>
-                <div className="space-y-2">
+              <div style={{
+                background: 'rgba(201,150,58,0.04)',
+                border: '1px solid rgba(201,150,58,0.12)',
+                borderRadius: 8, padding: '14px 16px',
+              }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {scripture.verses.map(v => (
-                    <p key={v.verse} className="text-sm text-gray-200 leading-relaxed">
-                      <sup className="text-amber-500 text-xs mr-1">{v.verse}</sup>
+                    <p key={v.verse} style={{
+                      fontFamily: 'Cormorant Garamond, Georgia, serif',
+                      fontSize: 15.5, lineHeight: 1.75, color: 'var(--ivory)',
+                    }}>
+                      <sup style={{ color: 'var(--gold)', fontSize: 10, marginRight: 3, fontFamily: 'Cinzel, serif' }}>{v.verse}</sup>
                       {v.text}
                     </p>
                   ))}
                 </div>
-                <div className="mt-2 text-xs text-gray-600">{scripture.translation_name || 'KJV'}</div>
+                <div style={{ marginTop: 10, fontSize: 10, color: 'var(--text-muted)', fontStyle: 'italic', textAlign: 'right' }}>
+                  {scripture.translation_name || 'KJV'}
+                </div>
               </div>
             ) : scripture?.text ? (
-              <p className="text-sm text-gray-200 leading-relaxed">{scripture.text}</p>
+              <div style={{
+                background: 'rgba(201,150,58,0.04)',
+                border: '1px solid rgba(201,150,58,0.12)',
+                borderRadius: 8, padding: '14px 16px',
+              }}>
+                <p style={{
+                  fontFamily: 'Cormorant Garamond, Georgia, serif',
+                  fontSize: 15.5, lineHeight: 1.75, color: 'var(--ivory)',
+                }}>
+                  {scripture.text}
+                </p>
+              </div>
             ) : (
-              <p className="text-sm text-gray-500 italic">Scripture unavailable</p>
+              <p style={{ fontSize: 13, color: 'var(--text-muted)', fontStyle: 'italic' }}>Scripture unavailable</p>
             )}
           </div>
 
           {/* People */}
           {selectedEvent.people?.length > 0 && (
-            <div className="px-4 py-3 border-t border-gray-800">
-              <h3 className="font-cinzel text-xs uppercase tracking-wider text-amber-500 mb-2">People</h3>
-              <div className="flex flex-wrap gap-1.5">
+            <div style={{ padding: '0 18px 14px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ fontFamily: 'Cinzel, serif', fontSize: 9, letterSpacing: '0.18em', color: 'var(--gold)', textTransform: 'uppercase', margin: '12px 0 8px' }}>
+                People
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                 {selectedEvent.people.map(person => (
-                  <span
-                    key={person}
-                    className="px-2 py-0.5 bg-gray-800 rounded text-xs text-gray-300 capitalize"
-                  >
+                  <span key={person} style={{
+                    padding: '3px 9px',
+                    background: 'rgba(255,255,255,0.06)',
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    borderRadius: 20,
+                    fontSize: 12, color: 'var(--ivory-dim)',
+                    textTransform: 'capitalize',
+                  }}>
                     {person.replace(/-/g, ' ')}
                   </span>
                 ))}
@@ -193,14 +271,17 @@ export default function ScripturePanel() {
 
           {/* Tags */}
           {selectedEvent.tags?.length > 0 && (
-            <div className="px-4 py-3 border-t border-gray-800">
-              <div className="flex flex-wrap gap-1.5">
+            <div style={{ padding: '0 18px 14px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                 {selectedEvent.tags.map(tag => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded text-xs capitalize"
-                    style={{ background: color + '20', color }}
-                  >
+                  <span key={tag} style={{
+                    padding: '2px 8px',
+                    background: `${color}15`,
+                    border: `1px solid ${color}30`,
+                    borderRadius: 4,
+                    fontSize: 11, color,
+                    textTransform: 'capitalize',
+                  }}>
                     #{tag}
                   </span>
                 ))}
@@ -209,30 +290,39 @@ export default function ScripturePanel() {
           )}
 
           {/* Copy link */}
-          <div className="px-4 py-3 border-t border-gray-800">
+          <div style={{ padding: '12px 18px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
             <button
               onClick={handleCopyLink}
-              className="flex items-center gap-2 text-xs text-gray-500 hover:text-amber-400 transition-colors"
+              style={{
+                display: 'flex', alignItems: 'center', gap: 6, fontSize: 12,
+                color: copied ? '#38b880' : 'var(--text-muted)',
+                cursor: 'pointer', transition: 'color 0.2s',
+              }}
+              onMouseEnter={e => { if (!copied) e.currentTarget.style.color = 'var(--gold)' }}
+              onMouseLeave={e => { if (!copied) e.currentTarget.style.color = 'var(--text-muted)' }}
             >
               {copied ? (
                 <>
-                  <svg className="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-green-400">Link copied!</span>
+                  Link copied!
                 </>
               ) : (
                 <>
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                  <svg width="13" height="13" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                   </svg>
                   Copy link to this event
                 </>
               )}
             </button>
           </div>
+
+          <div style={{ height: 16 }} />
         </div>
       </div>
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
   )
 }

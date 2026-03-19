@@ -3,48 +3,37 @@ import useMapStore from '../../store/useMapStore'
 import journeys from '../../data/journeys.json'
 import events from '../../data/events.json'
 
-// Count events per category once at module level
 const categoryCounts = events.reduce((acc, e) => {
   acc[e.category] = (acc[e.category] || 0) + 1
   return acc
 }, {})
 
 const LAYERS = [
-  { key: 'oldTestament', label: 'Old Testament', color: '#F59E0B' },
-  { key: 'newTestament', label: 'New Testament', color: '#22D3EE' },
-  { key: 'journeys', label: 'Journeys', color: '#F97316' },
-  { key: 'kingdoms', label: 'Kingdoms', color: '#8B5CF6' },
-  { key: 'spread', label: 'Spread of Christianity', color: '#A78BFA' },
-  { key: 'archaeology', label: 'Archaeological Sites', color: '#10B981' },
+  { key: 'oldTestament',  label: 'Old Testament',          color: '#d4943a' },
+  { key: 'newTestament',  label: 'New Testament',          color: '#38b0c8' },
+  { key: 'journeys',      label: 'Journeys',               color: '#e07830' },
+  { key: 'kingdoms',      label: 'Kingdoms',               color: '#9060c8' },
+  { key: 'spread',        label: 'Spread of Christianity', color: '#a880e8' },
+  { key: 'archaeology',   label: 'Archaeological Sites',   color: '#38b880' },
 ]
 
 const CATEGORIES = [
-  { key: 'creation', label: 'Creation / Origins', color: '#8B5CF6' },
-  { key: 'covenant', label: 'Covenant / Promise', color: '#F59E0B' },
-  { key: 'battle', label: 'Battle / War', color: '#EF4444' },
-  { key: 'miracle', label: 'Miracle', color: '#3B82F6' },
-  { key: 'prophecy', label: 'Prophecy', color: '#10B981' },
-  { key: 'journey', label: 'Journey / Travel', color: '#F97316' },
-  { key: 'birth-death', label: 'Birth / Death', color: '#EC4899' },
-  { key: 'worship', label: 'Worship / Temple', color: '#6366F1' },
-  { key: 'judgment', label: 'Judgment', color: '#DC2626' },
-  { key: 'gospel', label: 'Gospel Event', color: '#FBBF24' },
-  { key: 'apostolic', label: 'Apostolic', color: '#22D3EE' },
-  { key: 'early-church', label: 'Early Church', color: '#A78BFA' },
+  { key: 'creation',    label: 'Creation',        color: '#8B5CF6' },
+  { key: 'covenant',    label: 'Covenant',         color: '#d4943a' },
+  { key: 'battle',      label: 'Battle / War',     color: '#c84848' },
+  { key: 'miracle',     label: 'Miracle',          color: '#3B82F6' },
+  { key: 'prophecy',    label: 'Prophecy',         color: '#38b880' },
+  { key: 'journey',     label: 'Journey',          color: '#e07830' },
+  { key: 'birth-death', label: 'Birth / Death',    color: '#d04898' },
+  { key: 'worship',     label: 'Worship',          color: '#6060c8' },
+  { key: 'judgment',    label: 'Judgment',         color: '#b83030' },
+  { key: 'gospel',      label: 'Gospel Event',     color: '#e8b840' },
+  { key: 'apostolic',   label: 'Apostolic',        color: '#38b0c8' },
+  { key: 'early-church',label: 'Early Church',     color: '#a880e8' },
 ]
 
 const ALL_CATEGORY_KEYS = CATEGORIES.map(c => c.key)
-
-const ALL_JOURNEY_IDS = journeys.map(j => j.id)
-
-const PERSON_LABELS = {
-  'abraham': 'Abraham',
-  'moses': 'Moses / Exodus',
-  'joseph-mary-jesus': 'Flight to Egypt',
-  'jesus': 'Jesus',
-  'paul': 'Paul',
-  'john': 'John',
-}
+const ALL_JOURNEY_IDS   = journeys.map(j => j.id)
 
 export default function LayerPanel() {
   const {
@@ -54,237 +43,310 @@ export default function LayerPanel() {
     toggleJourney, resetJourneys, setSpreadYear,
   } = useMapStore()
   const [categoriesExpanded, setCategoriesExpanded] = useState(false)
-  const [journeysExpanded, setJourneysExpanded] = useState(false)
+  const [journeysExpanded,   setJourneysExpanded]   = useState(false)
 
-  const isCategoryOn = (key) => activeCategories === null || activeCategories.has(key)
-  const allCatsOn = activeCategories === null
+  const isCategoryOn   = (key) => activeCategories === null || activeCategories.has(key)
+  const allCatsOn      = activeCategories === null
+  const isJourneyOn    = (id)  => activeJourneys  === null || activeJourneys.has(id)
 
-  const isJourneyOn = (id) => activeJourneys === null || activeJourneys.has(id)
-  const allJourneysOn = activeJourneys === null
+  const panelW = 220
 
   return (
     <>
-      {/* Panel — slides left/right independently */}
+      {/* ── Panel ── */}
       <div
-        className={`fixed left-0 top-16 z-30 w-52 transition-transform duration-300 ${
-          layerPanelOpen ? 'translate-x-0' : '-translate-x-52'
-        }`}
+        className="fixed left-0 z-30"
+        style={{
+          top: 52,
+          width: panelW,
+          maxHeight: 'calc(100vh - 116px)',
+          transform: layerPanelOpen ? 'translateX(0)' : `translateX(-${panelW}px)`,
+          transition: 'transform 0.28s cubic-bezier(0.4,0,0.2,1)',
+        }}
       >
-      <div className="bg-gray-900/95 backdrop-blur border border-gray-700 rounded-r-lg shadow-xl w-52 max-h-[calc(100vh-5rem)] overflow-y-auto">
-        {/* Layers section */}
-        <div className="p-3 border-b border-gray-700">
-          <div className="font-cinzel text-xs uppercase tracking-wider text-amber-500">Layers</div>
-        </div>
-        <div className="p-2 space-y-1">
-          {LAYERS.map(layer => (
-            <div key={layer.key}>
+        <div
+          className="overflow-y-auto"
+          style={{
+            background: 'var(--panel-bg)',
+            border: '1px solid var(--panel-border)',
+            borderLeft: 'none',
+            borderRadius: '0 10px 10px 0',
+            maxHeight: 'calc(100vh - 116px)',
+            boxShadow: '8px 0 40px rgba(0,0,0,0.5)',
+          }}
+        >
+          {/* Panel header */}
+          <div style={{ padding: '12px 14px 10px' }}>
+            <span
+              className="font-cinzel"
+              style={{ color: 'var(--gold)', fontSize: 9, letterSpacing: '0.2em' }}
+            >
+              MAP LAYERS
+            </span>
+          </div>
+          <div className="gold-rule mx-3" />
+
+          {/* Layer toggles */}
+          <div style={{ padding: '8px 8px' }}>
+            {LAYERS.map(layer => {
+              const on = layers[layer.key]
+              return (
+                <div key={layer.key}>
+                  <button
+                    onClick={() => toggleLayer(layer.key)}
+                    className="w-full flex items-center gap-2.5 text-left"
+                    style={{
+                      padding: '8px 10px',
+                      borderRadius: 7,
+                      background: on ? `${layer.color}12` : 'transparent',
+                      border: `1px solid ${on ? `${layer.color}30` : 'transparent'}`,
+                      marginBottom: 3,
+                      transition: 'all 0.2s',
+                    }}
+                    onMouseEnter={e => { if (!on) e.currentTarget.style.background = 'rgba(255,255,255,0.04)' }}
+                    onMouseLeave={e => { if (!on) e.currentTarget.style.background = 'transparent' }}
+                  >
+                    {/* Dot indicator */}
+                    <div style={{
+                      width: 8, height: 8, borderRadius: '50%', flexShrink: 0,
+                      background: on ? layer.color : 'var(--panel-border)',
+                      boxShadow: on ? `0 0 6px ${layer.color}80` : 'none',
+                      transition: 'all 0.2s',
+                    }} />
+                    <span style={{
+                      fontSize: 12.5,
+                      color: on ? 'var(--ivory)' : 'var(--text-body)',
+                      flex: 1,
+                      transition: 'color 0.2s',
+                    }}>
+                      {layer.label}
+                    </span>
+                    {/* Toggle pill */}
+                    <div style={{
+                      width: 28, height: 15, borderRadius: 8,
+                      background: on ? layer.color : 'rgba(255,255,255,0.08)',
+                      position: 'relative',
+                      flexShrink: 0,
+                      transition: 'background 0.2s',
+                    }}>
+                      <div style={{
+                        width: 11, height: 11, borderRadius: '50%',
+                        background: on ? 'var(--deep-navy)' : 'rgba(255,255,255,0.3)',
+                        position: 'absolute',
+                        top: 2,
+                        left: on ? 15 : 2,
+                        transition: 'left 0.2s, background 0.2s',
+                      }} />
+                    </div>
+                  </button>
+
+                  {/* Spread year slider */}
+                  {layer.key === 'spread' && layers.spread && (
+                    <div style={{ padding: '2px 10px 8px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, color: 'var(--text-muted)', marginBottom: 6 }}>
+                        <span>AD 30</span>
+                        <span style={{ color: 'var(--gold)', fontWeight: 600 }}>AD {spreadYear}</span>
+                        <span>AD 500</span>
+                      </div>
+                      <input
+                        type="range" min={30} max={500} step={5} value={spreadYear}
+                        onChange={e => setSpreadYear(Number(e.target.value))}
+                        style={{
+                          width: '100%',
+                          background: `linear-gradient(to right, #a880e8 ${((spreadYear - 30) / 470) * 100}%, rgba(255,255,255,0.1) ${((spreadYear - 30) / 470) * 100}%)`,
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Journey Routes */}
+          {layers.journeys && (
+            <>
+              <div className="gold-rule mx-3" />
               <button
-                onClick={() => toggleLayer(layer.key)}
-                className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${
-                  layers[layer.key]
-                    ? 'bg-gray-800 text-gray-100'
-                    : 'text-gray-500 hover:bg-gray-800/50 hover:text-gray-400'
-                }`}
+                onClick={() => setJourneysExpanded(!journeysExpanded)}
+                className="w-full flex items-center justify-between"
+                style={{ padding: '10px 14px' }}
               >
-                <div
-                  className="w-2.5 h-2.5 rounded-full shrink-0"
-                  style={{ background: layers[layer.key] ? layer.color : '#374151' }}
-                />
-                <span>{layer.label}</span>
-                {layers[layer.key] && (
-                  <svg className="w-3.5 h-3.5 ml-auto text-amber-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
+                <span className="font-cinzel" style={{ color: 'var(--gold)', fontSize: 9, letterSpacing: '0.15em' }}>
+                  JOURNEY ROUTES
+                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                  {activeJourneys !== null && (
+                    <span style={{
+                      background: 'rgba(201,150,58,0.15)',
+                      color: 'var(--gold)',
+                      borderRadius: 4, padding: '1px 6px', fontSize: 10,
+                    }}>
+                      {activeJourneys.size}/{journeys.length}
+                    </span>
+                  )}
+                  <svg width="10" height="10" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
+                    style={{ color: 'var(--text-muted)', transform: journeysExpanded ? 'rotate(180deg)' : 'rotate(0)', transition: 'transform 0.2s' }}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
-                )}
+                </div>
               </button>
 
-              {/* Spread year slider — inline under the Spread toggle */}
-              {layer.key === 'spread' && layers.spread && (
-                <div className="px-3 pb-2 pt-1">
-                  <div className="flex justify-between text-xs text-gray-500 mb-1">
-                    <span>AD 30</span>
-                    <span className="text-amber-400 font-medium">AD {spreadYear}</span>
-                    <span>AD 500</span>
+              {journeysExpanded && (
+                <div style={{ padding: '0 8px 8px' }}>
+                  {/* All / None */}
+                  <div style={{ display: 'flex', gap: 8, padding: '0 6px 6px' }}>
+                    <button onClick={resetJourneys}
+                      style={{ fontSize: 11, color: 'var(--text-body)', cursor: 'pointer' }}
+                      onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
+                      onMouseLeave={e => e.currentTarget.style.color = 'var(--text-body)'}
+                    >All</button>
+                    <span style={{ color: 'var(--text-muted)' }}>·</span>
+                    <button onClick={() => useMapStore.setState({ activeJourneys: new Set() })}
+                      style={{ fontSize: 11, color: 'var(--text-body)', cursor: 'pointer' }}
+                      onMouseEnter={e => e.currentTarget.style.color = '#c84848'}
+                      onMouseLeave={e => e.currentTarget.style.color = 'var(--text-body)'}
+                    >None</button>
                   </div>
-                  <input
-                    type="range"
-                    min={30}
-                    max={500}
-                    step={5}
-                    value={spreadYear}
-                    onChange={e => setSpreadYear(Number(e.target.value))}
-                    className="w-full h-1.5 rounded-full appearance-none cursor-pointer"
-                    style={{
-                      background: `linear-gradient(to right, #A78BFA ${((spreadYear - 30) / 470) * 100}%, #374151 ${((spreadYear - 30) / 470) * 100}%)`
-                    }}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* Journeys sub-filter — only when Journeys layer is on */}
-        {layers.journeys && (
-          <div className="border-t border-gray-700">
-            <button
-              onClick={() => setJourneysExpanded(!journeysExpanded)}
-              className="w-full flex items-center justify-between px-3 py-2.5 text-xs font-cinzel uppercase tracking-wider text-amber-500 hover:text-amber-400 transition-colors"
-            >
-              <span>Journey Routes</span>
-              <div className="flex items-center gap-1.5">
-                {!allJourneysOn && (
-                  <span className="bg-amber-500/20 text-amber-400 rounded px-1 py-0.5 text-xs font-sans normal-case tracking-normal">
-                    {activeJourneys?.size ?? 0}/{journeys.length}
-                  </span>
-                )}
-                <svg
-                  className={`w-3 h-3 transition-transform ${journeysExpanded ? 'rotate-180' : ''}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </button>
-
-            {journeysExpanded && (
-              <div className="pb-2">
-                <div className="flex gap-2 px-3 pb-2">
-                  <button
-                    onClick={resetJourneys}
-                    className="text-xs text-gray-400 hover:text-amber-400 transition-colors underline-offset-2 hover:underline"
-                  >
-                    All
-                  </button>
-                  <span className="text-gray-700">·</span>
-                  <button
-                    onClick={() => useMapStore.setState({ activeJourneys: new Set() })}
-                    className="text-xs text-gray-400 hover:text-red-400 transition-colors underline-offset-2 hover:underline"
-                  >
-                    None
-                  </button>
-                </div>
-                <div className="space-y-0.5 px-2">
                   {journeys.map(journey => {
                     const on = isJourneyOn(journey.id)
                     return (
                       <button
                         key={journey.id}
                         onClick={() => toggleJourney(journey.id, ALL_JOURNEY_IDS)}
-                        className={`w-full flex items-center gap-2 px-2 py-1.5 rounded text-xs transition-colors ${
-                          on ? 'text-gray-200' : 'text-gray-600 hover:text-gray-500'
-                        }`}
+                        className="w-full flex items-center gap-2.5 text-left"
+                        style={{ padding: '6px 8px', borderRadius: 6, transition: 'background 0.15s' }}
+                        onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.04)'}
+                        onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                       >
-                        <div
-                          className="w-2 h-2 rounded-full shrink-0"
-                          style={{ background: on ? journey.color : '#374151' }}
-                        />
-                        <div className="text-left">
-                          <div>{journey.title}</div>
-                          <div className="text-gray-500 text-xs">{journey.reference}</div>
+                        <div style={{
+                          width: 6, height: 6, borderRadius: '50%', flexShrink: 0,
+                          background: on ? journey.color : 'var(--panel-border)',
+                          boxShadow: on ? `0 0 4px ${journey.color}80` : 'none',
+                        }} />
+                        <div>
+                          <div style={{ fontSize: 12, color: on ? 'var(--ivory)' : 'var(--text-muted)' }}>
+                            {journey.title}
+                          </div>
+                          <div style={{ fontSize: 10, color: 'var(--text-muted)', marginTop: 1 }}>
+                            {journey.reference}
+                          </div>
                         </div>
                       </button>
                     )
                   })}
                 </div>
-              </div>
-            )}
-          </div>
-        )}
+              )}
+            </>
+          )}
 
-        {/* Categories sub-filter section */}
-        <div className="border-t border-gray-700">
+          {/* Event Types */}
+          <div className="gold-rule mx-3" />
           <button
             onClick={() => setCategoriesExpanded(!categoriesExpanded)}
-            className="w-full flex items-center justify-between px-3 py-2.5 text-xs font-cinzel uppercase tracking-wider text-amber-500 hover:text-amber-400 transition-colors"
+            className="w-full flex items-center justify-between"
+            style={{ padding: '10px 14px' }}
           >
-            <span>Event Types</span>
-            <div className="flex items-center gap-1.5">
+            <span className="font-cinzel" style={{ color: 'var(--gold)', fontSize: 9, letterSpacing: '0.15em' }}>
+              EVENT TYPES
+            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               {!allCatsOn && (
-                <span className="bg-amber-500/20 text-amber-400 rounded px-1 py-0.5 text-xs font-sans normal-case tracking-normal">
-                  {[...activeCategories].reduce((sum, k) => sum + (categoryCounts[k] ?? 0), 0)} shown
+                <span style={{
+                  background: 'rgba(201,150,58,0.15)',
+                  color: 'var(--gold)',
+                  borderRadius: 4, padding: '1px 6px', fontSize: 10,
+                }}>
+                  {[...activeCategories].reduce((s, k) => s + (categoryCounts[k] ?? 0), 0)} shown
                 </span>
               )}
-              <svg
-                className={`w-3 h-3 transition-transform ${categoriesExpanded ? 'rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              <svg width="10" height="10" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
+                style={{ color: 'var(--text-muted)', transform: categoriesExpanded ? 'rotate(180deg)' : 'rotate(0)', transition: 'transform 0.2s' }}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
           </button>
 
           {categoriesExpanded && (
-            <div className="pb-2">
-              <div className="flex gap-2 px-3 pb-2">
-                <button
-                  onClick={resetCategories}
-                  className="text-xs text-gray-400 hover:text-amber-400 transition-colors underline-offset-2 hover:underline"
-                >
-                  All
-                </button>
-                <span className="text-gray-700">·</span>
-                <button
-                  onClick={() => useMapStore.setState({ activeCategories: new Set() })}
-                  className="text-xs text-gray-400 hover:text-red-400 transition-colors underline-offset-2 hover:underline"
-                >
-                  None
-                </button>
+            <div style={{ padding: '0 8px 8px' }}>
+              <div style={{ display: 'flex', gap: 8, padding: '0 6px 6px' }}>
+                <button onClick={resetCategories}
+                  style={{ fontSize: 11, color: 'var(--text-body)', cursor: 'pointer' }}
+                  onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-body)'}
+                >All</button>
+                <span style={{ color: 'var(--text-muted)' }}>·</span>
+                <button onClick={() => useMapStore.setState({ activeCategories: new Set() })}
+                  style={{ fontSize: 11, color: 'var(--text-body)', cursor: 'pointer' }}
+                  onMouseEnter={e => e.currentTarget.style.color = '#c84848'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-body)'}
+                >None</button>
               </div>
-
-              <div className="space-y-0.5 px-2">
-                {CATEGORIES.map(cat => {
-                  const on = isCategoryOn(cat.key)
-                  return (
-                    <button
-                      key={cat.key}
-                      onClick={() => toggleCategory(cat.key, ALL_CATEGORY_KEYS)}
-                      className={`w-full flex items-center gap-2 px-2 py-1.5 rounded text-xs transition-colors ${
-                        on ? 'text-gray-200' : 'text-gray-500 hover:text-gray-400'
-                      }`}
-                    >
-                      <div
-                        className="w-2 h-2 rounded-full shrink-0 transition-all"
-                        style={{ background: on ? cat.color : '#374151' }}
-                      />
-                      <span className="text-left flex-1">{cat.label}</span>
-                      <span className={`text-xs tabular-nums ${on ? 'text-gray-500' : 'text-gray-700'}`}>
-                        {categoryCounts[cat.key] ?? 0}
-                      </span>
-                    </button>
-                  )
-                })}
-              </div>
+              {CATEGORIES.map(cat => {
+                const on = isCategoryOn(cat.key)
+                const count = categoryCounts[cat.key] ?? 0
+                return (
+                  <button
+                    key={cat.key}
+                    onClick={() => toggleCategory(cat.key, ALL_CATEGORY_KEYS)}
+                    className="w-full flex items-center gap-2.5 text-left"
+                    style={{ padding: '5px 8px', borderRadius: 6, transition: 'background 0.15s' }}
+                    onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.04)'}
+                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  >
+                    <div style={{
+                      width: 6, height: 6, borderRadius: '50%', flexShrink: 0,
+                      background: on ? cat.color : 'var(--panel-border)',
+                      boxShadow: on ? `0 0 4px ${cat.color}70` : 'none',
+                      transition: 'all 0.2s',
+                    }} />
+                    <span style={{ fontSize: 12, color: on ? 'var(--ivory-dim)' : 'var(--text-muted)', flex: 1, transition: 'color 0.2s' }}>
+                      {cat.label}
+                    </span>
+                    <span style={{ fontSize: 10, color: on ? 'var(--text-muted)' : 'var(--text-muted)', opacity: on ? 0.7 : 0.35, fontVariantNumeric: 'tabular-nums' }}>
+                      {count}
+                    </span>
+                  </button>
+                )
+              })}
             </div>
           )}
+
+          <div style={{ height: 8 }} />
         </div>
       </div>
-      </div>
 
-      {/* Toggle button — fixed independently so it stays visible when the panel is closed */}
+      {/* ── Toggle tab ── */}
       <button
         onClick={() => setLayerPanelOpen(!layerPanelOpen)}
         aria-label={layerPanelOpen ? 'Close layer panel' : 'Open layer panel'}
-        className={`fixed top-20 z-30 bg-gray-900/95 border border-gray-700 rounded-r-md p-1.5 text-gray-400 hover:text-amber-400 transition-transform duration-300 ${
-          layerPanelOpen ? 'translate-x-52' : 'translate-x-0'
-        }`}
-        style={{ left: 0 }}
+        style={{
+          position: 'fixed',
+          top: 72,
+          left: 0,
+          zIndex: 30,
+          background: 'var(--panel-bg)',
+          border: '1px solid var(--panel-border)',
+          borderLeft: 'none',
+          borderRadius: '0 6px 6px 0',
+          padding: '8px 6px',
+          cursor: 'pointer',
+          transform: layerPanelOpen ? `translateX(${panelW}px)` : 'translateX(0)',
+          transition: 'transform 0.28s cubic-bezier(0.4,0,0.2,1)',
+          color: 'var(--text-body)',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+        onMouseEnter={e => e.currentTarget.style.color = 'var(--gold)'}
+        onMouseLeave={e => e.currentTarget.style.color = 'var(--text-body)'}
       >
         <svg
-          className={`w-4 h-4 transition-transform ${layerPanelOpen ? '' : 'rotate-180'}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+          width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"
+          style={{ transform: layerPanelOpen ? 'rotate(0)' : 'rotate(180deg)', transition: 'transform 0.28s' }}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
     </>
