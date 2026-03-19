@@ -1,6 +1,7 @@
-import { useMemo } from 'react'
-import { Marker } from 'react-leaflet'
+import { useEffect, useMemo } from 'react'
+import { useMap } from 'react-leaflet'
 import L from 'leaflet'
+import 'leaflet.markercluster'
 import { getCategoryColor } from '../../utils/colorMap'
 
 // ─────────────────────────────────────────────
@@ -20,7 +21,7 @@ function hexToRgb(hex) {
 function mix(ch, t) { return Math.min(255, Math.round(ch + (255 - ch) * t)) }
 
 // ─────────────────────────────────────────────
-// Leaflet divIcon — inline SVG, resolution-independent
+// Marker icon — inline SVG, resolution-independent
 // ─────────────────────────────────────────────
 const iconCache = new Map()
 
@@ -65,9 +66,32 @@ function createLeafletIcon(hex) {
 }
 
 // ─────────────────────────────────────────────
-// Jitter co-located events
-// Events at the same lat/lng will always overlap at max zoom.
-// Spread them in a tiny circle (~330 m) so zooming in separates them.
+// Cluster badge icon — dark navy + gold ring
+// ─────────────────────────────────────────────
+function createClusterIcon(cluster) {
+  const count = cluster.getChildCount()
+  const size  = count < 10 ? 40 : count < 100 ? 46 : 52
+  const half  = size / 2
+  const fs    = count < 10 ? 13 : count < 100 ? 12 : 10
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+  <circle cx="${half}" cy="${half}" r="${half - 1}" fill="rgba(5,8,15,0.93)" stroke="rgba(201,150,58,0.75)" stroke-width="2.2"/>
+  <circle cx="${half}" cy="${half}" r="${half - 6}" fill="none" stroke="rgba(201,150,58,0.22)" stroke-width="1"/>
+  <text x="${half}" y="${half + 0.5}" text-anchor="middle" dominant-baseline="middle"
+    fill="#e8b84b" font-family="Cinzel,serif" font-size="${fs}" font-weight="600" letter-spacing="0.5">${count}</text>
+</svg>`
+
+  return L.divIcon({
+    html:       svg,
+    className:  'bible-cluster-icon',
+    iconSize:   [size, size],
+    iconAnchor: [half, half],
+  })
+}
+
+// ─────────────────────────────────────────────
+// Jitter co-located events into a small circle
+// so zooming in separates them (~330 m radius)
 // ─────────────────────────────────────────────
 const JITTER_RADIUS = 0.003
 const COORD_PREC    = 3
@@ -100,37 +124,48 @@ function jitterColocatedEvents(events) {
 }
 
 // ─────────────────────────────────────────────
-// Component
+// Component — imperative Leaflet layer so we
+// can wrap everything in MarkerClusterGroup
 // ─────────────────────────────────────────────
 export default function EventMarkers({ events, onEventClick, onEventHover }) {
+  const map    = useMap()
   const placed = useMemo(() => jitterColocatedEvents(events), [events])
 
-  return placed.map(({ event, lat, lng }) => {
-    if (!isValidCoord(lat, lng)) return null
-    const icon = createLeafletIcon(getCategoryColor(event.category))
+  useEffect(() => {
+    const group = L.markerClusterGroup({
+      iconCreateFunction:      createClusterIcon,
+      maxClusterRadius:        60,
+      spiderfyOnMaxZoom:       true,
+      showCoverageOnHover:     false,
+      zoomToBoundsOnClick:     true,
+      disableClusteringAtZoom: 12,
+      animate:                 true,
+    })
 
-    return (
-      <Marker
-        key={event.id}
-        position={[lat, lng]}
-        icon={icon}
-        eventHandlers={{
-          click: (e) => {
-            e.originalEvent.stopPropagation()
-            onEventClick(event)
-          },
-          mouseover: (e) => {
-            const { clientX, clientY } = e.originalEvent
-            onEventHover(event, { x: clientX, y: clientY })
-          },
-          mouseout: () => onEventHover(null, null),
-          mousemove: (e) => {
-            if (!e.originalEvent) return
-            const { clientX, clientY } = e.originalEvent
-            onEventHover(event, { x: clientX, y: clientY })
-          },
-        }}
-      />
-    )
-  })
+    placed.forEach(({ event, lat, lng }) => {
+      if (!isValidCoord(lat, lng)) return
+      const marker = L.marker([lat, lng], {
+        icon: createLeafletIcon(getCategoryColor(event.category)),
+      })
+
+      marker.on('click', (e) => {
+        e.originalEvent?.stopPropagation()
+        onEventClick(event)
+      })
+      marker.on('mouseover', (e) => {
+        if (e.originalEvent) onEventHover(event, { x: e.originalEvent.clientX, y: e.originalEvent.clientY })
+      })
+      marker.on('mousemove', (e) => {
+        if (e.originalEvent) onEventHover(event, { x: e.originalEvent.clientX, y: e.originalEvent.clientY })
+      })
+      marker.on('mouseout', () => onEventHover(null, null))
+
+      group.addLayer(marker)
+    })
+
+    map.addLayer(group)
+    return () => { map.removeLayer(group) }
+  }, [map, placed]) // eslint-disable-line
+
+  return null
 }

@@ -88,21 +88,22 @@ export default function Globe() {
       zoomControl={false}
       style={{ width: '100%', height: '100%', background: '#0a0e1c' }}
     >
-      {/* Esri World Physical — terrain base layer */}
+      {/* Esri World Shaded Relief — terrain base, stays sharp to zoom 13 */}
       <TileLayer
-        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}"
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}"
         attribution=""
-        maxNativeZoom={8}
+        maxNativeZoom={13}
         maxZoom={16}
         className="map-tiles-terrain"
       />
-      {/* CartoDB Voyager — borders, city labels, roads overlaid on terrain */}
+      {/* CartoDB Voyager (no labels) — country/coast borders without modern city names */}
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png"
+        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png"
         attribution=""
         maxNativeZoom={19}
         maxZoom={16}
-        className="map-tiles-labels"
+        opacity={0.38}
+        className="map-tiles-borders"
         subdomains="abcd"
       />
 

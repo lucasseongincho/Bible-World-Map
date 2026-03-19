@@ -61,7 +61,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) return 'react'
-          if (id.includes('node_modules/leaflet') || id.includes('node_modules/react-leaflet')) return 'leaflet'
+          if (id.includes('node_modules/leaflet') || id.includes('node_modules/react-leaflet') || id.includes('node_modules/leaflet.markercluster')) return 'leaflet'
           if (id.includes('node_modules/')) return 'vendor'
         },
       },

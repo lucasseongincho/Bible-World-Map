@@ -54,11 +54,17 @@ body::after {
 .leaflet-control-attribution { display: none !important; }
 .leaflet-control-zoom { display: none !important; }
 
-/* Slightly dim + desaturate the terrain tiles to reduce eye strain */
-.map-tiles { filter: brightness(0.82) saturate(0.75) contrast(1.05); }
+/* Terrain base — dim + desaturate for a dark-map feel */
+.map-tiles-terrain { filter: brightness(0.78) saturate(0.65) contrast(1.08); }
+
+/* Borders overlay — desaturate so only the outlines are faintly visible, no color noise */
+.map-tiles-borders { filter: saturate(0.12) brightness(1.5) contrast(0.65); }
 
 /* Custom marker — remove Leaflet's default white box */
 .bible-marker { background: none !important; border: none !important; }
+
+/* Cluster icon — remove Leaflet's default styling */
+.bible-cluster-icon { background: none !important; border: none !important; }
 
 /* Journey path marching-dash animation */
 @keyframes journeyMarch { to { stroke-dashoffset: -17; } }
