@@ -11,177 +11,77 @@ function isValidCoord(lat, lng) {
   )
 }
 
-// ── High-DPI canvas scale factor ──
-// Draw at 4× so markers are razor-sharp on retina / HiDPI displays.
-const SCALE = 4
-
-// Module-level cache — one canvas per unique color
-const markerCanvasCache = new Map()
-
-/**
- * Parse a "#rrggbb" hex color into [r, g, b] 0-255 components.
- */
+// ─────────────────────────────────────────────
+// Color helpers
+// ─────────────────────────────────────────────
 function hexToRgb(hex) {
   const h = hex.replace('#', '')
-  return [
-    parseInt(h.slice(0, 2), 16),
-    parseInt(h.slice(2, 4), 16),
-    parseInt(h.slice(4, 6), 16),
-  ]
+  return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)]
+}
+function mix(channel, toWhite) {
+  return Math.min(255, Math.round(channel + (255 - channel) * toWhite))
 }
 
-/**
- * Lighten an rgb color by mixing toward white.
- * @param {number[]} rgb  [r, g, b]
- * @param {number}   t    0 = original, 1 = white
- */
-function lighten([r, g, b], t) {
-  return `rgb(${Math.round(r + (255 - r) * t)},${Math.round(g + (255 - g) * t)},${Math.round(b + (255 - b) * t)})`
-}
-function darken([r, g, b], t) {
-  return `rgb(${Math.round(r * (1 - t))},${Math.round(g * (1 - t))},${Math.round(b * (1 - t))})`
-}
-function rgba([r, g, b], a) {
-  return `rgba(${r},${g},${b},${a})`
-}
+// ─────────────────────────────────────────────
+// SVG marker — resolution-independent, crisp at any DPI
+// Cached per hex color (~12 unique values).
+// SVG source: 192×192  →  Cesium billboard: 48×48
+// ─────────────────────────────────────────────
+const markerSVGCache = new Map()
 
-/**
- * Create a single high-quality circular map marker.
- *
- * Display size:  32 × 32  (billboard width/height)
- * Canvas pixels: 128 × 128  (4× scale → pixel-perfect on 4K/retina)
- *
- * Design:
- *  • Wide soft outer halo (category color, very transparent)
- *  • Crisp medium ring  (category color, semi-transparent)
- *  • Main filled circle  (radial gradient: light center → full color edge)
- *  • Thin white border ring
- *  • Glossy light-reflection overlay (top-left quadrant)
- *  • Small bright inner dot (center)
- */
-function createMarkerCanvas(hexColor) {
-  if (markerCanvasCache.has(hexColor)) return markerCanvasCache.get(hexColor)
+function createMarkerSVG(hex) {
+  if (markerSVGCache.has(hex)) return markerSVGCache.get(hex)
 
-  const D   = 32          // display diameter (pixels Cesium will render at)
-  const PAD = 8           // padding around circle for glow to bleed into
-  const W   = D + PAD * 2 // canvas display size
-  const H   = W
+  const [r, g, b] = hexToRgb(hex)
+  const light = `rgb(${mix(r,.45)},${mix(g,.45)},${mix(b,.45)})`
+  const dark  = `rgb(${Math.round(r*.72)},${Math.round(g*.72)},${Math.round(b*.72)})`
 
-  const canvas = document.createElement('canvas')
-  canvas.width  = W * SCALE
-  canvas.height = H * SCALE
-  const ctx = canvas.getContext('2d')
-  ctx.scale(SCALE, SCALE)
+  // Unique IDs per color so gradients don't clash if SVG is parsed into DOM
+  const uid = hex.replace('#','')
 
-  const cx  = W / 2
-  const cy  = H / 2
-  const r   = D / 2                // circle radius
-  const rgb = hexToRgb(hexColor)
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="b${uid}" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="${light}"/>
+      <stop offset="100%" stop-color="${hex}"/>
+    </radialGradient>
+    <radialGradient id="h${uid}" cx="32%" cy="28%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <!-- outer soft halo -->
+  <circle cx="24" cy="24" r="23" fill="${hex}" fill-opacity="0.16"/>
+  <circle cx="24" cy="24" r="19" fill="${hex}" fill-opacity="0.09"/>
+  <!-- subtle depth shadow -->
+  <circle cx="24.5" cy="25" r="14.5" fill="${dark}" fill-opacity="0.35"/>
+  <!-- main body -->
+  <circle cx="24" cy="23.5" r="14" fill="url(#b${uid})"/>
+  <!-- outer dark ring (separation from background) -->
+  <circle cx="24" cy="23.5" r="14.8" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="1.2"/>
+  <!-- white border -->
+  <circle cx="24" cy="23.5" r="14" fill="none" stroke="rgba(255,255,255,0.90)" stroke-width="1.9"/>
+  <!-- gloss highlight -->
+  <circle cx="24" cy="23.5" r="13" fill="url(#h${uid})"/>
+  <!-- center dot -->
+  <circle cx="24" cy="23.5" r="4" fill="rgba(255,255,255,0.97)"/>
+  <circle cx="24" cy="23.5" r="2" fill="rgba(255,255,255,1)"/>
+</svg>`
 
-  // ── 1. Outer soft halo ──
-  {
-    const grad = ctx.createRadialGradient(cx, cy, r * 0.6, cx, cy, r + PAD)
-    grad.addColorStop(0,   rgba(rgb, 0.22))
-    grad.addColorStop(0.5, rgba(rgb, 0.10))
-    grad.addColorStop(1,   rgba(rgb, 0))
-    ctx.beginPath()
-    ctx.arc(cx, cy, r + PAD, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
-
-  // ── 2. Mid pulse ring ──
-  {
-    const grad = ctx.createRadialGradient(cx, cy, r - 2, cx, cy, r + 3)
-    grad.addColorStop(0,   rgba(rgb, 0))
-    grad.addColorStop(0.4, rgba(rgb, 0.35))
-    grad.addColorStop(1,   rgba(rgb, 0))
-    ctx.beginPath()
-    ctx.arc(cx, cy, r + 3, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
-
-  // ── 3. Drop shadow ──
-  ctx.shadowColor = rgba(rgb, 0.7)
-  ctx.shadowBlur  = 6
-
-  // ── 4. Main circle body — radial gradient (light upper-left → full color) ──
-  {
-    const grad = ctx.createRadialGradient(
-      cx - r * 0.28, cy - r * 0.28, 0,
-      cx, cy, r
-    )
-    grad.addColorStop(0,   lighten(rgb, 0.45))
-    grad.addColorStop(0.5, hexColor)
-    grad.addColorStop(1,   darken(rgb, 0.25))
-    ctx.beginPath()
-    ctx.arc(cx, cy, r, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
-
-  ctx.shadowBlur = 0
-
-  // ── 5. White border ring ──
-  ctx.beginPath()
-  ctx.arc(cx, cy, r, 0, Math.PI * 2)
-  ctx.strokeStyle = 'rgba(255,255,255,0.90)'
-  ctx.lineWidth   = 1.8
-  ctx.stroke()
-
-  // ── 6. Thin dark outer ring (depth) ──
-  ctx.beginPath()
-  ctx.arc(cx, cy, r + 0.8, 0, Math.PI * 2)
-  ctx.strokeStyle = 'rgba(0,0,0,0.25)'
-  ctx.lineWidth   = 1
-  ctx.stroke()
-
-  // ── 7. Glossy highlight (top-left reflection) ──
-  {
-    const grad = ctx.createRadialGradient(
-      cx - r * 0.3, cy - r * 0.35, 0,
-      cx - r * 0.1, cy - r * 0.1, r * 0.72
-    )
-    grad.addColorStop(0,   'rgba(255,255,255,0.55)')
-    grad.addColorStop(0.55,'rgba(255,255,255,0.12)')
-    grad.addColorStop(1,   'rgba(255,255,255,0)')
-    ctx.beginPath()
-    ctx.arc(cx, cy, r - 1.5, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
-
-  // ── 8. Center dot ──
-  {
-    const dotR = 4
-    const grad = ctx.createRadialGradient(cx - 1, cy - 1, 0, cx, cy, dotR)
-    grad.addColorStop(0, 'rgba(255,255,255,1)')
-    grad.addColorStop(1, 'rgba(255,255,255,0.7)')
-    ctx.beginPath()
-    ctx.arc(cx, cy, dotR, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
-
-  markerCanvasCache.set(hexColor, canvas)
-  return canvas
+  const uri = `data:image/svg+xml,${encodeURIComponent(svg)}`
+  markerSVGCache.set(hex, uri)
+  return uri
 }
 
-/**
- * Cluster badge — shown when multiple events group together at low zoom.
- *
- * Display: 46 × 46
- * Design:
- *  • Outer soft halo ring (gold)
- *  • Dark navy main circle
- *  • Gold border ring
- *  • Inner faint radial gradient
- *  • Crisp count number (large, bold)
- */
+// ─────────────────────────────────────────────
+// Cluster badge — canvas at 4× for sharpness.
+// Clean number only, no micro-text.
+// ─────────────────────────────────────────────
+const SCALE = 4
+
 function createClusterCanvas(count) {
-  const D   = 46
-  const PAD = 8
+  const D   = 52
+  const PAD = 12
   const W   = D + PAD * 2
 
   const canvas = document.createElement('canvas')
@@ -190,91 +90,120 @@ function createClusterCanvas(count) {
   const ctx = canvas.getContext('2d')
   ctx.scale(SCALE, SCALE)
 
-  const cx = W / 2
-  const cy = W / 2
-  const r  = D / 2
+  const cx = W / 2, cy = W / 2, r = D / 2
 
-  // ── Outer halo ──
-  {
-    const grad = ctx.createRadialGradient(cx, cy, r * 0.5, cx, cy, r + PAD)
-    grad.addColorStop(0,   'rgba(212,168,67,0.30)')
-    grad.addColorStop(0.5, 'rgba(212,168,67,0.10)')
-    grad.addColorStop(1,   'rgba(212,168,67,0)')
-    ctx.beginPath()
-    ctx.arc(cx, cy, r + PAD, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
+  // Outer halo
+  const halo = ctx.createRadialGradient(cx, cy, r * 0.4, cx, cy, r + PAD)
+  halo.addColorStop(0,   'rgba(212,168,67,0.40)')
+  halo.addColorStop(0.5, 'rgba(212,168,67,0.15)')
+  halo.addColorStop(1,   'rgba(212,168,67,0)')
+  ctx.beginPath()
+  ctx.arc(cx, cy, r + PAD, 0, Math.PI * 2)
+  ctx.fillStyle = halo
+  ctx.fill()
 
-  // ── Shadow ──
-  ctx.shadowColor = 'rgba(212,168,67,0.5)'
-  ctx.shadowBlur  = 8
+  // Drop shadow
+  ctx.shadowColor = 'rgba(212,168,67,0.55)'
+  ctx.shadowBlur  = 12
 
-  // ── Main circle — deep navy ──
-  {
-    const grad = ctx.createRadialGradient(cx - r * 0.2, cy - r * 0.2, 0, cx, cy, r)
-    grad.addColorStop(0, '#1a2540')
-    grad.addColorStop(1, '#0a0e1c')
-    ctx.beginPath()
-    ctx.arc(cx, cy, r, 0, Math.PI * 2)
-    ctx.fillStyle = grad
-    ctx.fill()
-  }
+  // Main circle — deep navy gradient
+  const bg = ctx.createRadialGradient(cx - r * 0.25, cy - r * 0.25, 0, cx, cy, r)
+  bg.addColorStop(0, '#1c2b46')
+  bg.addColorStop(1, '#060a16')
+  ctx.beginPath()
+  ctx.arc(cx, cy, r, 0, Math.PI * 2)
+  ctx.fillStyle = bg
+  ctx.fill()
 
   ctx.shadowBlur = 0
 
-  // ── Gold border ring ──
+  // Gold border
   ctx.beginPath()
   ctx.arc(cx, cy, r, 0, Math.PI * 2)
   ctx.strokeStyle = '#d4a843'
-  ctx.lineWidth   = 2.2
+  ctx.lineWidth   = 2.8
   ctx.stroke()
 
-  // ── Inner subtle ring ──
+  // Subtle inner ring
   ctx.beginPath()
-  ctx.arc(cx, cy, r - 4, 0, Math.PI * 2)
-  ctx.strokeStyle = 'rgba(212,168,67,0.2)'
+  ctx.arc(cx, cy, r - 5, 0, Math.PI * 2)
+  ctx.strokeStyle = 'rgba(212,168,67,0.18)'
   ctx.lineWidth   = 1
   ctx.stroke()
 
-  // ── Count label ──
-  const label = count > 99 ? '99+' : String(count)
-  const fontSize = count > 9 ? (count > 99 ? 11 : 13) : 16
-  ctx.font         = `700 ${fontSize}px -apple-system, "Segoe UI", Arial, sans-serif`
+  // Count number — large, bold, crisp
+  const label    = count > 999 ? '999+' : String(count)
+  const fontSize = count > 99 ? 15 : count > 9 ? 19 : 23
+  ctx.font         = `800 ${fontSize}px -apple-system, "Segoe UI", Arial, sans-serif`
   ctx.textAlign    = 'center'
   ctx.textBaseline = 'middle'
-
-  // Subtle text shadow
-  ctx.shadowColor = 'rgba(0,0,0,0.6)'
-  ctx.shadowBlur  = 3
-  ctx.fillStyle   = '#f0e6d0'
-  ctx.fillText(label, cx, cy + 0.5)
-
-  ctx.shadowBlur = 0
-
-  // Tiny "events" label below
-  if (count <= 99) {
-    ctx.font      = `500 7px -apple-system, "Segoe UI", Arial, sans-serif`
-    ctx.fillStyle = 'rgba(201,150,58,0.7)'
-    ctx.fillText('events', cx, cy + fontSize * 0.72)
-  }
+  ctx.shadowColor  = 'rgba(0,0,0,0.7)'
+  ctx.shadowBlur   = 6
+  ctx.fillStyle    = '#f0e6d0'
+  ctx.fillText(label, cx, cy)
+  ctx.shadowBlur   = 0
 
   return canvas
 }
 
-// ── Billboard display dimensions ──
-const MARKER_DISPLAY  = 48   // Cesium renders the billboard at this size (px)
-const CLUSTER_DISPLAY = 62
+// ─────────────────────────────────────────────
+// Jitter co-located events
+//
+// Events at the same lat/lng will forever overlap even at max zoom
+// because Cesium clustering is pixel-based. We spread them into a
+// tiny circle (~330 m radius) so zooming in separates them visually.
+// The original event data is preserved in entity.properties so
+// click/hover still reports the correct scripture reference.
+// ─────────────────────────────────────────────
+const JITTER_RADIUS_DEG = 0.003   // ≈ 330 m — invisible at city zoom, clear at street zoom
+const COORD_PRECISION   = 3       // group by ≤0.001° tolerance
 
+function jitterColocatedEvents(events) {
+  const groups = new Map()
+  events.forEach(ev => {
+    if (!isValidCoord(ev.location?.lat, ev.location?.lng)) return
+    const key = `${ev.location.lat.toFixed(COORD_PRECISION)},${ev.location.lng.toFixed(COORD_PRECISION)}`
+    if (!groups.has(key)) groups.set(key, [])
+    groups.get(key).push(ev)
+  })
+
+  const result = []
+  groups.forEach(group => {
+    if (group.length === 1) {
+      result.push({ event: group[0], lat: group[0].location.lat, lng: group[0].location.lng })
+      return
+    }
+    group.forEach((ev, i) => {
+      // Spread evenly around a circle, starting from the top (−π/2)
+      const angle = (i / group.length) * Math.PI * 2 - Math.PI / 2
+      result.push({
+        event: ev,
+        lat: ev.location.lat + Math.sin(angle) * JITTER_RADIUS_DEG,
+        lng: ev.location.lng + Math.cos(angle) * JITTER_RADIUS_DEG,
+      })
+    })
+  })
+  return result
+}
+
+// ─────────────────────────────────────────────
+// Billboard display sizes (Cesium px)
+// ─────────────────────────────────────────────
+const MARKER_DISPLAY  = 48
+const CLUSTER_DISPLAY = 76
+
+// ─────────────────────────────────────────────
+// Main component
+// ─────────────────────────────────────────────
 function EventMarkersInner({ events, onEventClick, onEventHover }) {
   const { viewer } = useCesium()
-  const handlerRef     = useRef(null)
-  const entitiesRef    = useRef([])
-  const dataSourceRef  = useRef(null)
-  const onEventClickRef = useRef(onEventClick)
-  const onEventHoverRef = useRef(onEventHover)
-  useEffect(() => { onEventClickRef.current = onEventClick }, [onEventClick])
-  useEffect(() => { onEventHoverRef.current = onEventHover }, [onEventHover])
+  const handlerRef    = useRef(null)
+  const entitiesRef   = useRef([])
+  const dataSourceRef = useRef(null)
+  const onClickRef    = useRef(onEventClick)
+  const onHoverRef    = useRef(onEventHover)
+  useEffect(() => { onClickRef.current = onEventClick }, [onEventClick])
+  useEffect(() => { onHoverRef.current = onEventHover }, [onEventHover])
 
   // Set up data source + interaction handler once
   useEffect(() => {
@@ -285,16 +214,16 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
       viewer.dataSources.add(ds)
       dataSourceRef.current = ds
 
-      ds.clustering.enabled         = true
-      ds.clustering.pixelRange      = 52
+      ds.clustering.enabled          = true
+      ds.clustering.pixelRange       = 52
       ds.clustering.minimumClusterSize = 3
 
       ds.clustering.clusterEvent.addEventListener((clusteredEntities, cluster) => {
-        cluster.billboard.show        = true
-        cluster.label.show            = false
-        cluster.billboard.id          = cluster
-        cluster.billboard.verticalOrigin   = Cesium.VerticalOrigin.CENTER
-        cluster.billboard.horizontalOrigin = Cesium.HorizontalOrigin.CENTER
+        cluster.billboard.show              = true
+        cluster.label.show                  = false
+        cluster.billboard.id                = cluster
+        cluster.billboard.verticalOrigin    = Cesium.VerticalOrigin.CENTER
+        cluster.billboard.horizontalOrigin  = Cesium.HorizontalOrigin.CENTER
         cluster.billboard.disableDepthTestDistance = Number.POSITIVE_INFINITY
         cluster.billboard.image  = createClusterCanvas(clusteredEntities.length)
         cluster.billboard.width  = CLUSTER_DISPLAY
@@ -308,9 +237,9 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
       const picked = viewer.scene.pick(click.position)
       if (Cesium.defined(picked) && picked.id) {
         const eventData = picked.id?.properties?.eventData?.getValue()
-        if (eventData) { onEventClickRef.current(eventData); return }
+        if (eventData) { onClickRef.current(eventData); return }
       }
-      onEventClickRef.current(null)
+      onClickRef.current(null)
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK)
 
     handlerRef.current.setInputAction((movement) => {
@@ -318,12 +247,12 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
       if (Cesium.defined(picked) && picked.id) {
         const eventData = picked.id?.properties?.eventData?.getValue()
         if (eventData) {
-          onEventHoverRef.current(eventData, { x: movement.endPosition.x, y: movement.endPosition.y })
+          onHoverRef.current(eventData, { x: movement.endPosition.x, y: movement.endPosition.y })
           viewer.scene.canvas.style.cursor = 'pointer'
           return
         }
       }
-      onEventHoverRef.current(null, null)
+      onHoverRef.current(null, null)
       viewer.scene.canvas.style.cursor = 'default'
     }, Cesium.ScreenSpaceEventType.MOUSE_MOVE)
 
@@ -335,7 +264,7 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
     }
   }, [viewer])
 
-  // Rebuild entities whenever the filtered event list changes
+  // Rebuild markers whenever filtered events change
   useEffect(() => {
     const ds = dataSourceRef.current
     if (!ds || !viewer || viewer.isDestroyed()) return
@@ -343,42 +272,37 @@ function EventMarkersInner({ events, onEventClick, onEventHover }) {
     ds.entities.removeAll()
     entitiesRef.current = []
 
-    events.forEach(event => {
-      const lat = event.location?.lat
-      const lng = event.location?.lng
-      if (!isValidCoord(lat, lng)) return
+    // Spread co-located events before placing billboards
+    const placed = jitterColocatedEvents(events)
 
-      const color  = getCategoryColor(event.category)
-      const canvas = createMarkerCanvas(color)   // cached per color
+    placed.forEach(({ event, lat, lng }) => {
+      const color    = getCategoryColor(event.category)
+      const imageUri = createMarkerSVG(color)
 
       const entity = ds.entities.add({
         id:       event.id,
         name:     event.title,
         position: Cesium.Cartesian3.fromDegrees(lng, lat),
         billboard: {
-          image:              canvas,
-          width:              MARKER_DISPLAY,
-          height:             MARKER_DISPLAY,
-          verticalOrigin:     Cesium.VerticalOrigin.CENTER,
-          horizontalOrigin:   Cesium.HorizontalOrigin.CENTER,
+          image:            imageUri,
+          width:            MARKER_DISPLAY,
+          height:           MARKER_DISPLAY,
+          verticalOrigin:   Cesium.VerticalOrigin.CENTER,
+          horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
           disableDepthTestDistance: Number.POSITIVE_INFINITY,
-          // Scale smoothly from close-up to zoomed-out
-          scaleByDistance:    new Cesium.NearFarScalar(8e5, 1.1, 1.2e7, 0.55),
-          // Fade markers near the horizon
-          translucencyByDistance: new Cesium.NearFarScalar(6e6, 1.0, 1.4e7, 0.4),
+          scaleByDistance:  new Cesium.NearFarScalar(8e5, 1.1, 1.2e7, 0.5),
+          translucencyByDistance: new Cesium.NearFarScalar(6e6, 1.0, 1.4e7, 0.35),
         },
-        properties: { eventData: event },
+        properties: { eventData: event },  // original event — not the jittered copy
       })
       entitiesRef.current.push(entity)
     })
   }, [viewer, events])
 
-  // Cleanup on unmount
+  // Full cleanup on unmount
   useEffect(() => {
     return () => {
-      if (handlerRef.current && !handlerRef.current.isDestroyed()) {
-        handlerRef.current.destroy()
-      }
+      if (handlerRef.current && !handlerRef.current.isDestroyed()) handlerRef.current.destroy()
       if (dataSourceRef.current && viewer && !viewer.isDestroyed()) {
         viewer.dataSources.remove(dataSourceRef.current, false)
       }
