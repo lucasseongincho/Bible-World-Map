@@ -15,18 +15,23 @@ export default function SearchBar() {
   const [results, setResults] = useState([])
   const [open, setOpen] = useState(false)
   const [focused, setFocused] = useState(false)
-  const { setSelectedEvent, setCameraFly } = useMapStore()
+  const { setSelectedEvent, setCameraFly, setSearchResults } = useMapStore()
   const inputRef = useRef(null)
 
   useEffect(() => {
-    if (!query.trim()) { setResults([]); return }
+    if (!query.trim()) {
+      setResults([])
+      setSearchResults([])
+      return
+    }
     const timer = setTimeout(() => {
-      const r = fuse.search(query).slice(0, 8)
-      setResults(r.map(r => r.item))
+      const hits = fuse.search(query).slice(0, 8).map(r => r.item)
+      setResults(hits)
+      setSearchResults(hits)   // mirror to store so Globe shows only these on the map
       setOpen(true)
     }, 200)
     return () => clearTimeout(timer)
-  }, [query])
+  }, [query]) // eslint-disable-line
 
   const handleSelect = (event) => {
     setSelectedEvent(event)
@@ -34,6 +39,7 @@ export default function SearchBar() {
     window.location.hash = `/event/${event.id}`
     setQuery('')
     setResults([])
+    setSearchResults([])   // restore normal map filtering
     setOpen(false)
   }
 
@@ -63,7 +69,7 @@ export default function SearchBar() {
           onFocus={() => { setFocused(true); results.length > 0 && setOpen(true) }}
           onBlur={() => { setFocused(false); setTimeout(() => setOpen(false), 200) }}
           onKeyDown={e => {
-            if (e.key === 'Escape') { setQuery(''); setResults([]); setOpen(false); inputRef.current?.blur() }
+            if (e.key === 'Escape') { setQuery(''); setResults([]); setSearchResults([]); setOpen(false); inputRef.current?.blur() }
           }}
           placeholder="Search events, places, people…"
           style={{
@@ -77,7 +83,7 @@ export default function SearchBar() {
         />
         {query && (
           <button
-            onClick={() => { setQuery(''); setResults([]) }}
+            onClick={() => { setQuery(''); setResults([]); setSearchResults([]) }}
             style={{ color: 'var(--text-muted)', flexShrink: 0, padding: 2 }}
             onMouseEnter={e => e.currentTarget.style.color = 'var(--ivory-dim)'}
             onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}

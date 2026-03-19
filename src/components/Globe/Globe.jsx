@@ -53,7 +53,7 @@ function MapController() {
 export default function Globe() {
   const {
     layers, activeCategories, activeJourneys, timelinePosition, spreadYear,
-    activeTour, tourStep,
+    activeTour, tourStep, searchResults,
     setSelectedEvent, setHoveredEvent,
   } = useMapStore(useShallow(state => ({
     layers:           state.layers,
@@ -63,6 +63,7 @@ export default function Globe() {
     spreadYear:       state.spreadYear,
     activeTour:       state.activeTour,
     tourStep:         state.tourStep,
+    searchResults:    state.searchResults,
     setSelectedEvent: state.setSelectedEvent,
     setHoveredEvent:  state.setHoveredEvent,
   })))
@@ -78,7 +79,11 @@ export default function Globe() {
     return activeJourneys === null ? allJourneyIds : [...activeJourneys]
   }, [layers.journeys, activeJourneys])
 
-  const filteredEvents = useMemo(() => events.filter(event => {
+  const filteredEvents = useMemo(() => {
+    // Active search: show only matching results, ignore all layer/category/timeline filters
+    if (searchResults.length > 0) return searchResults
+
+    return events.filter(event => {
     if (event.testament === 'old' && !layers.oldTestament) return false
     if (event.testament === 'new' && !layers.newTestament) return false
     if (activeCategories !== null && !activeCategories.has(event.category)) return false
@@ -87,7 +92,8 @@ export default function Globe() {
       if (!isNaN(year) && (year < timelinePosition - TIMELINE_WINDOW || year > timelinePosition + TIMELINE_WINDOW)) return false
     }
     return true
-  }), [layers.oldTestament, layers.newTestament, activeCategories, timelinePosition])
+  })
+  }, [searchResults, layers.oldTestament, layers.newTestament, activeCategories, timelinePosition])
 
   return (
     <MapContainer
